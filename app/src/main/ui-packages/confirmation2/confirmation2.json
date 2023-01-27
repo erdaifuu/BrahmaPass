@@ -1,0 +1,138 @@
+{
+  "name": "confirmation2",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "113:347",
+    "version": "2928813622",
+    "component-id": "46cf3fca8a6a5194277c53407a42ef5b591868ce"
+  },
+  "default": "Confirmation2",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Polygon 4"
+      },
+      {
+        "type": "vector",
+        "id": "Polygon 3"
+      },
+      {
+        "type": "vector",
+        "id": "Polygon 2"
+      }
+    ],
+    "modes": {
+      "Confirmation2": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Polygon 4",
+              "Polygon 3",
+              "Polygon 2"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Polygon 4",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "180.88134765625"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "353.99151611328125"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "77.364501953125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "135.0084686279297"
+              }
+            },
+            "vector-content": "polygon_4.svg"
+          },
+          {
+            "id": "Polygon 3",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "102.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "310.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "156.245849609375"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "89.5"
+              }
+            },
+            "vector-content": "polygon_3.svg"
+          },
+          {
+            "id": "Polygon 2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "102.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "353.99151611328125"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "78.88134765625"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "135.0084686279297"
+              }
+            },
+            "vector-content": "polygon_2.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Confirmation2",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
