@@ -1,0 +1,173 @@
+{
+  "name": "ellipse_1",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "111:98",
+    "version": "2928813622",
+    "component-id": "c50d019ed1b6d2a61f8b7a3f0f50ef4a9bd3e3b5"
+  },
+  "default": "Property 1=Variant4",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 1"
+      }
+    ],
+    "modes": {
+      "Property 1=Variant4": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Ellipse 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Ellipse 1",
+            "margin": {
+              "top": "6.394884621840902e-14"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_1.svg"
+          }
+        ]
+      },
+      "Property 1=Variant3": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Ellipse 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Ellipse 1",
+            "margin": {
+              "left": "3.552713678800501e-15"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_2.svg"
+          }
+        ]
+      },
+      "Property 1=Variant2": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Ellipse 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Ellipse 1",
+            "margin": {
+              "right": "7.105427357601002e-15"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_3.svg"
+          }
+        ]
+      },
+      "Property 1=Default": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Ellipse 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Ellipse 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_4.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Property 1=Variant4",
+      "size": {
+        "width": 50.0,
+        "height": 50.0
+      }
+    },
+    {
+      "design": "Property 1=Variant3",
+      "size": {
+        "width": 50.0,
+        "height": 50.0
+      }
+    },
+    {
+      "design": "Property 1=Variant2",
+      "size": {
+        "width": 50.0,
+        "height": 50.0
+      }
+    },
+    {
+      "design": "Property 1=Default",
+      "size": {
+        "width": 50.0,
+        "height": 50.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,151 @@
+{
+  "name": "options_list",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "113:228",
+    "version": "2928813622",
+    "component-id": "6e1efe9039a75f6e46f09c41390e39948db60696"
+  },
+  "default": "options list",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "option",
+        "key": "option"
+      },
+      {
+        "type": "adin_component",
+        "id": "option1",
+        "key": "option"
+      },
+      {
+        "type": "adin_component",
+        "id": "option2",
+        "key": "option"
+      },
+      {
+        "type": "adin_component",
+        "id": "option3",
+        "key": "option"
+      },
+      {
+        "type": "adin_component",
+        "id": "option4",
+        "key": "option"
+      }
+    ],
+    "modes": {
+      "options list": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "option",
+              "option1",
+              "option2",
+              "option3",
+              "option4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "option",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "37.0"
+              }
+            }
+          },
+          {
+            "id": "option1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            }
+          },
+          {
+            "id": "option2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "37.0"
+              }
+            }
+          },
+          {
+            "id": "option3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            }
+          },
+          {
+            "id": "option4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "37.0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "options list",
+      "size": {
+        "width": 148.0,
+        "height": 187.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

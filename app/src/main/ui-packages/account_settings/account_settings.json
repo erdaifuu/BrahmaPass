@@ -1,0 +1,859 @@
+{
+  "name": "account_settings",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "113:350",
+    "version": "2928813622",
+    "component-id": "5e1275902fbf86e9d6915b3d04086efad5dff378"
+  },
+  "default": "Account Settings",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 14"
+      },
+      {
+        "type": "text",
+        "id": "BrahmaPass"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      },
+      {
+        "type": "text",
+        "id": "Account Settings"
+      },
+      {
+        "type": "group",
+        "id": "User Name Field & Text"
+      },
+      {
+        "type": "group",
+        "id": "Email Field & Text"
+      },
+      {
+        "type": "group",
+        "id": "Phone Number Field & Text"
+      },
+      {
+        "type": "group",
+        "id": "Password Field  & Text & Icon"
+      },
+      {
+        "type": "group",
+        "id": "Password Field  & Text & Icon1"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 6"
+      },
+      {
+        "type": "group",
+        "id": "mdi:house"
+      },
+      {
+        "type": "group",
+        "id": "SignUp Field & Text"
+      },
+      {
+        "type": "vector",
+        "id": "Username Rectangle "
+      },
+      {
+        "type": "text",
+        "id": "Enter Your Username Text"
+      },
+      {
+        "type": "vector",
+        "id": "Email Rectangle "
+      },
+      {
+        "type": "text",
+        "id": "Enter Your Email Text"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 3"
+      },
+      {
+        "type": "text",
+        "id": "Room Number"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 4"
+      },
+      {
+        "type": "text",
+        "id": "Password"
+      },
+      {
+        "type": "adin_component",
+        "id": "Eyecon",
+        "key": "eyecon"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 5"
+      },
+      {
+        "type": "text",
+        "id": "Confirm Password"
+      },
+      {
+        "type": "adin_component",
+        "id": "Eyecon1",
+        "key": "eyecon"
+      },
+      {
+        "type": "vector",
+        "id": "Vector1"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 7"
+      },
+      {
+        "type": "text",
+        "id": "Update Account"
+      }
+    ],
+    "modes": {
+      "Account Settings": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 14",
+              "BrahmaPass",
+              "Vector",
+              "Account Settings",
+              "User Name Field & Text",
+              "Email Field & Text",
+              "Phone Number Field & Text",
+              "Password Field  & Text & Icon",
+              "Password Field  & Text & Icon1",
+              "Rectangle 6",
+              "mdi:house",
+              "SignUp Field & Text"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Rectangle 14",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "71.0"
+              }
+            },
+            "vector-content": "rectangle_14.svg"
+          },
+          {
+            "id": "BrahmaPass",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "16.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "266.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "BrahmaPass",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "40.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Vector",
+            "margin": {
+              "left": "11.149987697601318",
+              "top": "97.84999990463257",
+              "right": "328.8500123023987",
+              "bottom": "689.8499999046326"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector.svg"
+          },
+          {
+            "id": "Account Settings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "43.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "79.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Account Settings",
+            "overflow": "visible",
+            "text-size": "32.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "User Name Field & Text",
+            "border-radius": "10.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "169.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Username Rectangle ",
+              "Enter Your Username Text"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Email Field & Text",
+            "border-radius": "10.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "245.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Email Rectangle ",
+              "Enter Your Email Text"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Phone Number Field & Text",
+            "border-radius": "10.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "321.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 3",
+              "Room Number"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Password Field  & Text & Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "397.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 4",
+              "Password",
+              "Eyecon"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Password Field  & Text & Icon1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "23.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "473.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 5",
+              "Confirm Password",
+              "Eyecon1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 6",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "729.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "71.0"
+              }
+            },
+            "vector-content": "rectangle_6.svg"
+          },
+          {
+            "id": "mdi:house",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "154.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "737.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "55.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector1"
+            ]
+          },
+          {
+            "id": "SignUp Field & Text",
+            "border-radius": "5.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "552.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 7",
+              "Update Account"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Username Rectangle ",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "vector-content": "username_rectangle_.svg"
+          },
+          {
+            "id": "Enter Your Username Text",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "11.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "12.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Name",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Email Rectangle ",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "vector-content": "email_rectangle_.svg"
+          },
+          {
+            "id": "Enter Your Email Text",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "11.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "12.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Email",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Rectangle 3",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "vector-content": "rectangle_3.svg"
+          },
+          {
+            "id": "Room Number",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "11.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "12.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Room Number",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Rectangle 4",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "vector-content": "rectangle_4.svg"
+          },
+          {
+            "id": "Password",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "11.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "12.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "257.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Password",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Eyecon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "280.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "16.0"
+              }
+            },
+            "design": "Property 1=Closed",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "19.20001220703125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "15.0"
+              }
+            }
+          },
+          {
+            "id": "Rectangle 5",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "vector-content": "rectangle_5.svg"
+          },
+          {
+            "id": "Confirm Password",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "11.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "12.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "257.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Confirm Password",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Eyecon1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "280.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "16.0"
+              }
+            },
+            "design": "Property 1=Closed",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "19.20001220703125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "15.0"
+              }
+            }
+          },
+          {
+            "id": "Vector1",
+            "margin": {
+              "left": "4.166656494140625",
+              "top": "6.875",
+              "right": "4.16668701171875",
+              "bottom": "9.1666259765625"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector1.svg"
+          },
+          {
+            "id": "Rectangle 7",
+            "border-radius": "5.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "vector-content": "rectangle_7.svg"
+          },
+          {
+            "id": "Update Account",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "89.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "12.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "0.8980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Update Account",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Account Settings",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
