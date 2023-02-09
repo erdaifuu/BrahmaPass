@@ -1,6 +1,18 @@
 buildscript {
     ext {
-        compose_version = '1.1.0-beta01'
+        kotlinVer = '1.8.10'
+        composeCompilerVer = '1.4.2'
+        composeVer = '1.4.0-beta01'
+    }
+    dependencies {
+        // Add the dependency for the Google services Gradle plugin
+        classpath 'com.google.gms:google-services:4.3.15'
+        classpath 'com.android.tools.build:gradle:7.3.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10"
+    }
+    dependencies {
+        // Add the dependency for the Google services Gradle plugin
+        classpath 'com.google.gms:google-services:4.3.15'
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
