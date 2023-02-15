@@ -1,0 +1,668 @@
+{
+  "name": "scn_settings",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "113:352",
+    "version": "2994250744",
+    "component-id": "8db0bf24dca837e79b971c088457359622507a47"
+  },
+  "default": "scnSettings",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "bkgTopOnSettings"
+      },
+      {
+        "type": "text",
+        "id": "lblBrahmaPassTitleOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "bkgBottomOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgSettingsOnSettings"
+      },
+      {
+        "type": "text",
+        "id": "lblSettingsTitleOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgBackArrowOnSettings"
+      },
+      {
+        "type": "group",
+        "id": "grpLogoutOnSettings"
+      },
+      {
+        "type": "group",
+        "id": "grpNotificationsOnSettings"
+      },
+      {
+        "type": "group",
+        "id": "grpAccountSettingsOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgLogoutOnSettings"
+      },
+      {
+        "type": "text",
+        "id": "lblLogoutOnSettings"
+      },
+      {
+        "type": "group",
+        "id": "objSliderOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgBellOnSettings"
+      },
+      {
+        "type": "text",
+        "id": "lblNotificationsOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgRectangleOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgCircleOnSettings"
+      },
+      {
+        "type": "group",
+        "id": "imgCheckmarkOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgBoundingBoxSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgCheckOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgForwardArrowOnSettings"
+      },
+      {
+        "type": "text",
+        "id": "lblAccountSettingsOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgUserOnSettings"
+      }
+    ],
+    "modes": {
+      "scnSettings": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "bkgTopOnSettings",
+              "lblBrahmaPassTitleOnSettings",
+              "bkgBottomOnSettings",
+              "imgSettingsOnSettings",
+              "lblSettingsTitleOnSettings",
+              "imgBackArrowOnSettings",
+              "grpLogoutOnSettings",
+              "grpNotificationsOnSettings",
+              "grpAccountSettingsOnSettings"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "bkgTopOnSettings",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "71.0"
+              }
+            },
+            "vector-content": "bkg_top_on_settings.svg"
+          },
+          {
+            "id": "lblBrahmaPassTitleOnSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "16.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "266.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "BrahmaPass",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "40.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "bkgBottomOnSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "729.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "71.0"
+              }
+            },
+            "vector-content": "bkg_bottom_on_settings.svg"
+          },
+          {
+            "id": "imgSettingsOnSettings",
+            "margin": {
+              "left": "162.0",
+              "top": "742.0",
+              "right": "161.52328491210938",
+              "bottom": "20.5"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_settings_on_settings.svg"
+          },
+          {
+            "id": "lblSettingsTitleOnSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "106.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "77.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Settings",
+            "overflow": "visible",
+            "text-size": "36.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "imgBackArrowOnSettings",
+            "margin": {
+              "left": "11.149987697601318",
+              "top": "97.84999990463257",
+              "right": "328.8500123023987",
+              "bottom": "689.8499999046326"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_back_arrow_on_settings.svg"
+          },
+          {
+            "id": "grpLogoutOnSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "19.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "644.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "322.75"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "imgLogoutOnSettings",
+              "lblLogoutOnSettings"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "grpNotificationsOnSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "284.79998779296875"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "224.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "62.19999694824219"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "objSliderOnSettings",
+              "imgBellOnSettings",
+              "lblNotificationsOnSettings"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "grpAccountSettingsOnSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "22.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "166.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "317.20001220703125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "imgForwardArrowOnSettings",
+              "lblAccountSettingsOnSettings",
+              "imgUserOnSettings"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "imgLogoutOnSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "304.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.75"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.75"
+              }
+            },
+            "vector-content": "img_logout_on_settings.svg"
+          },
+          {
+            "id": "lblLogoutOnSettings",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "1.0",
+              "value": "1.0"
+            },
+            "text-content": "Log out",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "22.0",
+            "letter-spacing": "0.22",
+            "line-height": "1.6180697631835939",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "objSliderOnSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "3.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "52.19999694824219"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "27.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "imgRectangleOnSettings",
+              "imgCircleOnSettings",
+              "imgCheckmarkOnSettings"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "imgBellOnSettings",
+            "margin": {
+              "top": "7.0",
+              "right": "153.99998474121094",
+              "bottom": "7.79998779296875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_bell_on_settings.svg"
+          },
+          {
+            "id": "lblNotificationsOnSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-265.79998779296875"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-1.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "144.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "35.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Notifications",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "22.0",
+            "letter-spacing": "0.22",
+            "line-height": "1.6180697631835939",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "imgRectangleOnSettings",
+            "margin": {
+              "left": "5.399999618530273"
+            },
+            "border-radius": "13.5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_rectangle_on_settings.svg"
+          },
+          {
+            "id": "imgCircleOnSettings",
+            "margin": {
+              "left": "27.0",
+              "top": "1.79998779296875",
+              "right": "1.799997329711914",
+              "bottom": "1.79998779296875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_circle_on_settings.svg"
+          },
+          {
+            "id": "imgCheckmarkOnSettings",
+            "margin": {
+              "left": "31.94999885559082",
+              "top": "6.75",
+              "right": "6.2999982833862305",
+              "bottom": "6.29998779296875"
+            },
+            "is-structured": "false",
+            "children": [
+              "imgBoundingBoxSettings",
+              "imgCheckOnSettings"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "imgBoundingBoxSettings",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "imgCheckOnSettings",
+            "margin": {
+              "left": "2.2377898693084717",
+              "top": "3.472900390625",
+              "right": "2.237835168838501",
+              "bottom": "3.48760986328125"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_check_on_settings.svg"
+          },
+          {
+            "id": "imgForwardArrowOnSettings",
+            "margin": {
+              "left": "305.09999990463257",
+              "top": "12.900000095367432",
+              "bottom": "13.900000095367432"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_forward_arrow_on_settings.svg"
+          },
+          {
+            "id": "lblAccountSettingsOnSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-3.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "200.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Account Settings",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "22.0",
+            "letter-spacing": "0.22",
+            "line-height": "1.6180697631835939",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "imgUserOnSettings",
+            "margin": {
+              "left": "197.0",
+              "top": "7.0",
+              "right": "103.40033721923828",
+              "bottom": "9.79998779296875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_user_on_settings.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "scnSettings",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

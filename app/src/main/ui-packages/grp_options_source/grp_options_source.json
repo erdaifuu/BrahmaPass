@@ -1,0 +1,356 @@
+{
+  "name": "grp_options_source",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "113:219",
+    "version": "2994250744",
+    "component-id": "e410453e70cde7ef286d75551465cefbf7a0fbcc"
+  },
+  "default": "Property 1=Normal",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "normal text"
+      },
+      {
+        "type": "text",
+        "id": "hover text"
+      },
+      {
+        "type": "text",
+        "id": "selected text"
+      },
+      {
+        "type": "text",
+        "id": "selectedhover text"
+      }
+    ],
+    "modes": {
+      "Property 1=Normal": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "13.0",
+              "top": "12.0",
+              "right": "13.0",
+              "bottom": "12.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "normal text"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "normal text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Option 1",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      },
+      "Property 1=hover": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "13.0",
+              "top": "12.0",
+              "right": "13.0",
+              "bottom": "12.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "hover text"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "fills": [
+              {
+                "color": {
+                  "alpha": "0.09803921568627451",
+                  "hue": "0.0",
+                  "saturation": "0.0",
+                  "value": "0.0"
+                },
+                "opacity": "1.0",
+                "fill-type": "solid",
+                "blend-mode": "normal",
+                "color-stops": [],
+                "gradient-handle-positions": []
+              }
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "hover text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Option 1",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      },
+      "Property 1=selected": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "13.0",
+              "top": "12.0",
+              "right": "13.0",
+              "bottom": "12.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "selected text"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "selected text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Option 1",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      },
+      "Property 1=selected hover": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "13.0",
+              "top": "12.0",
+              "right": "13.0",
+              "bottom": "12.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "selectedhover text"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "fills": [
+              {
+                "color": {
+                  "alpha": "0.09803921568627451",
+                  "hue": "0.0",
+                  "saturation": "0.0",
+                  "value": "0.0"
+                },
+                "opacity": "1.0",
+                "fill-type": "solid",
+                "blend-mode": "normal",
+                "color-stops": [],
+                "gradient-handle-positions": []
+              }
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "selectedhover text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Option 1",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Property 1=Normal",
+      "size": {
+        "width": 120.0,
+        "height": 45.0
+      }
+    },
+    {
+      "design": "Property 1=hover",
+      "size": {
+        "width": 120.0,
+        "height": 45.0
+      }
+    },
+    {
+      "design": "Property 1=selected",
+      "size": {
+        "width": 120.0,
+        "height": 45.0
+      }
+    },
+    {
+      "design": "Property 1=selected hover",
+      "size": {
+        "width": 120.0,
+        "height": 45.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

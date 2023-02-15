@@ -1,0 +1,91 @@
+{
+  "name": "scn_confirmation3",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "113:346",
+    "version": "2994250744",
+    "component-id": "54da928f957abd8a4fd0e31c7d89a1c67247fc64"
+  },
+  "default": "scnConfirmation3",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "lblHallPassCreatedOnConfirmation3"
+      }
+    ],
+    "modes": {
+      "scnConfirmation3": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "lblHallPassCreatedOnConfirmation3"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "260.2453987730062",
+              "saturation": "0.6599190283400809",
+              "value": "0.9686274509803922"
+            }
+          },
+          {
+            "id": "lblHallPassCreatedOnConfirmation3",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "313.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "282.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Hall Pass\nCreated",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "58.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "scnConfirmation3",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

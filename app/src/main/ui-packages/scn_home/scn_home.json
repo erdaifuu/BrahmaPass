@@ -1,0 +1,776 @@
+{
+  "name": "scn_home",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "111:241",
+    "version": "2994250744",
+    "component-id": "c50544f50f68c86bec602960acc3a1180a89b57d"
+  },
+  "default": "scnHome",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "lblTimeSubtitleOnHome"
+      },
+      {
+        "type": "text",
+        "id": "lblHomeSubtitleOnHome"
+      },
+      {
+        "type": "text",
+        "id": "txtTimeOnHome"
+      },
+      {
+        "type": "vector",
+        "id": "imgClockOnHonme"
+      },
+      {
+        "type": "vector",
+        "id": "bkgBottomIconsOnHome"
+      },
+      {
+        "type": "vector",
+        "id": "imgExitLogOnHome"
+      },
+      {
+        "type": "vector",
+        "id": "imgHomeOnHome"
+      },
+      {
+        "type": "vector",
+        "id": "imgSettingsIconOnHome"
+      },
+      {
+        "type": "vector",
+        "id": "bkgTitleOnHome"
+      },
+      {
+        "type": "text",
+        "id": "lblBrahmaPassTitleOnHome"
+      },
+      {
+        "type": "group",
+        "id": "btnCreateHallpassOnHome"
+      },
+      {
+        "type": "vector",
+        "id": "bckEnterIDOnHome"
+      },
+      {
+        "type": "group",
+        "id": "grpEnterReasonOnHome"
+      },
+      {
+        "type": "text",
+        "id": "lblIDOnHome"
+      },
+      {
+        "type": "text",
+        "id": "lblReasonOnHome"
+      },
+      {
+        "type": "text",
+        "id": "txtEnterIDOnHome"
+      },
+      {
+        "type": "group",
+        "id": "ddScheduleOnHome"
+      },
+      {
+        "type": "vector",
+        "id": "bkgCreateHallpassOnHome"
+      },
+      {
+        "type": "text",
+        "id": "lblCreateHallpassOnHome"
+      },
+      {
+        "type": "vector",
+        "id": "bkgEmailBoxOnHome"
+      },
+      {
+        "type": "text",
+        "id": "txtEnterEmailOnHome"
+      },
+      {
+        "type": "text",
+        "id": "Select the Schedule"
+      },
+      {
+        "type": "vector",
+        "id": "Vector 1"
+      }
+    ],
+    "modes": {
+      "scnHome": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "lblTimeSubtitleOnHome",
+              "lblHomeSubtitleOnHome",
+              "txtTimeOnHome",
+              "imgClockOnHonme",
+              "bkgBottomIconsOnHome",
+              "imgExitLogOnHome",
+              "imgHomeOnHome",
+              "imgSettingsIconOnHome",
+              "bkgTitleOnHome",
+              "lblBrahmaPassTitleOnHome",
+              "btnCreateHallpassOnHome",
+              "bckEnterIDOnHome",
+              "grpEnterReasonOnHome",
+              "lblIDOnHome",
+              "lblReasonOnHome",
+              "txtEnterIDOnHome",
+              "ddScheduleOnHome"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "lblTimeSubtitleOnHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "80.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "127.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "200.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Current Time:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "28.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "lblHomeSubtitleOnHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "126.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "79.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Home",
+            "overflow": "visible",
+            "text-size": "36.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "txtTimeOnHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "166.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "320.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "1/20, 11:57:45 AM",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "28.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "imgClockOnHonme",
+            "margin": {
+              "left": "160.0",
+              "top": "217.0",
+              "right": "160.0",
+              "bottom": "543.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_clock_on_honme.svg"
+          },
+          {
+            "id": "bkgBottomIconsOnHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "729.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "71.0"
+              }
+            },
+            "vector-content": "bkg_bottom_icons_on_home.svg"
+          },
+          {
+            "id": "imgExitLogOnHome",
+            "margin": {
+              "left": "262.0",
+              "top": "745.0",
+              "right": "64.0",
+              "bottom": "15.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_exit_log_on_home.svg"
+          },
+          {
+            "id": "imgHomeOnHome",
+            "margin": {
+              "left": "158.1666259765625",
+              "top": "743.875",
+              "right": "160.166748046875",
+              "bottom": "17.166656494140625"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_home_on_home.svg"
+          },
+          {
+            "id": "imgSettingsIconOnHome",
+            "margin": {
+              "left": "64.2574462890625",
+              "top": "746.75",
+              "right": "259.265869140625",
+              "bottom": "15.75"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_settings_icon_on_home.svg"
+          },
+          {
+            "id": "bkgTitleOnHome",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "71.0"
+              }
+            },
+            "vector-content": "bkg_title_on_home.svg"
+          },
+          {
+            "id": "lblBrahmaPassTitleOnHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "12.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "266.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "BrahmaPass",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "40.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "btnCreateHallpassOnHome",
+            "border-radius": "5.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "645.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "bkgCreateHallpassOnHome",
+              "lblCreateHallpassOnHome"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "bckEnterIDOnHome",
+            "border-radius": "10.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "404.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "39.0"
+              }
+            },
+            "vector-content": "bck_enter_idon_home.svg"
+          },
+          {
+            "id": "grpEnterReasonOnHome",
+            "border-radius": "10.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "501.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "114.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "bkgEmailBoxOnHome",
+              "txtEnterEmailOnHome"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "lblIDOnHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-143.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "378.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "26.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "21.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "ID:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "lblReasonOnHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-70.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "473.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "172.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "21.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Reason of Departure:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "txtEnterIDOnHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "33.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "412.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Enter Your ID...",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ddScheduleOnHome",
+            "padding": {
+              "left": "13.0",
+              "top": "14.0",
+              "right": "13.0",
+              "bottom": "14.0"
+            },
+            "border-radius": "10.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "50.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "275.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "260.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "42.0"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "0.2",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "arrangement": "row",
+            "main-axis-align": "space-between",
+            "children": [
+              "Select the Schedule",
+              "Vector 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "bkgCreateHallpassOnHome",
+            "border-radius": "5.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "vector-content": "bkg_create_hallpass_on_home.svg"
+          },
+          {
+            "id": "lblCreateHallpassOnHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "96.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "12.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Create Hallpass",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "bkgEmailBoxOnHome",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "312.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "114.0"
+              }
+            },
+            "vector-content": "bkg_email_box_on_home.svg"
+          },
+          {
+            "id": "txtEnterEmailOnHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "12.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "8.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "289.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "95.0"
+              }
+            },
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Enter here...",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Select the Schedule",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "165.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Select the Schedule",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Vector 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "11.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "6.0"
+              }
+            },
+            "vector-content": "vector_1.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "scnHome",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
