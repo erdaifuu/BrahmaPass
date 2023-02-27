@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "113:350",
-    "version": "2994250744",
+    "version": "3085165634",
     "component-id": "5e1275902fbf86e9d6915b3d04086efad5dff378"
   },
   "default": "scnAccountSettings",
@@ -18,15 +18,19 @@
       },
       {
         "type": "vector",
+        "id": "bkgBottomOnAccountSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgUserOnSettings"
+      },
+      {
+        "type": "vector",
         "id": "bkgTopOnAccountSettings"
       },
       {
         "type": "text",
         "id": "lblBrahmaPassTitleOnAccountSettings"
-      },
-      {
-        "type": "vector",
-        "id": "imgBackArrowOnAccountSettings"
       },
       {
         "type": "text",
@@ -53,16 +57,12 @@
         "id": "grpConfirmPasswordOnAccountSettings"
       },
       {
-        "type": "vector",
-        "id": "bkgBottomOnAccountSettings"
-      },
-      {
-        "type": "group",
-        "id": "imgHomeIconOnAccountSettings"
-      },
-      {
         "type": "group",
         "id": "grpSignUpButtonOnAccountSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgBackArrowOnAccountSettings"
       },
       {
         "type": "vector",
@@ -116,10 +116,6 @@
       },
       {
         "type": "vector",
-        "id": "imgHomePicture"
-      },
-      {
-        "type": "vector",
         "id": "bkgUpdateAccountOnSignUpButton"
       },
       {
@@ -134,18 +130,18 @@
             "id": "top_level",
             "is-structured": "false",
             "children": [
+              "bkgBottomOnAccountSettings",
+              "imgUserOnSettings",
               "bkgTopOnAccountSettings",
               "lblBrahmaPassTitleOnAccountSettings",
-              "imgBackArrowOnAccountSettings",
               "lblTitleOnAccountSettings",
               "grpNameOnAccountSettings",
               "grpEmailOnOnAccountSettings",
               "grpRoomNumberOnAccountSettings",
               "grpPasswordOnAccountSettings",
               "grpConfirmPasswordOnAccountSettings",
-              "bkgBottomOnAccountSettings",
-              "imgHomeIconOnAccountSettings",
-              "grpSignUpButtonOnAccountSettings"
+              "grpSignUpButtonOnAccountSettings",
+              "imgBackArrowOnAccountSettings"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -155,11 +151,55 @@
             }
           },
           {
+            "id": "bkgBottomOnAccountSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "729.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "480.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "71.0"
+              }
+            },
+            "vector-content": "bkg_bottom_on_account_settings.svg"
+          },
+          {
+            "id": "imgUserOnSettings",
+            "margin": {
+              "left": "220.0",
+              "top": "741.0",
+              "right": "220.0",
+              "bottom": "19.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_user_on_settings.svg"
+          },
+          {
             "id": "bkgTopOnAccountSettings",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "360.0"
+                "value": "480.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -206,35 +246,15 @@
             "typeface": "Poppins"
           },
           {
-            "id": "imgBackArrowOnAccountSettings",
-            "margin": {
-              "left": "11.149987697601318",
-              "top": "97.84999990463257",
-              "right": "328.8500123023987",
-              "bottom": "689.8499999046326"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "vector-content": "img_back_arrow_on_account_settings.svg"
-          },
-          {
             "id": "lblTitleOnAccountSettings",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "43.0"
+                "offset": "103.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "79.0"
+                "offset": "81.0"
               }
             },
             "font-weight": "500.0",
@@ -256,17 +276,17 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "169.0"
+                "offset": "184.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -286,17 +306,17 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "245.0"
+                "offset": "260.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -316,17 +336,17 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "321.0"
+                "offset": "336.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -345,17 +365,17 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "397.0"
+                "offset": "412.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -375,17 +395,17 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "23.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "473.0"
+                "offset": "488.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -401,73 +421,23 @@
             "clip-content": "false"
           },
           {
-            "id": "bkgBottomOnAccountSettings",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "0.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "729.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "360.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "71.0"
-              }
-            },
-            "vector-content": "bkg_bottom_on_account_settings.svg"
-          },
-          {
-            "id": "imgHomeIconOnAccountSettings",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "154.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "737.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "50.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "55.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "imgHomePicture"
-            ]
-          },
-          {
             "id": "grpSignUpButtonOnAccountSettings",
             "border-radius": "5.0",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "552.0"
+                "offset": "589.0"
               }
             },
+            "tap-handler": "$on grpSignUpButtonOnAccountSettings tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -482,12 +452,33 @@
             "clip-content": "false"
           },
           {
+            "id": "imgBackArrowOnAccountSettings",
+            "margin": {
+              "left": "21.233337402343746",
+              "top": "98.5",
+              "right": "438.76666259765625",
+              "bottom": "688.5"
+            },
+            "tap-handler": "$on imgBackArrowOnAccountSettings tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_back_arrow_on_account_settings.svg"
+          },
+          {
             "id": "bkgBoxOnName",
             "border-radius": "10.0",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -501,7 +492,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "11.0"
+                "offset": "13.185882568359375"
               },
               "vertical": {
                 "attachment": "start",
@@ -511,7 +502,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "287.0"
+                "value": "344.0320739746094"
               },
               "height-constraints": {
                 "sizing-mode": "shrink"
@@ -523,7 +514,7 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Name",
+            "text-content": "$txtNameOnAccountSettings text content",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -537,7 +528,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -551,7 +542,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "11.0"
+                "offset": "15.0"
               },
               "vertical": {
                 "attachment": "start",
@@ -561,7 +552,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "287.0"
+                "value": "342.0"
               },
               "height-constraints": {
                 "sizing-mode": "shrink"
@@ -573,7 +564,7 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Email",
+            "text-content": "$txtEmailOnAccountSettings text content",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -587,7 +578,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -601,7 +592,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "11.0"
+                "offset": "13.185882568359375"
               },
               "vertical": {
                 "attachment": "start",
@@ -611,7 +602,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "287.0"
+                "value": "344.0320739746094"
               },
               "height-constraints": {
                 "sizing-mode": "shrink"
@@ -623,7 +614,7 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Room Number",
+            "text-content": "$txtRoomnumberOnAccountSettings text content",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -637,7 +628,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -651,7 +642,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "11.0"
+                "offset": "13.185882568359375"
               },
               "vertical": {
                 "attachment": "start",
@@ -661,7 +652,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "257.0"
+                "value": "308.0704650878906"
               },
               "height-constraints": {
                 "sizing-mode": "shrink"
@@ -673,7 +664,7 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Password",
+            "text-content": "$txtPasswordOnAccountSettings text content",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -686,7 +677,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "280.0"
+                "offset": "337.380615234375"
               },
               "vertical": {
                 "attachment": "start",
@@ -697,11 +688,11 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "19.20001220703125"
+                "value": "20.58001708984375"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "15.0"
+                "value": "17.0"
               }
             }
           },
@@ -711,7 +702,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -725,7 +716,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "11.0"
+                "offset": "13.185882568359375"
               },
               "vertical": {
                 "attachment": "start",
@@ -735,7 +726,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "257.0"
+                "value": "308.0704650878906"
               },
               "height-constraints": {
                 "sizing-mode": "shrink"
@@ -747,7 +738,7 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Confirm Password",
+            "text-content": "$txtConfirmPasswordOnAccountSettings text content",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -760,7 +751,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "280.0"
+                "offset": "339.1201171875"
               },
               "vertical": {
                 "attachment": "start",
@@ -771,33 +762,13 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "19.20001220703125"
+                "value": "20.58001708984375"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "15.0"
+                "value": "17.0"
               }
             }
-          },
-          {
-            "id": "imgHomePicture",
-            "margin": {
-              "left": "4.166656494140625",
-              "top": "6.875",
-              "right": "4.16668701171875",
-              "bottom": "9.1666259765625"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "vector-content": "img_home_picture.svg"
           },
           {
             "id": "bkgUpdateAccountOnSignUpButton",
@@ -805,7 +776,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -819,11 +790,20 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "89.0"
+                "offset": "130.0"
               },
               "vertical": {
                 "attachment": "start",
                 "offset": "12.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "132.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
               }
             },
             "font-weight": "600.0",
@@ -835,6 +815,7 @@
             },
             "text-content": "Update Account",
             "overflow": "visible",
+            "max-lines": "-1",
             "text-align": "left",
             "text-size": "16.0",
             "line-height": "1.5",
@@ -844,12 +825,56 @@
       }
     }
   },
+  "parameters": {
+    "on grpSignUpButtonOnAccountSettings tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": "Updates the account"
+    },
+    "on imgBackArrowOnAccountSettings tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": "goes back to home screen or account settings"
+    },
+    "txtNameOnAccountSettings text content": {
+      "data-type": "text",
+      "required": false,
+      "description": "Enter your name here"
+    },
+    "txtEmailOnAccountSettings text content": {
+      "data-type": "text",
+      "required": false,
+      "description": "Enter email here"
+    },
+    "txtRoomnumberOnAccountSettings text content": {
+      "data-type": "text",
+      "required": false,
+      "description": "Enter the room number of room number"
+    },
+    "txtPasswordOnAccountSettings text content": {
+      "data-type": "text",
+      "required": false,
+      "description": "Password"
+    },
+    "txtConfirmPasswordOnAccountSettings text content": {
+      "data-type": "text",
+      "required": false,
+      "description": "Confirm your password"
+    }
+  },
   "previews": [
     {
       "design": "scnAccountSettings",
       "size": {
-        "width": 360.0,
+        "width": 480.0,
         "height": 800.0
+      },
+      "parameters": {
+        "txtNameOnAccountSettings text content": "Name",
+        "txtEmailOnAccountSettings text content": "Email",
+        "txtRoomnumberOnAccountSettings text content": "Room Number",
+        "txtPasswordOnAccountSettings text content": "Password",
+        "txtConfirmPasswordOnAccountSettings text content": "Confirm Password"
       }
     }
   ],

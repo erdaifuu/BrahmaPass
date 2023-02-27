@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "113:352",
-    "version": "2994250744",
+    "version": "3085165634",
     "component-id": "8db0bf24dca837e79b971c088457359622507a47"
   },
   "default": "scnSettings",
@@ -50,6 +50,10 @@
       },
       {
         "type": "group",
+        "id": "objSliderOnSettings"
+      },
+      {
+        "type": "group",
         "id": "grpAccountSettingsOnSettings"
       },
       {
@@ -59,10 +63,6 @@
       {
         "type": "text",
         "id": "lblLogoutOnSettings"
-      },
-      {
-        "type": "group",
-        "id": "objSliderOnSettings"
       },
       {
         "type": "vector",
@@ -120,6 +120,7 @@
               "imgBackArrowOnSettings",
               "grpLogoutOnSettings",
               "grpNotificationsOnSettings",
+              "objSliderOnSettings",
               "grpAccountSettingsOnSettings"
             ],
             "background-color": {
@@ -134,7 +135,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "360.0"
+                "value": "480.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -195,7 +196,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "360.0"
+                "value": "480.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -207,10 +208,10 @@
           {
             "id": "imgSettingsOnSettings",
             "margin": {
-              "left": "162.0",
-              "top": "742.0",
-              "right": "161.52328491210938",
-              "bottom": "20.5"
+              "left": "220.0",
+              "top": "745.0",
+              "right": "220.0",
+              "bottom": "15.0"
             },
             "size-constraints": {
               "width-constraints": {
@@ -229,7 +230,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "106.0"
+                "offset": "166.0"
               },
               "vertical": {
                 "attachment": "start",
@@ -252,11 +253,12 @@
           {
             "id": "imgBackArrowOnSettings",
             "margin": {
-              "left": "11.149987697601318",
-              "top": "97.84999990463257",
-              "right": "328.8500123023987",
-              "bottom": "689.8499999046326"
+              "left": "19.899982452392575",
+              "top": "97.5",
+              "right": "440.1000175476074",
+              "bottom": "689.5"
             },
+            "tap-handler": "$on imgBackArrowOnSettings tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -281,10 +283,11 @@
                 "offset": "644.0"
               }
             },
+            "tap-handler": "$on grpLogoutOnSettings tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "322.75"
+                "value": "440.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -310,6 +313,7 @@
                 "offset": "224.0"
               }
             },
+            "tap-handler": "$on grpNotificationsOnSettings tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -322,93 +326,21 @@
             },
             "is-structured": "false",
             "children": [
-              "objSliderOnSettings",
               "imgBellOnSettings",
               "lblNotificationsOnSettings"
             ],
             "clip-content": "false"
           },
           {
-            "id": "grpAccountSettingsOnSettings",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "22.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "166.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "317.20001220703125"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "36.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "imgForwardArrowOnSettings",
-              "lblAccountSettingsOnSettings",
-              "imgUserOnSettings"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "imgLogoutOnSettings",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "304.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "6.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "18.75"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "18.75"
-              }
-            },
-            "vector-content": "img_logout_on_settings.svg"
-          },
-          {
-            "id": "lblLogoutOnSettings",
-            "font-weight": "500.0",
-            "color": {
-              "alpha": "0.6980392156862745",
-              "hue": "0.0",
-              "saturation": "1.0",
-              "value": "1.0"
-            },
-            "text-content": "Log out",
-            "overflow": "visible",
-            "text-align": "left",
-            "text-size": "22.0",
-            "letter-spacing": "0.22",
-            "line-height": "1.6180697631835939",
-            "typeface": "Poppins"
-          },
-          {
             "id": "objSliderOnSettings",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "0.0"
+                "offset": "413.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "3.5"
+                "offset": "224.0"
               }
             },
             "size-constraints": {
@@ -430,11 +362,93 @@
             "clip-content": "false"
           },
           {
+            "id": "grpAccountSettingsOnSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "22.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "166.0"
+              }
+            },
+            "tap-handler": "$on grpAccountSettingsOnSettings tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "443.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "imgForwardArrowOnSettings",
+              "lblAccountSettingsOnSettings",
+              "imgUserOnSettings"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "imgLogoutOnSettings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "420.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "22.0"
+              }
+            },
+            "vector-content": "img_logout_on_settings.svg"
+          },
+          {
+            "id": "lblLogoutOnSettings",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "114.69558715820312"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "1.0",
+              "value": "1.0"
+            },
+            "text-content": "Log out",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "22.0",
+            "letter-spacing": "0.22",
+            "line-height": "1.6180697631835939",
+            "typeface": "Poppins"
+          },
+          {
             "id": "imgBellOnSettings",
             "margin": {
               "top": "7.0",
-              "right": "153.99998474121094",
-              "bottom": "7.79998779296875"
+              "right": "131.99998474121094",
+              "bottom": "8.0"
             },
             "size-constraints": {
               "width-constraints": {
@@ -489,7 +503,7 @@
           {
             "id": "imgRectangleOnSettings",
             "margin": {
-              "left": "5.399999618530273"
+              "left": "5.400001525878906"
             },
             "border-radius": "13.5",
             "size-constraints": {
@@ -509,7 +523,7 @@
             "margin": {
               "left": "27.0",
               "top": "1.79998779296875",
-              "right": "1.799997329711914",
+              "right": "1.8000030517578125",
               "bottom": "1.79998779296875"
             },
             "size-constraints": {
@@ -527,9 +541,9 @@
           {
             "id": "imgCheckmarkOnSettings",
             "margin": {
-              "left": "31.94999885559082",
+              "left": "31.949996948242188",
               "top": "6.75",
-              "right": "6.2999982833862305",
+              "right": "6.3000030517578125",
               "bottom": "6.29998779296875"
             },
             "is-structured": "false",
@@ -555,9 +569,9 @@
           {
             "id": "imgCheckOnSettings",
             "margin": {
-              "left": "2.2377898693084717",
+              "left": "2.23779296875",
               "top": "3.472900390625",
-              "right": "2.237835168838501",
+              "right": "2.237823486328125",
               "bottom": "3.48760986328125"
             },
             "size-constraints": {
@@ -575,9 +589,9 @@
           {
             "id": "imgForwardArrowOnSettings",
             "margin": {
-              "left": "305.09999990463257",
-              "top": "12.900000095367432",
-              "bottom": "13.900000095367432"
+              "left": "429.0756435394287",
+              "top": "11.075662612915039",
+              "bottom": "12.075662612915039"
             },
             "size-constraints": {
               "width-constraints": {
@@ -632,10 +646,10 @@
           {
             "id": "imgUserOnSettings",
             "margin": {
-              "left": "197.0",
+              "left": "213.0",
               "top": "7.0",
-              "right": "103.40033721923828",
-              "bottom": "9.79998779296875"
+              "right": "212.0",
+              "bottom": "9.0"
             },
             "size-constraints": {
               "width-constraints": {
@@ -653,11 +667,33 @@
       }
     }
   },
+  "parameters": {
+    "on imgBackArrowOnSettings tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": "Goes back to home"
+    },
+    "on grpLogoutOnSettings tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": "Logs the user out"
+    },
+    "on grpNotificationsOnSettings tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": "Turns notifications on or off"
+    },
+    "on grpAccountSettingsOnSettings tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": "Goes to the account settings screen"
+    }
+  },
   "previews": [
     {
       "design": "scnSettings",
       "size": {
-        "width": 360.0,
+        "width": 480.0,
         "height": 800.0
       }
     }

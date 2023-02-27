@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "113:349",
-    "version": "2994250744",
+    "version": "3085165634",
     "component-id": "074fc1d0bbe50893cecde4303c78f623f44397b4"
   },
   "default": "scnExitLog",
@@ -18,15 +18,15 @@
       },
       {
         "type": "vector",
+        "id": "bkgTopOnExitLog"
+      },
+      {
+        "type": "vector",
         "id": "bkgBottomOnExitLog"
       },
       {
         "type": "group",
         "id": "Frame 2608559"
-      },
-      {
-        "type": "vector",
-        "id": "bkgTopOnExitLog"
       },
       {
         "type": "text",
@@ -308,9 +308,9 @@
             "id": "top_level",
             "is-structured": "false",
             "children": [
+              "bkgTopOnExitLog",
               "bkgBottomOnExitLog",
               "Frame 2608559",
-              "bkgTopOnExitLog",
               "lblBrahmaPassOnExitLog",
               "imgDocumentOnExitLog",
               "lblTitleOnExitLog",
@@ -322,6 +322,20 @@
               "saturation": "0.0",
               "value": "1.0"
             }
+          },
+          {
+            "id": "bkgTopOnExitLog",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "484.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "71.0"
+              }
+            },
+            "vector-content": "bkg_top_on_exit_log.svg"
           },
           {
             "id": "bkgBottomOnExitLog",
@@ -338,7 +352,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "360.0"
+                "value": "484.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -427,20 +441,6 @@
             "clip-content": "false"
           },
           {
-            "id": "bkgTopOnExitLog",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "360.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "71.0"
-              }
-            },
-            "vector-content": "bkg_top_on_exit_log.svg"
-          },
-          {
             "id": "lblBrahmaPassOnExitLog",
             "alignment": {
               "horizontal": {
@@ -480,9 +480,9 @@
           {
             "id": "imgDocumentOnExitLog",
             "margin": {
-              "left": "163.0",
+              "left": "228.0",
               "top": "745.0",
-              "right": "163.0",
+              "right": "217.0",
               "bottom": "15.0"
             },
             "size-constraints": {
@@ -502,7 +502,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "113.0"
+                "offset": "174.0"
               },
               "vertical": {
                 "attachment": "start",
@@ -525,11 +525,12 @@
           {
             "id": "imgBackArrowOnExitLog",
             "margin": {
-              "left": "12.149987697601318",
-              "top": "98.84999990463257",
-              "right": "327.8500123023987",
-              "bottom": "688.8499999046326"
+              "left": "21.23331832885742",
+              "top": "98.5",
+              "right": "438.7666816711426",
+              "bottom": "688.5"
             },
+            "tap-handler": "$on imgBackArrowOnExitLog tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -2563,7 +2564,7 @@
           {
             "id": "imgCircleOnPerson",
             "margin": {
-              "left": "6.66717529296875",
+              "left": "6.667236328125",
               "top": "2.500244140625",
               "right": "6.66650390625",
               "bottom": "10.83343505859375"
@@ -2735,11 +2736,18 @@
       }
     }
   },
+  "parameters": {
+    "on imgBackArrowOnExitLog tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
   "previews": [
     {
       "design": "scnExitLog",
       "size": {
-        "width": 360.0,
+        "width": 480.0,
         "height": 800.0
       }
     }

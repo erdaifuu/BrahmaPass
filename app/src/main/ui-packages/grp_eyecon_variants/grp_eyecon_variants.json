@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "42:43",
-    "version": "2994250744",
+    "version": "3085165634",
     "component-id": "f813618f904dc82420c2f4bd5ccca1acb9028249"
   },
   "default": "Property 1=Open",
@@ -34,9 +34,6 @@
           },
           {
             "id": "Icon",
-            "margin": {
-              "bottom": "1.28570556640625"
-            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -90,8 +87,8 @@
     {
       "design": "Property 1=Closed",
       "size": {
-        "width": 19.199951171875,
-        "height": 15.0
+        "width": 20.580078125,
+        "height": 17.0
       }
     }
   ],
