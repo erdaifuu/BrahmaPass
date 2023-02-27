@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "111:241",
-    "version": "2994250744",
+    "version": "3085165634",
     "component-id": "c50544f50f68c86bec602960acc3a1180a89b57d"
   },
   "default": "scnHome",
@@ -94,11 +94,11 @@
       },
       {
         "type": "vector",
-        "id": "bkgEmailBoxOnHome"
+        "id": "bkgReasonBoxOnHome"
       },
       {
         "type": "text",
-        "id": "txtEnterEmailOnHome"
+        "id": "txtEnterReasonOnHome"
       },
       {
         "type": "text",
@@ -146,7 +146,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "80.0"
+                "offset": "140.0"
               },
               "vertical": {
                 "attachment": "start",
@@ -180,7 +180,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "126.0"
+                "offset": "186.0"
               },
               "vertical": {
                 "attachment": "start",
@@ -239,10 +239,10 @@
           {
             "id": "imgClockOnHonme",
             "margin": {
-              "left": "160.0",
+              "left": "213.0",
               "top": "217.0",
-              "right": "160.0",
-              "bottom": "543.0"
+              "right": "217.0",
+              "bottom": "533.0"
             },
             "size-constraints": {
               "width-constraints": {
@@ -271,7 +271,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "360.0"
+                "value": "480.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -283,9 +283,9 @@
           {
             "id": "imgExitLogOnHome",
             "margin": {
-              "left": "262.0",
+              "left": "365.0",
               "top": "745.0",
-              "right": "64.0",
+              "right": "80.0",
               "bottom": "15.0"
             },
             "size-constraints": {
@@ -303,10 +303,10 @@
           {
             "id": "imgHomeOnHome",
             "margin": {
-              "left": "158.1666259765625",
-              "top": "743.875",
-              "right": "160.166748046875",
-              "bottom": "17.166656494140625"
+              "left": "220.0",
+              "top": "745.0",
+              "right": "220.0",
+              "bottom": "15.0"
             },
             "size-constraints": {
               "width-constraints": {
@@ -323,10 +323,10 @@
           {
             "id": "imgSettingsIconOnHome",
             "margin": {
-              "left": "64.2574462890625",
-              "top": "746.75",
-              "right": "259.265869140625",
-              "bottom": "15.75"
+              "left": "75.0",
+              "top": "745.0",
+              "right": "365.0",
+              "bottom": "15.0"
             },
             "size-constraints": {
               "width-constraints": {
@@ -345,7 +345,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "360.0"
+                "value": "480.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -397,17 +397,17 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "645.0"
+                "offset": "644.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -427,17 +427,17 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "54.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "404.0"
+                "offset": "397.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -452,17 +452,17 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "54.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "501.0"
+                "offset": "493.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -471,8 +471,8 @@
             },
             "is-structured": "false",
             "children": [
-              "bkgEmailBoxOnHome",
-              "txtEnterEmailOnHome"
+              "bkgReasonBoxOnHome",
+              "txtEnterReasonOnHome"
             ],
             "clip-content": "false"
           },
@@ -481,11 +481,11 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "-143.0"
+                "offset": "-173.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "378.0"
+                "offset": "364.0"
               }
             },
             "size-constraints": {
@@ -517,11 +517,11 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "-70.0"
+                "offset": "-100.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "473.0"
+                "offset": "463.0"
               }
             },
             "size-constraints": {
@@ -552,11 +552,11 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "33.0"
+                "offset": "67.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "412.0"
+                "offset": "405.0"
               }
             },
             "size-constraints": {
@@ -574,7 +574,7 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Enter Your ID...",
+            "text-content": "$txtEnterIDOnHome text content",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -594,11 +594,11 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "50.0"
+                "offset": "111.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "275.0"
+                "offset": "300.0"
               }
             },
             "size-constraints": {
@@ -632,7 +632,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -646,11 +646,21 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "96.0"
+                "offset": "129.0"
               },
               "vertical": {
                 "attachment": "start",
                 "offset": "12.0"
+              }
+            },
+            "tap-handler": "$on lblCreateHallpassOnHome tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "133.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
               }
             },
             "font-weight": "600.0",
@@ -662,32 +672,33 @@
             },
             "text-content": "Create Hallpass",
             "overflow": "visible",
+            "max-lines": "-1",
             "text-align": "left",
             "text-size": "16.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           },
           {
-            "id": "bkgEmailBoxOnHome",
+            "id": "bkgReasonBoxOnHome",
             "border-radius": "10.0",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
                 "value": "114.0"
               }
             },
-            "vector-content": "bkg_email_box_on_home.svg"
+            "vector-content": "bkg_reason_box_on_home.svg"
           },
           {
-            "id": "txtEnterEmailOnHome",
+            "id": "txtEnterReasonOnHome",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "12.0"
+                "offset": "14.3846435546875"
               },
               "vertical": {
                 "attachment": "start",
@@ -697,7 +708,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "289.0"
+                "value": "346.429443359375"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -710,7 +721,7 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Enter here...",
+            "text-content": "$txtEnterReasonOnHome text content",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -761,12 +772,33 @@
       }
     }
   },
+  "parameters": {
+    "txtEnterIDOnHome text content": {
+      "data-type": "text",
+      "required": false,
+      "description": "Enter Your ID..."
+    },
+    "on lblCreateHallpassOnHome tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "txtEnterReasonOnHome text content": {
+      "data-type": "text",
+      "required": false,
+      "description": "Enter here..."
+    }
+  },
   "previews": [
     {
       "design": "scnHome",
       "size": {
-        "width": 360.0,
+        "width": 480.0,
         "height": 800.0
+      },
+      "parameters": {
+        "txtEnterIDOnHome text content": "Enter Your ID...",
+        "txtEnterReasonOnHome text content": "Enter here..."
       }
     }
   ],

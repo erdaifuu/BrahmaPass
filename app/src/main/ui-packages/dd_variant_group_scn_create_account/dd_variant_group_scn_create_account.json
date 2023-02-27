@@ -1,14 +1,14 @@
 {
-  "name": "scn_create_account",
+  "name": "dd_variant_group_scn_create_account",
   "version": 32,
   "source-key": {
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "111:239",
-    "version": "2994250744",
+    "version": "3085165634",
     "component-id": "400590182e35d2ce9d20ae9bc8b814ff8999c1b2"
   },
-  "default": "scnCreateAccount",
+  "default": "ddVariantGroup/scnCreateAccount",
   "design": {
     "atoms": [
       {
@@ -116,7 +116,7 @@
       }
     ],
     "modes": {
-      "scnCreateAccount": {
+      "ddVariantGroup/scnCreateAccount": {
         "rules": [
           {
             "id": "top_level",
@@ -181,7 +181,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
@@ -191,7 +191,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -211,7 +211,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
@@ -221,7 +221,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -241,7 +241,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
@@ -251,7 +251,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -271,17 +271,18 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
                 "offset": "548.0"
               }
             },
+            "tap-handler": "$on btnSignUpOnCreateAccount tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -300,7 +301,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "24.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
@@ -310,7 +311,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -330,7 +331,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "23.0"
+                "offset": "53.0"
               },
               "vertical": {
                 "attachment": "start",
@@ -340,7 +341,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -360,21 +361,21 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "49.0"
+                "offset": "80.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "635.0"
+                "offset": "656.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "265.0"
+                "value": "316.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "25.0"
+                "value": "24.0"
               }
             },
             "is-structured": "false",
@@ -390,7 +391,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -404,7 +405,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "11.0"
+                "offset": "13.1859130859375"
               },
               "vertical": {
                 "attachment": "start",
@@ -414,7 +415,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "287.0"
+                "value": "344.03204345703125"
               },
               "height-constraints": {
                 "sizing-mode": "shrink"
@@ -426,7 +427,7 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Enter Your Username",
+            "text-content": "$txtEnterUsernameOnCreateAccount text content",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -440,7 +441,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -454,7 +455,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "11.0"
+                "offset": "13.1859130859375"
               },
               "vertical": {
                 "attachment": "start",
@@ -464,7 +465,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "287.0"
+                "value": "344.03204345703125"
               },
               "height-constraints": {
                 "sizing-mode": "shrink"
@@ -476,7 +477,7 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Enter Your Email",
+            "text-content": "$txtEnterEmailOnCreateAccount text content",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -490,7 +491,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -526,7 +527,7 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Room Number",
+            "text-content": "$txtRoomNumberOnCreateAccount color",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -540,7 +541,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -554,11 +555,20 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "127.0"
+                "offset": "162.2371826171875"
               },
               "vertical": {
                 "attachment": "start",
                 "offset": "12.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "74.32049560546875"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
               }
             },
             "font-weight": "600.0",
@@ -570,6 +580,7 @@
             },
             "text-content": "Sign Up",
             "overflow": "visible",
+            "max-lines": "-1",
             "text-align": "left",
             "text-size": "16.0",
             "line-height": "1.5",
@@ -581,7 +592,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -595,7 +606,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "11.0"
+                "offset": "13.1859130859375"
               },
               "vertical": {
                 "attachment": "start",
@@ -605,7 +616,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "257.0"
+                "value": "308.070556640625"
               },
               "height-constraints": {
                 "sizing-mode": "shrink"
@@ -617,7 +628,7 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Enter Your Password",
+            "text-content": "$txtEnterPasswordOnCreateAccount text content",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -630,7 +641,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "280.0"
+                "offset": "335.6409912109375"
               },
               "vertical": {
                 "attachment": "start",
@@ -641,11 +652,11 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "19.20001220703125"
+                "value": "20.58001708984375"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "15.0"
+                "value": "17.0"
               }
             }
           },
@@ -655,7 +666,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "312.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -669,7 +680,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "11.0"
+                "offset": "13.1859130859375"
               },
               "vertical": {
                 "attachment": "start",
@@ -679,7 +690,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "257.0"
+                "value": "308.070556640625"
               },
               "height-constraints": {
                 "sizing-mode": "shrink"
@@ -691,7 +702,7 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Confirm Your Password",
+            "text-content": "$txtConfirmPasswordOnCreateAccount text content",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
@@ -704,7 +715,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "280.0"
+                "offset": "335.6409912109375"
               },
               "vertical": {
                 "attachment": "start",
@@ -715,11 +726,11 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "19.20001220703125"
+                "value": "20.58001708984375"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "15.0"
+                "value": "17.0"
               }
             }
           },
@@ -728,11 +739,20 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "222.0"
+                "offset": "272.863525390625"
               },
               "vertical": {
                 "attachment": "start",
                 "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.13653564453125"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
               }
             },
             "font-weight": "500.0",
@@ -744,6 +764,7 @@
             },
             "text-content": "Login",
             "overflow": "visible",
+            "max-lines": "-1",
             "text-align": "left",
             "text-size": "16.0",
             "line-height": "1.5",
@@ -752,14 +773,13 @@
           },
           {
             "id": "lblAlreadyHaveAccountOnCreateAccount",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "0.0"
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "212.67303466796875"
               },
-              "vertical": {
-                "attachment": "start",
-                "offset": "1.0"
+              "height-constraints": {
+                "sizing-mode": "shrink"
               }
             },
             "font-weight": "500.0",
@@ -771,6 +791,7 @@
             },
             "text-content": "Already have an account? ",
             "overflow": "visible",
+            "max-lines": "-1",
             "text-align": "left",
             "text-size": "16.0",
             "line-height": "1.5",
@@ -780,12 +801,51 @@
       }
     }
   },
+  "parameters": {
+    "on btnSignUpOnCreateAccount tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "txtEnterUsernameOnCreateAccount text content": {
+      "data-type": "text",
+      "required": false,
+      "description": "Enter Your Username"
+    },
+    "txtEnterEmailOnCreateAccount text content": {
+      "data-type": "text",
+      "required": false,
+      "description": "Enter Your Email"
+    },
+    "txtRoomNumberOnCreateAccount color": {
+      "data-type": "text",
+      "required": false,
+      "description": "Room Number"
+    },
+    "txtEnterPasswordOnCreateAccount text content": {
+      "data-type": "text",
+      "required": false,
+      "description": "Enter Your Password"
+    },
+    "txtConfirmPasswordOnCreateAccount text content": {
+      "data-type": "text",
+      "required": false,
+      "description": "Confirm Your Password"
+    }
+  },
   "previews": [
     {
-      "design": "scnCreateAccount",
+      "design": "ddVariantGroup/scnCreateAccount",
       "size": {
-        "width": 360.0,
+        "width": 480.0,
         "height": 800.0
+      },
+      "parameters": {
+        "txtEnterUsernameOnCreateAccount text content": "Enter Your Username",
+        "txtEnterEmailOnCreateAccount text content": "Enter Your Email",
+        "txtRoomNumberOnCreateAccount color": "Room Number",
+        "txtEnterPasswordOnCreateAccount text content": "Enter Your Password",
+        "txtConfirmPasswordOnCreateAccount text content": "Confirm Your Password"
       }
     }
   ],

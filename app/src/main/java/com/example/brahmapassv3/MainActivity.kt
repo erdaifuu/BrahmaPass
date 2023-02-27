@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.brahmapassv3.scnlogin.ScnLogin
 import com.example.brahmapassv3.ui.theme.BrahmapassV3Theme
 
 class MainActivity : ComponentActivity() {
@@ -18,9 +19,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             BrahmapassV3Theme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
-                    Greeting("Android")
-                }
             }
         }
     }
@@ -31,10 +29,10 @@ fun Greeting(name: String) {
     Text(text = "Hello $name!")
 }
 
-@Preview(showBackground = true)
+/*@Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     BrahmapassV3Theme {
-        Greeting("Android")
+        ScnLogin()
     }
-}
+}*/

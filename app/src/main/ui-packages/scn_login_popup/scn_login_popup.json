@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "111:243",
-    "version": "2994250744",
+    "version": "3085165634",
     "component-id": "5e92702776dee8988e3859c0045f9a3be6222a9f"
   },
   "default": "scnLoginPopup",
@@ -22,11 +22,15 @@
       },
       {
         "type": "group",
-        "id": "objEllipseOnLoginPopup"
+        "id": "grpLoadingAnimation"
+      },
+      {
+        "type": "group",
+        "id": "Loading Symbol"
       },
       {
         "type": "vector",
-        "id": "imgEllipseOnLoginPopup"
+        "id": "Ellipse 26"
       }
     ],
     "modes": {
@@ -51,7 +55,7 @@
             "is-structured": "false",
             "children": [
               "lblLoginOnLoginPopup",
-              "objEllipseOnLoginPopup"
+              "grpLoadingAnimation"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -97,35 +101,30 @@
             "typeface": "Poppins"
           },
           {
-            "id": "objEllipseOnLoginPopup",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "81.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "53.0"
-              }
+            "id": "grpLoadingAnimation",
+            "margin": {
+              "left": "81.0",
+              "top": "52.0",
+              "right": "81.0",
+              "bottom": "38.0"
             },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "50.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "50.0"
-              }
-            },
-            "is-structured": "false",
+            "arrangement": "row",
             "children": [
-              "imgEllipseOnLoginPopup"
+              "Loading Symbol"
             ],
             "clip-content": "false"
           },
           {
-            "id": "imgEllipseOnLoginPopup",
+            "id": "Loading Symbol",
+            "padding": "2.0",
+            "arrangement": "row",
+            "children": [
+              "Ellipse 26"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Ellipse 26",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -136,7 +135,7 @@
                 "value": "1.0"
               }
             },
-            "vector-content": "img_ellipse_on_login_popup.svg"
+            "vector-content": "ellipse_26.svg"
           }
         ]
       }
