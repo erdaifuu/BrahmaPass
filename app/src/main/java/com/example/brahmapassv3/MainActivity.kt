@@ -10,30 +10,29 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.*
-import androidx.navigation.compose.ComposeNavigator
-import androidx.navigation.compose.rememberNavController
-import com.example.brahmapassv3.scnlogin.GrpLoginButtonOnLogin
 import com.example.brahmapassv3.scnlogin.ScnLogin
 import com.example.brahmapassv3.ui.theme.BrahmapassV3Theme
-import androidx.navigation.compose.composable
-import com.example.brahmapassv3.scnhome.ScnHome
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             BrahmapassV3Theme {
-                Navigation()
+                // A surface container using the 'background' color from the theme
             }
         }
     }
 }
 
-@Preview(showBackground = true)
+@Composable
+fun Greeting(name: String) {
+    Text(text = "Hello $name!")
+}
+
+/*@Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     BrahmapassV3Theme {
-
+        ScnLogin()
     }
-}
+}*/

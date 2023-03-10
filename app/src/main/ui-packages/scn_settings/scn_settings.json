@@ -202,8 +202,7 @@
                 "sizing-mode": "fixed",
                 "value": "71.0"
               }
-            },
-            "vector-content": "bkg_bottom_on_settings.svg"
+            }
           },
           {
             "id": "imgSettingsOnSettings",
@@ -222,8 +221,7 @@
                 "sizing-mode": "proportional",
                 "value": "1.0"
               }
-            },
-            "vector-content": "img_settings_on_settings.svg"
+            }
           },
           {
             "id": "lblSettingsTitleOnSettings",
@@ -268,8 +266,7 @@
                 "sizing-mode": "proportional",
                 "value": "1.0"
               }
-            },
-            "vector-content": "img_back_arrow_on_settings.svg"
+            }
           },
           {
             "id": "grpLogoutOnSettings",
@@ -515,8 +512,7 @@
                 "sizing-mode": "proportional",
                 "value": "1.0"
               }
-            },
-            "vector-content": "img_rectangle_on_settings.svg"
+            }
           },
           {
             "id": "imgCircleOnSettings",
@@ -535,8 +531,7 @@
                 "sizing-mode": "proportional",
                 "value": "1.0"
               }
-            },
-            "vector-content": "img_circle_on_settings.svg"
+            }
           },
           {
             "id": "imgCheckmarkOnSettings",
@@ -583,8 +578,7 @@
                 "sizing-mode": "proportional",
                 "value": "1.0"
               }
-            },
-            "vector-content": "img_check_on_settings.svg"
+            }
           },
           {
             "id": "imgForwardArrowOnSettings",
@@ -602,8 +596,7 @@
                 "sizing-mode": "proportional",
                 "value": "1.0"
               }
-            },
-            "vector-content": "img_forward_arrow_on_settings.svg"
+            }
           },
           {
             "id": "lblAccountSettingsOnSettings",
@@ -660,8 +653,7 @@
                 "sizing-mode": "proportional",
                 "value": "1.0"
               }
-            },
-            "vector-content": "img_user_on_settings.svg"
+            }
           }
         ]
       }

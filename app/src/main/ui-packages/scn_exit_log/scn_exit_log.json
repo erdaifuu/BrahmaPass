@@ -334,8 +334,7 @@
                 "sizing-mode": "fixed",
                 "value": "71.0"
               }
-            },
-            "vector-content": "bkg_top_on_exit_log.svg"
+            }
           },
           {
             "id": "bkgBottomOnExitLog",
@@ -358,8 +357,7 @@
                 "sizing-mode": "fixed",
                 "value": "71.0"
               }
-            },
-            "vector-content": "bkg_bottom_on_exit_log.svg"
+            }
           },
           {
             "id": "Frame 2608559",
@@ -494,8 +492,7 @@
                 "sizing-mode": "proportional",
                 "value": "1.0"
               }
-            },
-            "vector-content": "img_document_on_exit_log.svg"
+            }
           },
           {
             "id": "lblTitleOnExitLog",
@@ -540,8 +537,7 @@
                 "sizing-mode": "proportional",
                 "value": "1.0"
               }
-            },
-            "vector-content": "img_back_arrow_on_exit_log.svg"
+            }
           },
           {
             "id": "grpReasonOnTable",
