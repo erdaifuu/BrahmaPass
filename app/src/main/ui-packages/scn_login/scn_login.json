@@ -407,8 +407,7 @@
                 "sizing-mode": "proportional",
                 "value": "1.0"
               }
-            },
-            "vector-content": "img_eyecon_on_login.svg"
+            }
           },
           {
             "id": "imgBrahmaOnLogin",

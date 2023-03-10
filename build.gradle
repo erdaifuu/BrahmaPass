@@ -3,6 +3,7 @@ buildscript {
         kotlinVer = '1.8.10'
         composeCompilerVer = '1.4.2'
         composeVer = '1.4.0-beta01'
+        compose_material3 = '1.0.1'
     }
     dependencies {
         // Add the dependency for the Google services Gradle plugin

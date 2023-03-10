@@ -1,1 +1,0 @@
-grp_checkbox_variants

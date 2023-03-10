@@ -277,8 +277,7 @@
                 "sizing-mode": "fixed",
                 "value": "71.0"
               }
-            },
-            "vector-content": "bkg_bottom_icons_on_home.svg"
+            }
           },
           {
             "id": "imgExitLogOnHome",
@@ -351,8 +350,7 @@
                 "sizing-mode": "fixed",
                 "value": "71.0"
               }
-            },
-            "vector-content": "bkg_title_on_home.svg"
+            }
           },
           {
             "id": "lblBrahmaPassTitleOnHome",
