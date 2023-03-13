@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.brahmapassv3.scnlogin.ScnLogin
+//import com.example.brahmapassv3.scnlogin.ScnLogin
 import com.example.brahmapassv3.ui.theme.BrahmapassV3Theme
 
 class MainActivity : ComponentActivity() {

@@ -10,7 +10,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.brahmapassv3.scnhome.ScnHome
-import com.example.brahmapassv3.scnlogin.ScnLogin
+//import com.example.brahmapassv3.scnlogin.ScnLogin
 
 //https://www.youtube.com/watch?v=4gUeyNkGE3g
 @Composable
@@ -39,6 +39,7 @@ fun Navigation() {
 @Composable
 fun LoginScreen(navController: NavController) {
     val context = LocalContext.current
+    /*
     ScnLogin(
         //onGrpLoginButtonOnLoginTapped = {navController.navigate("second/$text") },
         //TODO: figure out what the fuck this is
@@ -52,6 +53,7 @@ fun LoginScreen(navController: NavController) {
         },
         txtEmailExampleOnEmailTextContent = "hello",
         txtEnterYourPasswordOnLoginTextContent = "world")
+     */
 }
 
 @Composable
