@@ -1,0 +1,65 @@
+{
+  "name": "bkg_bottom_bar_on_home",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "229:221",
+    "version": "3148360469",
+    "component-id": "c4a3499c3f540626d045386fcfe6168bac26450b"
+  },
+  "default": "bkgBottomBarOnHome",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "imgBottonBarOnHome"
+      }
+    ],
+    "modes": {
+      "bkgBottomBarOnHome": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "imgBottonBarOnHome"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "imgBottonBarOnHome",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_botton_bar_on_home.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "bkgBottomBarOnHome",
+      "size": {
+        "width": 480.0,
+        "height": 71.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "111:237",
-    "version": "3085165634",
+    "version": "3148360469",
     "component-id": "2c45527b306265a134d5ad2a8fda15c34db2ee2e"
   },
   "default": "scnLogin",
@@ -18,44 +18,9 @@
         "root": "true"
       },
       {
-        "type": "text",
-        "id": "lblBrahmaPassOnLogin"
-      },
-      {
-        "type": "group",
-        "id": "grpEmailOnLogin"
-      },
-      {
-        "type": "group",
-        "id": "grpPasswordOnLogin"
-      },
-      {
-        "type": "text",
-        "id": "txtRememberMeOnLogin"
-      },
-      {
-        "type": "text",
-        "id": "lblForgotPasswordOnRememberMe"
-      },
-      {
-        "type": "group",
-        "id": "grpLoginButtonOnLogin"
-      },
-      {
-        "type": "text",
-        "id": "lblDontOnAlreadyAccount"
-      },
-      {
-        "type": "text",
-        "id": "lblSignUpOnAlreadyAccount"
-      },
-      {
-        "type": "vector",
-        "id": "imgEyeconOnLogin"
-      },
-      {
-        "type": "image",
-        "id": "imgBrahmaOnLogin"
+        "type": "adin_component",
+        "id": "btnLoginButtonOnLogin",
+        "key": "btn_login_button_on_login"
       },
       {
         "type": "adin_component",
@@ -63,36 +28,31 @@
         "key": "grp_checkbox_variants"
       },
       {
-        "type": "vector",
-        "id": "bkgBoxOnEmail"
+        "type": "text",
+        "id": "lblRememberMeOnLogin"
+      },
+      {
+        "type": "adin_component",
+        "id": "grpPasswordOnLogin",
+        "key": "grp_password_on_login"
+      },
+      {
+        "type": "adin_component",
+        "id": "grpEyeconVariants",
+        "key": "grp_eyecon_variants"
+      },
+      {
+        "type": "adin_component",
+        "id": "grpEmailOnLogin",
+        "key": "grp_email_on_login"
+      },
+      {
+        "type": "image",
+        "id": "imgBrahmaOnLogin"
       },
       {
         "type": "text",
-        "id": "txtEmailOnEmail"
-      },
-      {
-        "type": "text",
-        "id": "txtEmailExampleOnLogin"
-      },
-      {
-        "type": "vector",
-        "id": "bkgBoxOnPasswordOnLogin"
-      },
-      {
-        "type": "text",
-        "id": "txtEnterYourPasswordOnLogin"
-      },
-      {
-        "type": "text",
-        "id": "lblPasswordOnLogin"
-      },
-      {
-        "type": "vector",
-        "id": "bkgRectangleOnLoginButton"
-      },
-      {
-        "type": "text",
-        "id": "lblLoginOnLoginButton"
+        "id": "lblBrahmaPassOnLogin"
       }
     ],
     "modes": {
@@ -102,17 +62,14 @@
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "lblBrahmaPassOnLogin",
-              "grpEmailOnLogin",
+              "btnLoginButtonOnLogin",
+              "grpCheckboxVariantsOnLogin",
+              "lblRememberMeOnLogin",
               "grpPasswordOnLogin",
-              "txtRememberMeOnLogin",
-              "lblForgotPasswordOnRememberMe",
-              "grpLoginButtonOnLogin",
-              "lblDontOnAlreadyAccount",
-              "lblSignUpOnAlreadyAccount",
-              "imgEyeconOnLogin",
+              "grpEyeconVariants",
+              "grpEmailOnLogin",
               "imgBrahmaOnLogin",
-              "grpCheckboxVariantsOnLogin"
+              "lblBrahmaPassOnLogin"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -120,6 +77,182 @@
               "saturation": "0.0",
               "value": "1.0"
             }
+          },
+          {
+            "id": "btnLoginButtonOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "53.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "536.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "374.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            }
+          },
+          {
+            "id": "grpCheckboxVariantsOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "187.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "449.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            }
+          },
+          {
+            "id": "lblRememberMeOnLogin",
+            "margin": {
+              "left": "64.0",
+              "top": "446.0",
+              "right": "303.0",
+              "bottom": "325.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "204.0",
+              "saturation": "1.0",
+              "value": "0.0784313725490196"
+            },
+            "text-content": "Remember Me",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "grpPasswordOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "53.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "347.0"
+              }
+            },
+            "Text Input for Password": "Enter Your Password",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "374.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "75.0"
+              }
+            }
+          },
+          {
+            "id": "grpEyeconVariants",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "395.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "390.0"
+              }
+            },
+            "design": "Property 1=Closed",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.580001831054688"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              }
+            }
+          },
+          {
+            "id": "grpEmailOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "53.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "244.0"
+              }
+            },
+            "Text Input For Password": "Enter Your Email",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "374.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "79.0"
+              }
+            }
+          },
+          {
+            "id": "imgBrahmaOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "187.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "125.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "105.38642120361328"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "75.0"
+              }
+            },
+            "image-content": "img_brahma_on_login.png",
+            "scale": "cover"
           },
           {
             "id": "lblBrahmaPassOnLogin",
@@ -157,576 +290,9 @@
             "text-size": "40.0",
             "line-height": "1.5",
             "typeface": "Poppins"
-          },
-          {
-            "id": "grpEmailOnLogin",
-            "border-radius": "10.0",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "59.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "219.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "374.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "79.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "bkgBoxOnEmail",
-              "txtEmailOnEmail",
-              "txtEmailExampleOnLogin"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "grpPasswordOnLogin",
-            "border-radius": "10.0",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "59.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "314.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "374.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "75.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "bkgBoxOnPasswordOnLogin",
-              "txtEnterYourPasswordOnLogin",
-              "lblPasswordOnLogin"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "txtRememberMeOnLogin",
-            "margin": {
-              "left": "62.0",
-              "top": "413.0",
-              "right": "264.0",
-              "bottom": "358.0"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "204.0",
-              "saturation": "1.0",
-              "value": "0.0784313725490196"
-            },
-            "text-content": "Remember Me",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-align-vertical": "center",
-            "text-size": "15.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "lblForgotPasswordOnRememberMe",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "300.78192138671875"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "413.0"
-              }
-            },
-            "tap-handler": "$on lblForgotPasswordOnRememberMe tapped",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "132.21807861328125"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "29.0"
-              }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "1.0",
-              "value": "1.0"
-            },
-            "text-content": "Forgot Password?",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-align-vertical": "center",
-            "text-size": "15.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "grpLoginButtonOnLogin",
-            "border-radius": "5.0",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "53.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "461.0"
-              }
-            },
-            "tap-handler": "$on grpLoginButtonOnLogin tapped",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "374.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "48.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "bkgRectangleOnLoginButton",
-              "lblLoginOnLoginButton"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "lblDontOnAlreadyAccount",
-            "margin": {
-              "left": "67.0",
-              "top": "563.0",
-              "right": "152.010009765625",
-              "bottom": "211.42803955078125"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "font-weight": "500.0",
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.050980392156862744"
-            },
-            "text-content": "Don’t have an account? ",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "lblSignUpOnAlreadyAccount",
-            "margin": {
-              "left": "330.68084716796875",
-              "top": "562.0",
-              "right": "66.33330535888672",
-              "bottom": "210.92306518554688"
-            },
-            "tap-handler": "$on lblSignUpOnAlreadyAccount tapped",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "font-weight": "500.0",
-            "color": {
-              "alpha": "1.0",
-              "hue": "220.0",
-              "saturation": "0.7530364372469636",
-              "value": "0.9686274509803922"
-            },
-            "text-content": "Sign Up",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins",
-            "underline": "true"
-          },
-          {
-            "id": "imgEyeconOnLogin",
-            "margin": {
-              "left": "400.0",
-              "top": "356.0",
-              "right": "59.421051025390625",
-              "bottom": "427.0"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            }
-          },
-          {
-            "id": "imgBrahmaOnLogin",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "187.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "125.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "105.38642120361328"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "75.0"
-              }
-            },
-            "image-content": "img_brahma_on_login.png",
-            "scale": "cover"
-          },
-          {
-            "id": "grpCheckboxVariantsOnLogin",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "190.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "416.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "24.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "24.0"
-              }
-            }
-          },
-          {
-            "id": "bkgBoxOnEmail",
-            "border-radius": "10.0",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "0.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "31.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "374.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "48.0"
-              }
-            },
-            "vector-content": "bkg_box_on_email.svg"
-          },
-          {
-            "id": "txtEmailOnEmail",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-154.63461303710938"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "0.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "64.73077392578125"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "21.0"
-              }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Email",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "txtEmailExampleOnLogin",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "10.7884521484375"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "43.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "309.26922607421875"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "color": {
-              "alpha": "0.6980392156862745",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "$txtEmailExampleOnEmail text content",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "bkgBoxOnPasswordOnLogin",
-            "border-radius": "10.0",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "0.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "27.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "374.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "48.0"
-              }
-            },
-            "vector-content": "bkg_box_on_password_on_login.svg"
-          },
-          {
-            "id": "txtEnterYourPasswordOnLogin",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "11.387832641601562"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "40.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "309.26922607421875"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "color": {
-              "alpha": "0.6980392156862745",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "$txtEnterYourPasswordOnLogin text content",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "lblPasswordOnLogin",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-137.25"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "0.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "93.5"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "21.0"
-              }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Password",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "bkgRectangleOnLoginButton",
-            "border-radius": "5.0",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "374.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "48.0"
-              }
-            },
-            "vector-content": "bkg_rectangle_on_login_button.svg"
-          },
-          {
-            "id": "lblLoginOnLoginButton",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "160.62820434570312"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "12.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "52.74359130859375"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "font-weight": "600.0",
-            "color": {
-              "alpha": "0.8980392156862745",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "1.0"
-            },
-            "text-content": "Login",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
           }
         ]
       }
-    }
-  },
-  "parameters": {
-    "on lblForgotPasswordOnRememberMe tapped": {
-      "data-type": "void-callback",
-      "required": false,
-      "description": ""
-    },
-    "on grpLoginButtonOnLogin tapped": {
-      "data-type": "void-callback",
-      "required": false,
-      "description": ""
-    },
-    "on lblSignUpOnAlreadyAccount tapped": {
-      "data-type": "void-callback",
-      "required": false,
-      "description": ""
-    },
-    "txtEmailExampleOnEmail text content": {
-      "data-type": "text",
-      "required": false,
-      "description": "example@domain.com"
-    },
-    "txtEnterYourPasswordOnLogin text content": {
-      "data-type": "text",
-      "required": false,
-      "description": "Enter Your Password"
     }
   },
   "previews": [
@@ -735,10 +301,6 @@
       "size": {
         "width": 480.0,
         "height": 800.0
-      },
-      "parameters": {
-        "txtEmailExampleOnEmail text content": "example@domain.com",
-        "txtEnterYourPasswordOnLogin text content": "Enter Your Password"
       }
     }
   ],

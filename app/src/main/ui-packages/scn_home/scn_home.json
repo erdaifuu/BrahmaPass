@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "111:241",
-    "version": "3085165634",
+    "version": "3148360469",
     "component-id": "c50544f50f68c86bec602960acc3a1180a89b57d"
   },
   "default": "scnHome",
@@ -21,92 +21,70 @@
         "id": "lblTimeSubtitleOnHome"
       },
       {
-        "type": "text",
-        "id": "lblHomeSubtitleOnHome"
-      },
-      {
-        "type": "text",
-        "id": "txtTimeOnHome"
-      },
-      {
         "type": "vector",
         "id": "imgClockOnHonme"
       },
       {
-        "type": "vector",
-        "id": "bkgBottomIconsOnHome"
+        "type": "adin_component",
+        "id": "bkgBottomBarOnHome",
+        "key": "bkg_bottom_bar_on_home"
       },
       {
-        "type": "vector",
-        "id": "imgExitLogOnHome"
+        "type": "adin_component",
+        "id": "imgHomeOnHome",
+        "key": "img_home_on_home"
       },
       {
-        "type": "vector",
-        "id": "imgHomeOnHome"
+        "type": "adin_component",
+        "id": "imgSettingsIconOnHome",
+        "key": "img_settings_icon_on_home"
       },
       {
-        "type": "vector",
-        "id": "imgSettingsIconOnHome"
+        "type": "adin_component",
+        "id": "btnCreateHallpassOnHome",
+        "key": "btn_create_hallpass_on_home"
       },
       {
-        "type": "vector",
-        "id": "bkgTitleOnHome"
+        "type": "adin_component",
+        "id": "imgExitLogOnHome",
+        "key": "img_exit_log_on_home"
       },
       {
-        "type": "text",
-        "id": "lblBrahmaPassTitleOnHome"
+        "type": "adin_component",
+        "id": "grpEnterReasonOnHome",
+        "key": "grp_enter_reason_on_home"
       },
       {
-        "type": "group",
-        "id": "btnCreateHallpassOnHome"
-      },
-      {
-        "type": "vector",
-        "id": "bckEnterIDOnHome"
-      },
-      {
-        "type": "group",
-        "id": "grpEnterReasonOnHome"
-      },
-      {
-        "type": "text",
-        "id": "lblIDOnHome"
-      },
-      {
-        "type": "text",
-        "id": "lblReasonOnHome"
-      },
-      {
-        "type": "text",
-        "id": "txtEnterIDOnHome"
+        "type": "adin_component",
+        "id": "grpIDOnHome",
+        "key": "grp_idon_home"
       },
       {
         "type": "group",
         "id": "ddScheduleOnHome"
       },
       {
-        "type": "vector",
-        "id": "bkgCreateHallpassOnHome"
+        "type": "adin_component",
+        "id": "txtTimeOnHome",
+        "key": "txt_time_on_home"
+      },
+      {
+        "type": "adin_component",
+        "id": "lblHomeSubtitleOnHome",
+        "key": "lbl_home_subtitle_on_home"
+      },
+      {
+        "type": "adin_component",
+        "id": "lblBrahmaPassTopBar",
+        "key": "lbl_brahma_pass_top_bar"
       },
       {
         "type": "text",
-        "id": "lblCreateHallpassOnHome"
+        "id": "skldjv"
       },
       {
         "type": "vector",
-        "id": "bkgReasonBoxOnHome"
-      },
-      {
-        "type": "text",
-        "id": "txtEnterReasonOnHome"
-      },
-      {
-        "type": "text",
-        "id": "Select the Schedule"
-      },
-      {
-        "type": "vector",
-        "id": "Vector 1"
+        "id": "imgDownArrowInScheduleOnHome"
       }
     ],
     "modes": {
@@ -117,22 +95,18 @@
             "is-structured": "false",
             "children": [
               "lblTimeSubtitleOnHome",
-              "lblHomeSubtitleOnHome",
-              "txtTimeOnHome",
               "imgClockOnHonme",
-              "bkgBottomIconsOnHome",
-              "imgExitLogOnHome",
+              "bkgBottomBarOnHome",
               "imgHomeOnHome",
               "imgSettingsIconOnHome",
-              "bkgTitleOnHome",
-              "lblBrahmaPassTitleOnHome",
               "btnCreateHallpassOnHome",
-              "bckEnterIDOnHome",
+              "imgExitLogOnHome",
               "grpEnterReasonOnHome",
-              "lblIDOnHome",
-              "lblReasonOnHome",
-              "txtEnterIDOnHome",
-              "ddScheduleOnHome"
+              "grpIDOnHome",
+              "ddScheduleOnHome",
+              "txtTimeOnHome",
+              "lblHomeSubtitleOnHome",
+              "lblBrahmaPassTopBar"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -176,67 +150,6 @@
             "typeface": "Poppins"
           },
           {
-            "id": "lblHomeSubtitleOnHome",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "186.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "79.0"
-              }
-            },
-            "font-weight": "500.0",
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Home",
-            "overflow": "visible",
-            "text-size": "36.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "txtTimeOnHome",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "0.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "166.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "320.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "40.0"
-              }
-            },
-            "font-weight": "300.0",
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "1/20, 11:57:45 AM",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-size": "28.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
             "id": "imgClockOnHonme",
             "margin": {
               "left": "213.0",
@@ -257,7 +170,7 @@
             "vector-content": "img_clock_on_honme.svg"
           },
           {
-            "id": "bkgBottomIconsOnHome",
+            "id": "bkgBottomBarOnHome",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
@@ -280,126 +193,61 @@
             }
           },
           {
-            "id": "imgExitLogOnHome",
-            "margin": {
-              "left": "365.0",
-              "top": "745.0",
-              "right": "80.0",
-              "bottom": "15.0"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "vector-content": "img_exit_log_on_home.svg"
-          },
-          {
             "id": "imgHomeOnHome",
-            "margin": {
-              "left": "220.0",
-              "top": "745.0",
-              "right": "220.0",
-              "bottom": "15.0"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "vector-content": "img_home_on_home.svg"
-          },
-          {
-            "id": "imgSettingsIconOnHome",
-            "margin": {
-              "left": "75.0",
-              "top": "745.0",
-              "right": "365.0",
-              "bottom": "15.0"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "vector-content": "img_settings_icon_on_home.svg"
-          },
-          {
-            "id": "bkgTitleOnHome",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "480.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "71.0"
-              }
-            }
-          },
-          {
-            "id": "lblBrahmaPassTitleOnHome",
             "alignment": {
               "horizontal": {
-                "attachment": "center",
-                "offset": "0.0"
+                "attachment": "start",
+                "offset": "223.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "12.0"
+                "offset": "745.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "266.0"
+                "value": "40.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
                 "value": "40.0"
               }
-            },
-            "font-weight": "700.0",
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "1.0"
-            },
-            "text-content": "BrahmaPass",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align-vertical": "center",
-            "text-size": "40.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
+            }
           },
           {
-            "id": "btnCreateHallpassOnHome",
-            "border-radius": "5.0",
+            "id": "imgSettingsIconOnHome",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "53.0"
+                "offset": "84.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "644.0"
+                "offset": "745.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            }
+          },
+          {
+            "id": "btnCreateHallpassOnHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "51.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "631.0"
               }
             },
             "size-constraints": {
@@ -411,52 +259,44 @@
                 "sizing-mode": "fixed",
                 "value": "48.0"
               }
-            },
-            "is-structured": "false",
-            "children": [
-              "bkgCreateHallpassOnHome",
-              "lblCreateHallpassOnHome"
-            ],
-            "clip-content": "false"
+            }
           },
           {
-            "id": "bckEnterIDOnHome",
-            "border-radius": "10.0",
+            "id": "imgExitLogOnHome",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "54.0"
+                "offset": "363.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "397.0"
+                "offset": "745.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "374.0"
+                "value": "35.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "39.0"
+                "value": "40.0"
               }
-            },
-            "vector-content": "bck_enter_idon_home.svg"
+            }
           },
           {
             "id": "grpEnterReasonOnHome",
-            "border-radius": "10.0",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "54.0"
+                "offset": "51.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "493.0"
+                "offset": "451.0"
               }
             },
+            "Text Input For Reason": "Enter Reason",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -464,121 +304,33 @@
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "114.0"
+                "value": "144.0"
               }
-            },
-            "is-structured": "false",
-            "children": [
-              "bkgReasonBoxOnHome",
-              "txtEnterReasonOnHome"
-            ],
-            "clip-content": "false"
+            }
           },
           {
-            "id": "lblIDOnHome",
+            "id": "grpIDOnHome",
             "alignment": {
               "horizontal": {
-                "attachment": "center",
-                "offset": "-173.0"
+                "attachment": "start",
+                "offset": "51.0"
               },
               "vertical": {
                 "attachment": "start",
                 "offset": "364.0"
               }
             },
+            "Text Input For ID": "Enter Your ID",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "26.0"
+                "value": "374.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "21.0"
+                "value": "72.0"
               }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "ID:",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "lblReasonOnHome",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-100.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "463.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "172.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "21.0"
-              }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Reason of Departure:",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "txtEnterIDOnHome",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "67.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "405.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "287.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "color": {
-              "alpha": "0.6980392156862745",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "$txtEnterIDOnHome text content",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
+            }
           },
           {
             "id": "ddScheduleOnHome",
@@ -619,116 +371,74 @@
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "Select the Schedule",
-              "Vector 1"
+              "skldjv",
+              "imgDownArrowInScheduleOnHome"
             ],
             "clip-content": "false"
           },
           {
-            "id": "bkgCreateHallpassOnHome",
-            "border-radius": "5.0",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "374.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "48.0"
-              }
-            },
-            "vector-content": "bkg_create_hallpass_on_home.svg"
-          },
-          {
-            "id": "lblCreateHallpassOnHome",
+            "id": "txtTimeOnHome",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "129.0"
+                "offset": "82.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "12.0"
+                "offset": "169.0"
               }
             },
-            "tap-handler": "$on lblCreateHallpassOnHome tapped",
+            "Time Display": "MM/DD/YYYY 00:00",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "133.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "font-weight": "600.0",
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "1.0"
-            },
-            "text-content": "Create Hallpass",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "bkgReasonBoxOnHome",
-            "border-radius": "10.0",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "374.0"
+                "value": "320.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "114.0"
+                "value": "40.0"
               }
-            },
-            "vector-content": "bkg_reason_box_on_home.svg"
+            }
           },
           {
-            "id": "txtEnterReasonOnHome",
+            "id": "lblHomeSubtitleOnHome",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "14.3846435546875"
+                "offset": "189.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "8.0"
+                "offset": "73.0"
               }
             },
+            "Home/Teacher Display": "Home",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "346.429443359375"
+                "value": "108.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "95.0"
+                "value": "54.0"
               }
-            },
-            "color": {
-              "alpha": "0.6980392156862745",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "$txtEnterReasonOnHome text content",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
+            }
           },
           {
-            "id": "Select the Schedule",
+            "id": "lblBrahmaPassTopBar",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "480.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "71.0"
+              }
+            }
+          },
+          {
+            "id": "skldjv",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -753,7 +463,7 @@
             "typeface": "Poppins"
           },
           {
-            "id": "Vector 1",
+            "id": "imgDownArrowInScheduleOnHome",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -764,27 +474,10 @@
                 "value": "6.0"
               }
             },
-            "vector-content": "vector_1.svg"
+            "vector-content": "img_down_arrow_in_schedule_on_home.svg"
           }
         ]
       }
-    }
-  },
-  "parameters": {
-    "txtEnterIDOnHome text content": {
-      "data-type": "text",
-      "required": false,
-      "description": "Enter Your ID..."
-    },
-    "on lblCreateHallpassOnHome tapped": {
-      "data-type": "void-callback",
-      "required": false,
-      "description": ""
-    },
-    "txtEnterReasonOnHome text content": {
-      "data-type": "text",
-      "required": false,
-      "description": "Enter here..."
     }
   },
   "previews": [
@@ -793,10 +486,6 @@
       "size": {
         "width": 480.0,
         "height": 800.0
-      },
-      "parameters": {
-        "txtEnterIDOnHome text content": "Enter Your ID...",
-        "txtEnterReasonOnHome text content": "Enter here..."
       }
     }
   ],

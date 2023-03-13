@@ -1,0 +1,111 @@
+{
+  "name": "btn_login_button_on_login",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "223:166",
+    "version": "3148360469",
+    "component-id": "544e43bd6d0a6f019fa6da5c3db7f96208a04abd"
+  },
+  "default": "btnLoginButtonOnLogin",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "bkgRectangleOnLoginButton"
+      },
+      {
+        "type": "text",
+        "id": "lblLoginOnLoginButton"
+      }
+    ],
+    "modes": {
+      "btnLoginButtonOnLogin": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$on grpLoginButtonOnLogin tapped",
+            "is-structured": "false",
+            "children": [
+              "bkgRectangleOnLoginButton",
+              "lblLoginOnLoginButton"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "bkgRectangleOnLoginButton",
+            "border-radius": "5.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "bkg_rectangle_on_login_button.svg"
+          },
+          {
+            "id": "lblLoginOnLoginButton",
+            "margin": {
+              "left": "165.0",
+              "top": "12.0",
+              "right": "165.0",
+              "bottom": "12.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "0.8980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Login",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on grpLoginButtonOnLogin tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "btnLoginButtonOnLogin",
+      "size": {
+        "width": 374.0,
+        "height": 48.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

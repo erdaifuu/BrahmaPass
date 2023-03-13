@@ -1,0 +1,77 @@
+{
+  "name": "img_back_arrow",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "229:208",
+    "version": "3148360469",
+    "component-id": "c0600aab3e8ec8d3a327bf5eb30c282b84f929a8"
+  },
+  "default": "imgBackArrow",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "imgBackArrowOnSettings"
+      }
+    ],
+    "modes": {
+      "imgBackArrow": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "imgBackArrowOnSettings"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "imgBackArrowOnSettings",
+            "margin": {
+              "top": "3.4999999999999982",
+              "bottom": "3.5"
+            },
+            "tap-handler": "$on imgBackArrowOnSettings tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_back_arrow_on_settings.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on imgBackArrowOnSettings tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": "Goes back to home"
+    }
+  },
+  "previews": [
+    {
+      "design": "imgBackArrow",
+      "size": {
+        "width": 13.0,
+        "height": 20.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

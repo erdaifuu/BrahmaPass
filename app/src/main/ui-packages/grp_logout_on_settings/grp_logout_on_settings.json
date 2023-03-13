@@ -1,0 +1,114 @@
+{
+  "name": "grp_logout_on_settings",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "231:185",
+    "version": "3148360469",
+    "component-id": "6a5962aa815e33a9d52d86fccf961110ad0cab49"
+  },
+  "default": "grpLogoutOnSettings",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "imgLogoutOnSettings"
+      },
+      {
+        "type": "text",
+        "id": "lblLogoutOnSettings"
+      }
+    ],
+    "modes": {
+      "grpLogoutOnSettings": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "imgLogoutOnSettings",
+              "lblLogoutOnSettings"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "imgLogoutOnSettings",
+            "margin": {
+              "left": "420.0",
+              "top": "6.0",
+              "bottom": "8.0"
+            },
+            "tap-handler": "$on imgLogoutOnSettings tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_logout_on_settings.svg"
+          },
+          {
+            "id": "lblLogoutOnSettings",
+            "margin": {
+              "right": "325.304443359375"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "1.0",
+              "value": "1.0"
+            },
+            "text-content": "Log out",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "22.0",
+            "letter-spacing": "0.22",
+            "line-height": "1.6180697631835939",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on imgLogoutOnSettings tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "grpLogoutOnSettings",
+      "size": {
+        "width": 440.0,
+        "height": 36.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
