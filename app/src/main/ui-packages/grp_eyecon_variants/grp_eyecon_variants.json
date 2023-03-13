@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "42:43",
-    "version": "3085165634",
+    "version": "3148360469",
     "component-id": "f813618f904dc82420c2f4bd5ccca1acb9028249"
   },
   "default": "Property 1=Open",
@@ -80,14 +80,14 @@
     {
       "design": "Property 1=Open",
       "size": {
-        "width": 19.199951171875,
-        "height": 15.0
+        "width": 20.58001708984375,
+        "height": 17.0
       }
     },
     {
       "design": "Property 1=Closed",
       "size": {
-        "width": 20.580078125,
+        "width": 20.58001708984375,
         "height": 17.0
       }
     }

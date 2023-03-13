@@ -1,0 +1,5 @@
+img_exit_log_on_home
+lbl_brahma_pass_top_bar
+bkg_bottom_bar_on_home
+img_back_arrow
+tbl_exit_log_on_exit_log

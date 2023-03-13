@@ -1,0 +1,6 @@
+lbl_brahma_pass_top_bar
+bkg_bottom_bar_on_home
+img_back_arrow
+grp_logout_on_settings
+img_settings_icon_on_home
+grp_notifications

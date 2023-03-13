@@ -1,0 +1,10 @@
+bkg_bottom_bar_on_home
+img_home_on_home
+img_settings_icon_on_home
+btn_create_hallpass_on_home
+img_exit_log_on_home
+grp_enter_reason_on_home
+grp_idon_home
+txt_time_on_home
+lbl_home_subtitle_on_home
+lbl_brahma_pass_top_bar

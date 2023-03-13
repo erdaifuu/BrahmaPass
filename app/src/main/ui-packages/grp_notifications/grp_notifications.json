@@ -1,0 +1,241 @@
+{
+  "name": "grp_notifications",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "231:203",
+    "version": "3148360469",
+    "component-id": "0f73613579cf4547d8109929efde9ff3256eb34a"
+  },
+  "default": "grpNotifications",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "objSliderOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgBellOnSettings"
+      },
+      {
+        "type": "text",
+        "id": "lblNotificationsOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgRectangleOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgCircleOnSettings"
+      },
+      {
+        "type": "group",
+        "id": "imgCheckmarkOnSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgBoundingBoxSettings"
+      },
+      {
+        "type": "vector",
+        "id": "imgCheckOnSettings"
+      }
+    ],
+    "modes": {
+      "grpNotifications": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "objSliderOnSettings",
+              "imgBellOnSettings",
+              "lblNotificationsOnSettings"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "objSliderOnSettings",
+            "margin": {
+              "left": "379.0",
+              "top": "2.0",
+              "bottom": "6.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "imgRectangleOnSettings",
+              "imgCircleOnSettings",
+              "imgCheckmarkOnSettings"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "imgBellOnSettings",
+            "margin": {
+              "left": "175.0",
+              "top": "8.0",
+              "right": "239.20001220703125",
+              "bottom": "8.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_bell_on_settings.svg"
+          },
+          {
+            "id": "lblNotificationsOnSettings",
+            "margin": {
+              "right": "287.20001220703125"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Notifications",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "22.0",
+            "letter-spacing": "0.22",
+            "line-height": "1.6180697631835939",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "imgRectangleOnSettings",
+            "margin": {
+              "left": "5.4000244140625"
+            },
+            "border-radius": "13.5",
+            "tap-handler": "$on imgRectangleOnSettings tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_rectangle_on_settings.svg"
+          },
+          {
+            "id": "imgCircleOnSettings",
+            "margin": {
+              "left": "27.0",
+              "top": "1.79998779296875",
+              "right": "1.79998779296875",
+              "bottom": "1.79998779296875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_circle_on_settings.svg"
+          },
+          {
+            "id": "imgCheckmarkOnSettings",
+            "margin": {
+              "left": "31.95001220703125",
+              "top": "6.75",
+              "right": "6.29998779296875",
+              "bottom": "6.29998779296875"
+            },
+            "is-structured": "false",
+            "children": [
+              "imgBoundingBoxSettings",
+              "imgCheckOnSettings"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "imgBoundingBoxSettings",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "imgCheckOnSettings",
+            "margin": {
+              "left": "2.23779296875",
+              "top": "3.472900390625",
+              "right": "2.23785400390625",
+              "bottom": "3.48760986328125"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_check_on_settings.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on imgRectangleOnSettings tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "grpNotifications",
+      "size": {
+        "width": 431.20001220703125,
+        "height": 35.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

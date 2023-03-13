@@ -1,0 +1,111 @@
+{
+  "name": "btn_create_hallpass_on_home",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "223:172",
+    "version": "3148360469",
+    "component-id": "54e78cf87ea56f8924115cd777791b632eccb702"
+  },
+  "default": "btnCreateHallpassOnHome",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "bkgCreateHallpassOnHome"
+      },
+      {
+        "type": "text",
+        "id": "lblCreateHallpassOnHome"
+      }
+    ],
+    "modes": {
+      "btnCreateHallpassOnHome": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "bkgCreateHallpassOnHome",
+              "lblCreateHallpassOnHome"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "bkgCreateHallpassOnHome",
+            "border-radius": "5.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "bkg_create_hallpass_on_home.svg"
+          },
+          {
+            "id": "lblCreateHallpassOnHome",
+            "margin": {
+              "left": "122.0",
+              "top": "12.0",
+              "right": "122.0",
+              "bottom": "12.0"
+            },
+            "tap-handler": "$on lblCreateHallpassOnHome tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Create Hallpass",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on lblCreateHallpassOnHome tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "btnCreateHallpassOnHome",
+      "size": {
+        "width": 374.0,
+        "height": 48.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

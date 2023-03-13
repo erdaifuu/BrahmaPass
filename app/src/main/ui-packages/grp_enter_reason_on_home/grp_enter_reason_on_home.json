@@ -1,0 +1,147 @@
+{
+  "name": "grp_enter_reason_on_home",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "229:174",
+    "version": "3148360469",
+    "component-id": "6e0bbf7f854909b07b23ccaa2ffc57a87942bdff"
+  },
+  "default": "grpEnterReasonOnHome",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "bkgReasonBoxOnHome"
+      },
+      {
+        "type": "text",
+        "id": "txtEnterReasonOnHome"
+      },
+      {
+        "type": "text",
+        "id": "lblReasonOnHome"
+      }
+    ],
+    "modes": {
+      "grpEnterReasonOnHome": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "bkgReasonBoxOnHome",
+              "txtEnterReasonOnHome",
+              "lblReasonOnHome"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "bkgReasonBoxOnHome",
+            "margin": {
+              "top": "30.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "bkg_reason_box_on_home.svg"
+          },
+          {
+            "id": "txtEnterReasonOnHome",
+            "margin": {
+              "left": "14.3846435546875",
+              "top": "38.0",
+              "right": "13.1859130859375",
+              "bottom": "11.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Enter here...",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "lblReasonOnHome",
+            "margin": {
+              "right": "202.0",
+              "bottom": "123.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Reason of Departure:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "Text Input For Reason": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "grpEnterReasonOnHome",
+      "size": {
+        "width": 374.0,
+        "height": 144.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
