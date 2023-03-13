@@ -53,12 +53,17 @@ fun LoginScreen(navController: NavController) {
         },
         txtEmailExampleOnEmailTextContent = "hello",
         txtEnterYourPasswordOnLoginTextContent = "world")
-     */
+*/
 }
 
 @Composable
 fun HomeScreen(name: String?, navController: NavController) {
+    /*
     ScnHome(
         txtEnterIDOnHomeTextContent = "Hi, $name!",
         txtEnterReasonOnHomeTextContent = "What's up")
+
+     */
 }
+
+
