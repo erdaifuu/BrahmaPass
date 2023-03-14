@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "113:349",
-    "version": "3148360469",
+    "version": "3166801966",
     "component-id": "074fc1d0bbe50893cecde4303c78f623f44397b4"
   },
   "default": "scnExitLog",
@@ -18,8 +18,8 @@
       },
       {
         "type": "adin_component",
-        "id": "imgExitLogOnHome",
-        "key": "img_exit_log_on_home"
+        "id": "imgExitLog",
+        "key": "img_exit_log"
       },
       {
         "type": "text",
@@ -36,13 +36,13 @@
       },
       {
         "type": "adin_component",
-        "id": "bkgBottomBarOnHome",
-        "key": "bkg_bottom_bar_on_home"
+        "id": "bkgBottomBar",
+        "key": "bkg_bottom_bar"
       },
       {
         "type": "adin_component",
-        "id": "imgExitLogOnHome1",
-        "key": "img_exit_log_on_home"
+        "id": "imgExitLogOnExitLog",
+        "key": "img_exit_log"
       },
       {
         "type": "adin_component",
@@ -62,12 +62,12 @@
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "imgExitLogOnHome",
+              "imgExitLog",
               "lblBrahmaPassOnExitLog",
               "lblTitleOnExitLog",
               "lblBrahmaPassTopBar",
-              "bkgBottomBarOnHome",
-              "imgExitLogOnHome1",
+              "bkgBottomBar",
+              "imgExitLogOnExitLog",
               "imgBackArrow",
               "tblExitLogOnExitLog"
             ],
@@ -79,7 +79,7 @@
             }
           },
           {
-            "id": "imgExitLogOnHome",
+            "id": "imgExitLog",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
@@ -177,7 +177,7 @@
             }
           },
           {
-            "id": "bkgBottomBarOnHome",
+            "id": "bkgBottomBar",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
@@ -200,7 +200,7 @@
             }
           },
           {
-            "id": "imgExitLogOnHome1",
+            "id": "imgExitLogOnExitLog",
             "alignment": {
               "horizontal": {
                 "attachment": "start",

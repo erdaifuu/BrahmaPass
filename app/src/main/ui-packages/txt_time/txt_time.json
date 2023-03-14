@@ -1,14 +1,14 @@
 {
-  "name": "img_back_arrow",
+  "name": "txt_time",
   "version": 32,
   "source-key": {
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
-    "node": "229:208",
+    "node": "229:165",
     "version": "3166801966",
-    "component-id": "c0600aab3e8ec8d3a327bf5eb30c282b84f929a8"
+    "component-id": "e8b7e279525797cb00b609bc91d4b81d08a8fc9a"
   },
-  "default": "imgBackArrow",
+  "default": "txtTime",
   "design": {
     "atoms": [
       {
@@ -17,28 +17,23 @@
         "root": "true"
       },
       {
-        "type": "vector",
-        "id": "imgBackArrowOnSettings"
+        "type": "text",
+        "id": "txtTimeOnHome"
       }
     ],
     "modes": {
-      "imgBackArrow": {
+      "txtTime": {
         "rules": [
           {
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "imgBackArrowOnSettings"
+              "txtTimeOnHome"
             ],
             "clip-content": "false"
           },
           {
-            "id": "imgBackArrowOnSettings",
-            "margin": {
-              "top": "3.4999999999999982",
-              "bottom": "3.5"
-            },
-            "tap-handler": "$on imgBackArrowOnSettings tapped",
+            "id": "txtTimeOnHome",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -49,25 +44,37 @@
                 "value": "1.0"
               }
             },
-            "vector-content": "img_back_arrow_on_settings.svg"
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "MM/DD/YYYY 00:00",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "28.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
           }
         ]
       }
     }
   },
   "parameters": {
-    "on imgBackArrowOnSettings tapped": {
-      "data-type": "void-callback",
+    "Time Display": {
+      "data-type": "text",
       "required": false,
-      "description": "Goes back to home"
+      "description": ""
     }
   },
   "previews": [
     {
-      "design": "imgBackArrow",
+      "design": "txtTime",
       "size": {
-        "width": 13.0,
-        "height": 20.0
+        "width": 320.0,
+        "height": 40.0
       }
     }
   ],

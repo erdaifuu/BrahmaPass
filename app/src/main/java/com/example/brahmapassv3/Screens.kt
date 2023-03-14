@@ -1,7 +1,6 @@
 package com.example.brahmapassv3
 
 import androidx.compose.runtime.Composable
-import com.example.brahmapassv3.scnhome.ScnHome
 import com.example.brahmapassv3.scnlogin.ScnLogin
 
 sealed class Screen(val route: String) {

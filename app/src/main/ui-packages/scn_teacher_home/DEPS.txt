@@ -1,0 +1,6 @@
+lbl_home_subtitle_on_home
+bkg_bottom_bar
+img_home
+img_settings
+img_exit_log
+lbl_brahma_pass_top_bar

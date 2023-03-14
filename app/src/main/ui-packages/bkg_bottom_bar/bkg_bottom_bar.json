@@ -1,14 +1,14 @@
 {
-  "name": "img_back_arrow",
+  "name": "bkg_bottom_bar",
   "version": 32,
   "source-key": {
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
-    "node": "229:208",
+    "node": "229:221",
     "version": "3166801966",
-    "component-id": "c0600aab3e8ec8d3a327bf5eb30c282b84f929a8"
+    "component-id": "c4a3499c3f540626d045386fcfe6168bac26450b"
   },
-  "default": "imgBackArrow",
+  "default": "bkgBottomBar",
   "design": {
     "atoms": [
       {
@@ -18,27 +18,22 @@
       },
       {
         "type": "vector",
-        "id": "imgBackArrowOnSettings"
+        "id": "imgBottonBar"
       }
     ],
     "modes": {
-      "imgBackArrow": {
+      "bkgBottomBar": {
         "rules": [
           {
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "imgBackArrowOnSettings"
+              "imgBottonBar"
             ],
             "clip-content": "false"
           },
           {
-            "id": "imgBackArrowOnSettings",
-            "margin": {
-              "top": "3.4999999999999982",
-              "bottom": "3.5"
-            },
-            "tap-handler": "$on imgBackArrowOnSettings tapped",
+            "id": "imgBottonBar",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -49,25 +44,18 @@
                 "value": "1.0"
               }
             },
-            "vector-content": "img_back_arrow_on_settings.svg"
+            "vector-content": "img_botton_bar.svg"
           }
         ]
       }
     }
   },
-  "parameters": {
-    "on imgBackArrowOnSettings tapped": {
-      "data-type": "void-callback",
-      "required": false,
-      "description": "Goes back to home"
-    }
-  },
   "previews": [
     {
-      "design": "imgBackArrow",
+      "design": "bkgBottomBar",
       "size": {
-        "width": 13.0,
-        "height": 20.0
+        "width": 480.0,
+        "height": 71.0
       }
     }
   ],

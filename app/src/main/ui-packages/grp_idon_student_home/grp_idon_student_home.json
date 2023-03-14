@@ -1,14 +1,14 @@
 {
-  "name": "grp_email_on_login",
+  "name": "grp_idon_student_home",
   "version": 32,
   "source-key": {
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
-    "node": "223:185",
+    "node": "229:167",
     "version": "3166801966",
-    "component-id": "a62205070f860017ee55cd2dd572b149c65b63e4"
+    "component-id": "12620d79ef2bde7115355bfe2e6815ea930324db"
   },
-  "default": "grpEmailOnLogin",
+  "default": "grpIDOnStudentHome",
   "design": {
     "atoms": [
       {
@@ -18,35 +18,27 @@
       },
       {
         "type": "vector",
-        "id": "bkgBoxOnEmail"
+        "id": "bkgEnterIDOnHome"
       },
       {
         "type": "text",
-        "id": "txtEmailOnEmail"
-      },
-      {
-        "type": "text",
-        "id": "txtEmailExampleOnLogin"
+        "id": "txtEnterIDOnHome"
       }
     ],
     "modes": {
-      "grpEmailOnLogin": {
+      "grpIDOnStudentHome": {
         "rules": [
           {
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "bkgBoxOnEmail",
-              "txtEmailOnEmail",
-              "txtEmailExampleOnLogin"
+              "bkgEnterIDOnHome",
+              "txtEnterIDOnHome"
             ],
             "clip-content": "false"
           },
           {
-            "id": "bkgBoxOnEmail",
-            "margin": {
-              "top": "31.0"
-            },
+            "id": "bkgEnterIDOnHome",
             "border-radius": "10.0",
             "size-constraints": {
               "width-constraints": {
@@ -58,44 +50,15 @@
                 "value": "1.0"
               }
             },
-            "vector-content": "bkg_box_on_email.svg"
+            "vector-content": "bkg_enter_idon_home.svg"
           },
           {
-            "id": "txtEmailOnEmail",
+            "id": "txtEnterIDOnHome",
             "margin": {
-              "right": "309.26922607421875",
-              "bottom": "58.0"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Email",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-size": "16.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "txtEmailExampleOnLogin",
-            "margin": {
-              "left": "10.7884521484375",
-              "top": "43.0",
-              "right": "53.94232177734375",
-              "bottom": "12.0"
+              "left": "13.0",
+              "top": "10.0",
+              "right": "21.0",
+              "bottom": "13.0"
             },
             "size-constraints": {
               "width-constraints": {
@@ -113,11 +76,11 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "example@domain.com",
+            "text-content": "Enter Your ID...",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
-            "text-size": "16.0",
+            "text-size": "48.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           }
@@ -126,7 +89,7 @@
     }
   },
   "parameters": {
-    "Text Input For Password": {
+    "Text Input For ID": {
       "data-type": "text",
       "required": false,
       "description": ""
@@ -134,10 +97,10 @@
   },
   "previews": [
     {
-      "design": "grpEmailOnLogin",
+      "design": "grpIDOnStudentHome",
       "size": {
         "width": 374.0,
-        "height": 79.0
+        "height": 92.0
       }
     }
   ],

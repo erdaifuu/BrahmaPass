@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "65:99",
-    "version": "3148360469",
+    "version": "3166801966",
     "component-id": "2f09deaf11b830a6a1f981a59be5814976269e72"
   },
   "default": "Property 1=Unchecked",
@@ -117,7 +117,7 @@
               "left": "4.800048828125",
               "top": "6.0",
               "right": "4.7999267578125",
-              "bottom": "7.20001220703125"
+              "bottom": "7.199951171875"
             },
             "border-radius": "1.0",
             "size-constraints": {

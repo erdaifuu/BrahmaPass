@@ -4,11 +4,11 @@
   "source-key": {
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
-    "node": "113:234",
-    "version": "3148360469",
-    "component-id": "e7e50c1ea4256ccf05c6bded2c5d778a1eea25d4"
+    "node": "260:177",
+    "version": "3166801966",
+    "component-id": "f7c04d1b7e9f1bd7e6881a0e2d281fa40c0a3d54"
   },
-  "default": "Option=default, visible options=no",
+  "default": "optionReason",
   "design": {
     "atoms": [
       {
@@ -18,157 +18,157 @@
       },
       {
         "type": "text",
-        "id": "lblSelectTheScheduleOnDefaultNo"
+        "id": "txtOnReason"
       },
       {
         "type": "vector",
-        "id": "imgVector1OnDefaultNo"
+        "id": "imgOnReason"
       },
       {
         "type": "text",
-        "id": "lblRegularOn1No"
+        "id": "txtOnBathroom"
       },
       {
         "type": "vector",
-        "id": "imgVector1On1No"
+        "id": "imgOnBathroom"
       },
       {
         "type": "group",
-        "id": "Option=1, visible options=yes"
+        "id": "optionBathroomClicked"
       },
       {
         "type": "adin_component",
-        "id": "grpOptionsListOn1Yes",
-        "key": "grp_schedules_list"
+        "id": "optionListOnBathroom",
+        "key": "grp_options_list"
       },
       {
         "type": "text",
-        "id": "lblRegularOn1Yes"
+        "id": "txtOnBathroomClicked"
       },
       {
         "type": "vector",
-        "id": "imgVectorOn1Yes"
+        "id": "imgOnBathroomClicked"
       },
       {
         "type": "text",
-        "id": "lblLateStartOn2No"
+        "id": "txtOnGLC"
       },
       {
         "type": "vector",
-        "id": "imgVector1On2No"
+        "id": "imgOnGLC"
       },
       {
         "type": "group",
-        "id": "Option=2, visible options=yes"
+        "id": "optionGLCClicked"
       },
       {
         "type": "adin_component",
-        "id": "grpOptionsListOn2Yes",
-        "key": "grp_schedules_list"
+        "id": "optionsListOnGLC",
+        "key": "grp_options_list"
       },
       {
         "type": "text",
-        "id": "lblLateStartOn2Yes"
+        "id": "txtOnGLCClicked"
       },
       {
         "type": "vector",
-        "id": "imgVector1On2Yes"
+        "id": "imgOnGLCClicked"
       },
       {
         "type": "text",
-        "id": "lblMinimumOn3No"
+        "id": "txtOnOffice"
       },
       {
         "type": "vector",
-        "id": "imgVector 1"
+        "id": "imgOnOffice"
       },
       {
         "type": "group",
-        "id": "Option=3, visible options=yes"
+        "id": "optionOfficeClicked"
       },
       {
         "type": "adin_component",
-        "id": "grpOptionsListOn3Yes",
-        "key": "grp_schedules_list"
+        "id": "optionsListOnOffice",
+        "key": "grp_options_list"
       },
       {
         "type": "text",
-        "id": "lblMinimumOn3Yes"
+        "id": "txtOnOfficeClicked"
       },
       {
         "type": "vector",
-        "id": "imgVector1On3Yes"
+        "id": "imgOnOfficeClicked"
       },
       {
         "type": "text",
-        "id": "lblRallyAOn4No"
+        "id": "txtOnNurse"
       },
       {
         "type": "vector",
-        "id": "imgVector1On4No"
+        "id": "imgOnNurse"
       },
       {
         "type": "group",
-        "id": "Option=4, visible options=yes"
+        "id": "optionNurseClicked"
       },
       {
         "type": "adin_component",
-        "id": "grpOptionsListOn4Yes",
-        "key": "grp_schedules_list"
+        "id": "grpOptionsListOnNurse",
+        "key": "grp_options_list"
       },
       {
         "type": "text",
-        "id": "txtRallyAOn4Yes"
+        "id": "txtOptionNurseClicked"
       },
       {
         "type": "vector",
-        "id": "imgVector1On4Yes"
+        "id": "imgOptionNurseClicked"
       },
       {
         "type": "text",
-        "id": "txtRallyBOn5No"
+        "id": "txtOnOptionOther"
       },
       {
         "type": "vector",
-        "id": "imgVector1On5No"
+        "id": "imgOptionOther"
       },
       {
         "type": "group",
-        "id": "Option=5, visible options=yes"
+        "id": "optionOtherClicked"
       },
       {
         "type": "adin_component",
-        "id": "grpOptionsListOn5Yes",
-        "key": "grp_schedules_list"
+        "id": "grpOptionsListOnOther",
+        "key": "grp_options_list"
       },
       {
         "type": "text",
-        "id": "lblRallyBOn5Yes"
+        "id": "txtOptionOtherClicked"
       },
       {
         "type": "vector",
-        "id": "imgVector1On5Yes"
+        "id": "imgOptionOtherClicked"
       },
       {
         "type": "group",
-        "id": "Option=default, visible options=yes"
+        "id": "optionReasonClicked"
       },
       {
         "type": "adin_component",
-        "id": "grpOptionsListOnDefaultYes",
-        "key": "grp_schedules_list"
+        "id": "optionsListOnReasonClicked",
+        "key": "grp_options_list"
       },
       {
         "type": "text",
-        "id": "lblBoxOnDefaultYes"
+        "id": "txtOnReasonClicked"
       },
       {
         "type": "vector",
-        "id": "imgVector1OnDefaultYes"
+        "id": "imgOnReasonClicked"
       }
     ],
     "modes": {
-      "Option=default, visible options=no": {
+      "optionReason": {
         "rules": [
           {
             "id": "top_level",
@@ -179,6 +179,7 @@
               "bottom": "14.0"
             },
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "stroke-width": "1.0",
             "stroke-color": {
               "alpha": "0.2",
@@ -189,13 +190,82 @@
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "lblSelectTheScheduleOnDefaultNo",
-              "imgVector1OnDefaultNo"
+              "txtOnReason",
+              "imgOnReason"
             ],
             "clip-content": "false"
           },
           {
-            "id": "lblSelectTheScheduleOnDefaultNo",
+            "id": "txtOnReason",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "217.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Select the Reason",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "24.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "imgOnReason",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "11.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "6.0"
+              }
+            },
+            "vector-content": "img_on_reason.svg"
+          }
+        ]
+      },
+      "optionBathroom": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "13.0",
+              "top": "14.0",
+              "right": "13.0",
+              "bottom": "14.0"
+            },
+            "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "0.2",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "arrangement": "row",
+            "main-axis-align": "space-between",
+            "children": [
+              "txtOnBathroom",
+              "imgOnBathroom"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "txtOnBathroom",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -211,16 +281,17 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Select the Schedule",
+            "text-content": "Bathroom",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
             "text-align-vertical": "center",
+            "text-size": "24.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           },
           {
-            "id": "imgVector1OnDefaultNo",
+            "id": "imgOnBathroom",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -231,82 +302,16 @@
                 "value": "6.0"
               }
             },
-            "vector-content": "img_vector1on_default_no.svg"
+            "vector-content": "img_on_bathroom.svg"
           }
         ]
       },
-      "Option=1, visible options=no": {
-        "rules": [
-          {
-            "id": "top_level",
-            "padding": {
-              "left": "13.0",
-              "top": "14.0",
-              "right": "13.0",
-              "bottom": "14.0"
-            },
-            "border-radius": "10.0",
-            "stroke-width": "1.0",
-            "stroke-color": {
-              "alpha": "0.2",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "arrangement": "row",
-            "main-axis-align": "space-between",
-            "children": [
-              "lblRegularOn1No",
-              "imgVector1On1No"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "lblRegularOn1No",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "165.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Regular",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-align-vertical": "center",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
-            "id": "imgVector1On1No",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "11.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "6.0"
-              }
-            },
-            "vector-content": "img_vector1on1no.svg"
-          }
-        ]
-      },
-      "Option=1, visible options=yes_synth": {
+      "optionBathroomClicked_synth": {
         "rules": [
           {
             "id": "top_level",
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "stroke-width": "1.0",
             "stroke-color": {
               "alpha": "0.2",
@@ -316,13 +321,13 @@
             },
             "is-structured": "false",
             "children": [
-              "Option=1, visible options=yes",
-              "grpOptionsListOn1Yes"
+              "optionBathroomClicked",
+              "optionListOnBathroom"
             ],
             "clip-content": "false"
           },
           {
-            "id": "Option=1, visible options=yes",
+            "id": "optionBathroomClicked",
             "opacity": "100.0",
             "padding": {
               "left": "13.0",
@@ -331,6 +336,7 @@
               "bottom": "14.0"
             },
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -344,13 +350,13 @@
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "lblRegularOn1Yes",
-              "imgVectorOn1Yes"
+              "txtOnBathroomClicked",
+              "imgOnBathroomClicked"
             ],
             "clip-content": "false"
           },
           {
-            "id": "grpOptionsListOn1Yes",
+            "id": "optionListOnBathroom",
             "drop-shadow": {
               "color": {
                 "alpha": "0.24705882352941178",
@@ -385,7 +391,7 @@
             }
           },
           {
-            "id": "lblRegularOn1Yes",
+            "id": "txtOnBathroomClicked",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -401,16 +407,17 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Regular",
+            "text-content": "Bathroom",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
             "text-align-vertical": "center",
+            "text-size": "24.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           },
           {
-            "id": "imgVectorOn1Yes",
+            "id": "imgOnBathroomClicked",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -421,11 +428,11 @@
                 "value": "6.0"
               }
             },
-            "vector-content": "img_vector_on1yes.svg"
+            "vector-content": "img_on_bathroom_clicked.svg"
           }
         ]
       },
-      "Option=2, visible options=no": {
+      "optionGLC": {
         "rules": [
           {
             "id": "top_level",
@@ -436,6 +443,7 @@
               "bottom": "14.0"
             },
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "stroke-width": "1.0",
             "stroke-color": {
               "alpha": "0.2",
@@ -446,13 +454,13 @@
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "lblLateStartOn2No",
-              "imgVector1On2No"
+              "txtOnGLC",
+              "imgOnGLC"
             ],
             "clip-content": "false"
           },
           {
-            "id": "lblLateStartOn2No",
+            "id": "txtOnGLC",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -468,16 +476,17 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Late Start",
+            "text-content": "GLC",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
             "text-align-vertical": "center",
+            "text-size": "24.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           },
           {
-            "id": "imgVector1On2No",
+            "id": "imgOnGLC",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -488,15 +497,16 @@
                 "value": "6.0"
               }
             },
-            "vector-content": "img_vector1on2no.svg"
+            "vector-content": "img_on_glc.svg"
           }
         ]
       },
-      "Option=2, visible options=yes_synth": {
+      "optionGLCClicked_synth": {
         "rules": [
           {
             "id": "top_level",
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "stroke-width": "1.0",
             "stroke-color": {
               "alpha": "0.2",
@@ -506,13 +516,13 @@
             },
             "is-structured": "false",
             "children": [
-              "Option=2, visible options=yes",
-              "grpOptionsListOn2Yes"
+              "optionGLCClicked",
+              "optionsListOnGLC"
             ],
             "clip-content": "false"
           },
           {
-            "id": "Option=2, visible options=yes",
+            "id": "optionGLCClicked",
             "opacity": "100.0",
             "padding": {
               "left": "13.0",
@@ -521,6 +531,7 @@
               "bottom": "14.0"
             },
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -534,13 +545,13 @@
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "lblLateStartOn2Yes",
-              "imgVector1On2Yes"
+              "txtOnGLCClicked",
+              "imgOnGLCClicked"
             ],
             "clip-content": "false"
           },
           {
-            "id": "grpOptionsListOn2Yes",
+            "id": "optionsListOnGLC",
             "drop-shadow": {
               "color": {
                 "alpha": "0.24705882352941178",
@@ -575,7 +586,7 @@
             }
           },
           {
-            "id": "lblLateStartOn2Yes",
+            "id": "txtOnGLCClicked",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -591,16 +602,17 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Late Start",
+            "text-content": "GLC",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
             "text-align-vertical": "center",
+            "text-size": "24.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           },
           {
-            "id": "imgVector1On2Yes",
+            "id": "imgOnGLCClicked",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -611,11 +623,11 @@
                 "value": "6.0"
               }
             },
-            "vector-content": "img_vector1on2yes.svg"
+            "vector-content": "img_on_glcclicked.svg"
           }
         ]
       },
-      "Option=3, visible options=no": {
+      "optionOffice": {
         "rules": [
           {
             "id": "top_level",
@@ -626,6 +638,7 @@
               "bottom": "14.0"
             },
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "stroke-width": "1.0",
             "stroke-color": {
               "alpha": "0.2",
@@ -636,13 +649,13 @@
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "lblMinimumOn3No",
-              "imgVector 1"
+              "txtOnOffice",
+              "imgOnOffice"
             ],
             "clip-content": "false"
           },
           {
-            "id": "lblMinimumOn3No",
+            "id": "txtOnOffice",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -658,16 +671,17 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Minimum",
+            "text-content": "Office",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
             "text-align-vertical": "center",
+            "text-size": "24.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           },
           {
-            "id": "imgVector 1",
+            "id": "imgOnOffice",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -678,15 +692,16 @@
                 "value": "6.0"
               }
             },
-            "vector-content": "img_vector_1.svg"
+            "vector-content": "img_on_office.svg"
           }
         ]
       },
-      "Option=3, visible options=yes_synth": {
+      "optionOfficeClicked_synth": {
         "rules": [
           {
             "id": "top_level",
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "stroke-width": "1.0",
             "stroke-color": {
               "alpha": "0.2",
@@ -696,13 +711,13 @@
             },
             "is-structured": "false",
             "children": [
-              "Option=3, visible options=yes",
-              "grpOptionsListOn3Yes"
+              "optionOfficeClicked",
+              "optionsListOnOffice"
             ],
             "clip-content": "false"
           },
           {
-            "id": "Option=3, visible options=yes",
+            "id": "optionOfficeClicked",
             "opacity": "100.0",
             "padding": {
               "left": "13.0",
@@ -711,6 +726,7 @@
               "bottom": "14.0"
             },
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -724,13 +740,13 @@
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "lblMinimumOn3Yes",
-              "imgVector1On3Yes"
+              "txtOnOfficeClicked",
+              "imgOnOfficeClicked"
             ],
             "clip-content": "false"
           },
           {
-            "id": "grpOptionsListOn3Yes",
+            "id": "optionsListOnOffice",
             "drop-shadow": {
               "color": {
                 "alpha": "0.24705882352941178",
@@ -765,7 +781,7 @@
             }
           },
           {
-            "id": "lblMinimumOn3Yes",
+            "id": "txtOnOfficeClicked",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -781,16 +797,17 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Minimum",
+            "text-content": "Office",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
             "text-align-vertical": "center",
+            "text-size": "24.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           },
           {
-            "id": "imgVector1On3Yes",
+            "id": "imgOnOfficeClicked",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -801,11 +818,11 @@
                 "value": "6.0"
               }
             },
-            "vector-content": "img_vector1on3yes.svg"
+            "vector-content": "img_on_office_clicked.svg"
           }
         ]
       },
-      "Option=4, visible options=no": {
+      "optionNurse": {
         "rules": [
           {
             "id": "top_level",
@@ -816,6 +833,7 @@
               "bottom": "14.0"
             },
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "stroke-width": "1.0",
             "stroke-color": {
               "alpha": "0.2",
@@ -826,13 +844,13 @@
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "lblRallyAOn4No",
-              "imgVector1On4No"
+              "txtOnNurse",
+              "imgOnNurse"
             ],
             "clip-content": "false"
           },
           {
-            "id": "lblRallyAOn4No",
+            "id": "txtOnNurse",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -848,16 +866,17 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Rally A",
+            "text-content": "Nurse",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
             "text-align-vertical": "center",
+            "text-size": "24.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           },
           {
-            "id": "imgVector1On4No",
+            "id": "imgOnNurse",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -868,15 +887,16 @@
                 "value": "6.0"
               }
             },
-            "vector-content": "img_vector1on4no.svg"
+            "vector-content": "img_on_nurse.svg"
           }
         ]
       },
-      "Option=4, visible options=yes_synth": {
+      "optionNurseClicked_synth": {
         "rules": [
           {
             "id": "top_level",
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "stroke-width": "1.0",
             "stroke-color": {
               "alpha": "0.2",
@@ -886,13 +906,13 @@
             },
             "is-structured": "false",
             "children": [
-              "Option=4, visible options=yes",
-              "grpOptionsListOn4Yes"
+              "optionNurseClicked",
+              "grpOptionsListOnNurse"
             ],
             "clip-content": "false"
           },
           {
-            "id": "Option=4, visible options=yes",
+            "id": "optionNurseClicked",
             "opacity": "100.0",
             "padding": {
               "left": "13.0",
@@ -901,6 +921,7 @@
               "bottom": "14.0"
             },
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -914,13 +935,13 @@
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "txtRallyAOn4Yes",
-              "imgVector1On4Yes"
+              "txtOptionNurseClicked",
+              "imgOptionNurseClicked"
             ],
             "clip-content": "false"
           },
           {
-            "id": "grpOptionsListOn4Yes",
+            "id": "grpOptionsListOnNurse",
             "drop-shadow": {
               "color": {
                 "alpha": "0.24705882352941178",
@@ -955,7 +976,7 @@
             }
           },
           {
-            "id": "txtRallyAOn4Yes",
+            "id": "txtOptionNurseClicked",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -971,16 +992,17 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Rally A",
+            "text-content": "Nurse",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
             "text-align-vertical": "center",
+            "text-size": "24.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           },
           {
-            "id": "imgVector1On4Yes",
+            "id": "imgOptionNurseClicked",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -991,11 +1013,11 @@
                 "value": "6.0"
               }
             },
-            "vector-content": "img_vector1on4yes.svg"
+            "vector-content": "img_option_nurse_clicked.svg"
           }
         ]
       },
-      "Option=5, visible options=no": {
+      "optionOther": {
         "rules": [
           {
             "id": "top_level",
@@ -1006,6 +1028,7 @@
               "bottom": "14.0"
             },
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "stroke-width": "1.0",
             "stroke-color": {
               "alpha": "0.2",
@@ -1016,13 +1039,13 @@
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "txtRallyBOn5No",
-              "imgVector1On5No"
+              "txtOnOptionOther",
+              "imgOptionOther"
             ],
             "clip-content": "false"
           },
           {
-            "id": "txtRallyBOn5No",
+            "id": "txtOnOptionOther",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -1038,16 +1061,17 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Rally B",
+            "text-content": "Other",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
             "text-align-vertical": "center",
+            "text-size": "24.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           },
           {
-            "id": "imgVector1On5No",
+            "id": "imgOptionOther",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -1058,15 +1082,16 @@
                 "value": "6.0"
               }
             },
-            "vector-content": "img_vector1on5no.svg"
+            "vector-content": "img_option_other.svg"
           }
         ]
       },
-      "Option=5, visible options=yes_synth": {
+      "optionOtherClicked_synth": {
         "rules": [
           {
             "id": "top_level",
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "stroke-width": "1.0",
             "stroke-color": {
               "alpha": "0.2",
@@ -1076,13 +1101,13 @@
             },
             "is-structured": "false",
             "children": [
-              "Option=5, visible options=yes",
-              "grpOptionsListOn5Yes"
+              "optionOtherClicked",
+              "grpOptionsListOnOther"
             ],
             "clip-content": "false"
           },
           {
-            "id": "Option=5, visible options=yes",
+            "id": "optionOtherClicked",
             "opacity": "100.0",
             "padding": {
               "left": "13.0",
@@ -1091,6 +1116,7 @@
               "bottom": "14.0"
             },
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -1104,13 +1130,13 @@
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "lblRallyBOn5Yes",
-              "imgVector1On5Yes"
+              "txtOptionOtherClicked",
+              "imgOptionOtherClicked"
             ],
             "clip-content": "false"
           },
           {
-            "id": "grpOptionsListOn5Yes",
+            "id": "grpOptionsListOnOther",
             "drop-shadow": {
               "color": {
                 "alpha": "0.24705882352941178",
@@ -1145,7 +1171,7 @@
             }
           },
           {
-            "id": "lblRallyBOn5Yes",
+            "id": "txtOptionOtherClicked",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -1161,16 +1187,17 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Rally B",
+            "text-content": "Other",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
             "text-align-vertical": "center",
+            "text-size": "24.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           },
           {
-            "id": "imgVector1On5Yes",
+            "id": "imgOptionOtherClicked",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -1181,15 +1208,16 @@
                 "value": "6.0"
               }
             },
-            "vector-content": "img_vector1on5yes.svg"
+            "vector-content": "img_option_other_clicked.svg"
           }
         ]
       },
-      "Option=default, visible options=yes_synth": {
+      "optionReasonClicked_synth": {
         "rules": [
           {
             "id": "top_level",
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "stroke-width": "1.0",
             "stroke-color": {
               "alpha": "0.2",
@@ -1199,13 +1227,13 @@
             },
             "is-structured": "false",
             "children": [
-              "Option=default, visible options=yes",
-              "grpOptionsListOnDefaultYes"
+              "optionReasonClicked",
+              "optionsListOnReasonClicked"
             ],
             "clip-content": "false"
           },
           {
-            "id": "Option=default, visible options=yes",
+            "id": "optionReasonClicked",
             "opacity": "100.0",
             "padding": {
               "left": "13.0",
@@ -1214,6 +1242,7 @@
               "bottom": "14.0"
             },
             "border-radius": "10.0",
+            "tap-handler": "$on optionReason tapped",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -1227,13 +1256,13 @@
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "lblBoxOnDefaultYes",
-              "imgVector1OnDefaultYes"
+              "txtOnReasonClicked",
+              "imgOnReasonClicked"
             ],
             "clip-content": "false"
           },
           {
-            "id": "grpOptionsListOnDefaultYes",
+            "id": "optionsListOnReasonClicked",
             "drop-shadow": {
               "color": {
                 "alpha": "0.24705882352941178",
@@ -1268,11 +1297,11 @@
             }
           },
           {
-            "id": "lblBoxOnDefaultYes",
+            "id": "txtOnReasonClicked",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "165.0"
+                "value": "223.0"
               },
               "height-constraints": {
                 "sizing-mode": "shrink"
@@ -1284,16 +1313,17 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Select the Schedule",
+            "text-content": "Select the Reason",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align": "left",
             "text-align-vertical": "center",
+            "text-size": "24.0",
             "line-height": "1.5",
             "typeface": "Poppins"
           },
           {
-            "id": "imgVector1OnDefaultYes",
+            "id": "imgOnReasonClicked",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -1304,92 +1334,99 @@
                 "value": "6.0"
               }
             },
-            "vector-content": "img_vector1on_default_yes.svg"
+            "vector-content": "img_on_reason_clicked.svg"
           }
         ]
       }
     }
   },
+  "parameters": {
+    "on optionReason tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
   "previews": [
     {
-      "design": "Option=default, visible options=no",
+      "design": "optionReason",
       "size": {
         "width": 260.0,
         "height": 42.0
       }
     },
     {
-      "design": "Option=1, visible options=no",
+      "design": "optionBathroom",
       "size": {
         "width": 260.0,
         "height": 42.0
       }
     },
     {
-      "design": "Option=1, visible options=yes_synth",
+      "design": "optionBathroomClicked_synth",
       "size": {
         "width": 260.0,
         "height": 42.0
       }
     },
     {
-      "design": "Option=2, visible options=no",
+      "design": "optionGLC",
       "size": {
         "width": 260.0,
         "height": 42.0
       }
     },
     {
-      "design": "Option=2, visible options=yes_synth",
+      "design": "optionGLCClicked_synth",
       "size": {
         "width": 260.0,
         "height": 42.0
       }
     },
     {
-      "design": "Option=3, visible options=no",
+      "design": "optionOffice",
       "size": {
         "width": 260.0,
         "height": 42.0
       }
     },
     {
-      "design": "Option=3, visible options=yes_synth",
+      "design": "optionOfficeClicked_synth",
       "size": {
         "width": 260.0,
         "height": 42.0
       }
     },
     {
-      "design": "Option=4, visible options=no",
+      "design": "optionNurse",
       "size": {
         "width": 260.0,
         "height": 42.0
       }
     },
     {
-      "design": "Option=4, visible options=yes_synth",
+      "design": "optionNurseClicked_synth",
       "size": {
         "width": 260.0,
         "height": 42.0
       }
     },
     {
-      "design": "Option=5, visible options=no",
+      "design": "optionOther",
       "size": {
         "width": 260.0,
         "height": 42.0
       }
     },
     {
-      "design": "Option=5, visible options=yes_synth",
+      "design": "optionOtherClicked_synth",
       "size": {
         "width": 260.0,
         "height": 42.0
       }
     },
     {
-      "design": "Option=default, visible options=yes_synth",
+      "design": "optionReasonClicked_synth",
       "size": {
         "width": 260.0,
         "height": 42.0
