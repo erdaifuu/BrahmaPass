@@ -1,16 +1,23 @@
 package com.example.brahmapassv3
 
 import android.widget.Toast
+import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.unit.DpOffset
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.brahmapassv3.scnhome.ScnHome
-//import com.example.brahmapassv3.scnlogin.ScnLogin
+import com.example.brahmapassv3.scnlogin.BtnLoginButtonOnLoginInstance
+import com.example.brahmapassv3.screens.HomeScreen
+import com.example.brahmapassv3.screens.LoginScreen
+import com.google.relay.compose.BoxScopeInstance.boxAlign
 
 //https://www.youtube.com/watch?v=4gUeyNkGE3g
 @Composable
@@ -31,39 +38,10 @@ fun Navigation() {
                 }
             )
         ) { entry ->
-            HomeScreen(name = entry.arguments?.getString("name"), navController = navController)
+            HomeScreen(navController = navController)
+            //name = entry.arguments?.getString("name"),
         }
     }
-}
-
-@Composable
-fun LoginScreen(navController: NavController) {
-    val context = LocalContext.current
-    /*
-    ScnLogin(
-        //onGrpLoginButtonOnLoginTapped = {navController.navigate("second/$text") },
-        //TODO: figure out what the fuck this is
-        onGrpLoginButtonOnLoginTapped = {
-            Toast.makeText(context, "Welcome in!", Toast.LENGTH_LONG).show()
-            // You can also do Screen.HomeScreen.route, but with withArgs() defined in the screens
-            // class, you could pass args THROUGH the routes like the name in this case which
-            // can be picked up by home screen and used as shown below.
-            navController.navigate(Screen.HomeScreen.route)
-            // You can just pass the TEXT BOX CONTENT into the args, or just a default string.
-        },
-        txtEmailExampleOnEmailTextContent = "hello",
-        txtEnterYourPasswordOnLoginTextContent = "world")
-*/
-}
-
-@Composable
-fun HomeScreen(name: String?, navController: NavController) {
-    /*
-    ScnHome(
-        txtEnterIDOnHomeTextContent = "Hi, $name!",
-        txtEnterReasonOnHomeTextContent = "What's up")
-
-     */
 }
 
 

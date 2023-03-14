@@ -64,6 +64,7 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$composeVer"
     debugImplementation "androidx.compose.ui:ui-tooling:$composeVer"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$composeVer"
+    implementation 'androidx.compose.material3:material3-window-size-class:1.0.1'
 
     def nav_version = "2.5.3"
 
