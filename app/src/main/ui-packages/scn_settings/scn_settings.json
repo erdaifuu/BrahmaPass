@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "113:352",
-    "version": "3166801966",
+    "version": "3174017321",
     "component-id": "8db0bf24dca837e79b971c088457359622507a47"
   },
   "default": "scnSettings",
@@ -22,17 +22,17 @@
       },
       {
         "type": "adin_component",
-        "id": "lblBrahmaPassTopBar",
+        "id": "lblBrahmaPassTopBarOnSettings",
         "key": "lbl_brahma_pass_top_bar"
       },
       {
         "type": "adin_component",
-        "id": "bkgBottomBar",
+        "id": "bkgBottomBarOnSettings",
         "key": "bkg_bottom_bar"
       },
       {
         "type": "adin_component",
-        "id": "imgBackArrow",
+        "id": "imgBackArrowOnSettings",
         "key": "img_back_arrow"
       },
       {
@@ -47,7 +47,7 @@
       },
       {
         "type": "adin_component",
-        "id": "grpNotifications",
+        "id": "grpNotificationsOnSettings",
         "key": "grp_notifications"
       }
     ],
@@ -59,12 +59,12 @@
             "is-structured": "false",
             "children": [
               "lblSettingsTitleOnSettings",
-              "lblBrahmaPassTopBar",
-              "bkgBottomBar",
-              "imgBackArrow",
+              "lblBrahmaPassTopBarOnSettings",
+              "bkgBottomBarOnSettings",
+              "imgBackArrowOnSettings",
               "grpLogoutOnSettings",
               "imgSettingsonSettings",
-              "grpNotifications"
+              "grpNotificationsOnSettings"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -99,7 +99,7 @@
             "typeface": "Poppins"
           },
           {
-            "id": "lblBrahmaPassTopBar",
+            "id": "lblBrahmaPassTopBarOnSettings",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -112,7 +112,7 @@
             }
           },
           {
-            "id": "bkgBottomBar",
+            "id": "bkgBottomBarOnSettings",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
@@ -135,7 +135,7 @@
             }
           },
           {
-            "id": "imgBackArrow",
+            "id": "imgBackArrowOnSettings",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
@@ -204,7 +204,7 @@
             }
           },
           {
-            "id": "grpNotifications",
+            "id": "grpNotificationsOnSettings",
             "alignment": {
               "horizontal": {
                 "attachment": "start",

@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "111:241",
-    "version": "3166801966",
+    "version": "3174017321",
     "component-id": "c50544f50f68c86bec602960acc3a1180a89b57d"
   },
   "default": "scnStudentHome",
@@ -26,7 +26,7 @@
       },
       {
         "type": "adin_component",
-        "id": "bkgBottomBar",
+        "id": "bkgBottomBarOnStudentHome",
         "key": "bkg_bottom_bar"
       },
       {
@@ -47,17 +47,12 @@
       {
         "type": "adin_component",
         "id": "lblHomeSubtitleOnStudentHome",
-        "key": "lbl_home_subtitle_on_home"
+        "key": "lbl_home_subtitle_on_student_home"
       },
       {
         "type": "adin_component",
-        "id": "lblBrahmaPassTopBar",
+        "id": "lblBrahmaPassTopBarOnStudentHome",
         "key": "lbl_brahma_pass_top_bar"
-      },
-      {
-        "type": "adin_component",
-        "id": "txtOnStudentHome",
-        "key": "grp_idon_student_home"
       },
       {
         "type": "text",
@@ -65,8 +60,18 @@
       },
       {
         "type": "adin_component",
-        "id": "ddVariantGroup",
+        "id": "ddVariantGroupOnStudentHome",
         "key": "dd_variant_group"
+      },
+      {
+        "type": "adin_component",
+        "id": "txtEnterIDOnStudentHome",
+        "key": "txt_enter_idon_student_home"
+      },
+      {
+        "type": "adin_component",
+        "id": "bkgIDOnStudentHome",
+        "key": "bkg_idon_student_home"
       }
     ],
     "modes": {
@@ -78,15 +83,16 @@
             "children": [
               "lblTimeSubtitleOnStudentHome",
               "imgClockOnStudentHome",
-              "bkgBottomBar",
+              "bkgBottomBarOnStudentHome",
               "imgHomeOnStudentHome",
               "btnCreateHallpassOnStudentHome",
               "txtTimeOnStudentHome",
               "lblHomeSubtitleOnStudentHome",
-              "lblBrahmaPassTopBar",
-              "txtOnStudentHome",
+              "lblBrahmaPassTopBarOnStudentHome",
               "lblReasonOnStudentHome",
-              "ddVariantGroup"
+              "ddVariantGroupOnStudentHome",
+              "txtEnterIDOnStudentHome",
+              "bkgIDOnStudentHome"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -150,7 +156,7 @@
             "vector-content": "img_clock_on_student_home.svg"
           },
           {
-            "id": "bkgBottomBar",
+            "id": "bkgBottomBarOnStudentHome",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
@@ -267,7 +273,7 @@
             }
           },
           {
-            "id": "lblBrahmaPassTopBar",
+            "id": "lblBrahmaPassTopBarOnStudentHome",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -276,30 +282,6 @@
               "height-constraints": {
                 "sizing-mode": "fixed",
                 "value": "71.0"
-              }
-            }
-          },
-          {
-            "id": "txtOnStudentHome",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "53.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "298.0"
-              }
-            },
-            "Text Input For ID": "Enter Your ID...",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "374.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "92.0"
               }
             }
           },
@@ -335,7 +317,7 @@
             "typeface": "Poppins"
           },
           {
-            "id": "ddVariantGroup",
+            "id": "ddVariantGroupOnStudentHome",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
@@ -355,6 +337,53 @@
               "height-constraints": {
                 "sizing-mode": "fixed",
                 "value": "42.0"
+              }
+            }
+          },
+          {
+            "id": "txtEnterIDOnStudentHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "72.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "309.0"
+              }
+            },
+            "Enter ID On Student Home": "Enter Your ID...",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "340.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "64.0"
+              }
+            }
+          },
+          {
+            "id": "bkgIDOnStudentHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "57.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "300.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "374.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "92.0"
               }
             }
           }

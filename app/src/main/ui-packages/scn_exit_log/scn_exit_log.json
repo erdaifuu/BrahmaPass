@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "113:349",
-    "version": "3166801966",
+    "version": "3174017321",
     "component-id": "074fc1d0bbe50893cecde4303c78f623f44397b4"
   },
   "default": "scnExitLog",
@@ -31,12 +31,12 @@
       },
       {
         "type": "adin_component",
-        "id": "lblBrahmaPassTopBar",
+        "id": "lblBrahmaPassTopBarOnExitLog",
         "key": "lbl_brahma_pass_top_bar"
       },
       {
         "type": "adin_component",
-        "id": "bkgBottomBar",
+        "id": "bkgBottomBarOnExitLog",
         "key": "bkg_bottom_bar"
       },
       {
@@ -46,7 +46,7 @@
       },
       {
         "type": "adin_component",
-        "id": "imgBackArrow",
+        "id": "imgBackArrowOnExitLog",
         "key": "img_back_arrow"
       },
       {
@@ -65,10 +65,10 @@
               "imgExitLog",
               "lblBrahmaPassOnExitLog",
               "lblTitleOnExitLog",
-              "lblBrahmaPassTopBar",
-              "bkgBottomBar",
+              "lblBrahmaPassTopBarOnExitLog",
+              "bkgBottomBarOnExitLog",
               "imgExitLogOnExitLog",
-              "imgBackArrow",
+              "imgBackArrowOnExitLog",
               "tblExitLogOnExitLog"
             ],
             "background-color": {
@@ -164,7 +164,7 @@
             "typeface": "Poppins"
           },
           {
-            "id": "lblBrahmaPassTopBar",
+            "id": "lblBrahmaPassTopBarOnExitLog",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -177,7 +177,7 @@
             }
           },
           {
-            "id": "bkgBottomBar",
+            "id": "bkgBottomBarOnExitLog",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
@@ -223,7 +223,7 @@
             }
           },
           {
-            "id": "imgBackArrow",
+            "id": "imgBackArrowOnExitLog",
             "alignment": {
               "horizontal": {
                 "attachment": "start",

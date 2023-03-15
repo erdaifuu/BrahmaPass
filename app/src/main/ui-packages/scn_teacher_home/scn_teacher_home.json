@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "247:308",
-    "version": "3166801966",
+    "version": "3174017321",
     "component-id": "766a3ee8718dd1c7bc26beadb20fc396b4e9e0e6"
   },
   "default": "scnTeacherHome",
@@ -19,11 +19,11 @@
       {
         "type": "adin_component",
         "id": "lblHomeSubtitleOnTeacherHome",
-        "key": "lbl_home_subtitle_on_home"
+        "key": "lbl_home_subtitle_on_student_home"
       },
       {
         "type": "adin_component",
-        "id": "bkgBottomBar",
+        "id": "bkgBottomBarOnTeacherHome",
         "key": "bkg_bottom_bar"
       },
       {
@@ -43,7 +43,7 @@
       },
       {
         "type": "adin_component",
-        "id": "lblBrahmaPassTopBar",
+        "id": "lblBrahmaPassTopBarOnTeacherHome",
         "key": "lbl_brahma_pass_top_bar"
       }
     ],
@@ -55,11 +55,11 @@
             "is-structured": "false",
             "children": [
               "lblHomeSubtitleOnTeacherHome",
-              "bkgBottomBar",
+              "bkgBottomBarOnTeacherHome",
               "imgHomeOnTeacherHome",
               "imgSettingsOnTeacherHome",
               "imgExitLogOnTeacherHome",
-              "lblBrahmaPassTopBar"
+              "lblBrahmaPassTopBarOnTeacherHome"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -93,7 +93,7 @@
             }
           },
           {
-            "id": "bkgBottomBar",
+            "id": "bkgBottomBarOnTeacherHome",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
@@ -185,7 +185,7 @@
             }
           },
           {
-            "id": "lblBrahmaPassTopBar",
+            "id": "lblBrahmaPassTopBarOnTeacherHome",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",

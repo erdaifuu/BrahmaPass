@@ -1,14 +1,14 @@
 {
-  "name": "lbl_home_subtitle_on_home",
+  "name": "bkg_idon_student_home",
   "version": 32,
   "source-key": {
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
-    "node": "229:180",
-    "version": "3166801966",
-    "component-id": "eb773a33a357ed9ca58f636f77517c4bf6df0606"
+    "node": "229:167",
+    "version": "3174017321",
+    "component-id": "12620d79ef2bde7115355bfe2e6815ea930324db"
   },
-  "default": "lblHomeSubtitleOnHome",
+  "default": "bkgIDOnStudentHome",
   "design": {
     "atoms": [
       {
@@ -17,23 +17,24 @@
         "root": "true"
       },
       {
-        "type": "text",
-        "id": "lblHomeSubtitleOnHome"
+        "type": "vector",
+        "id": "bkgEnterIDOnHome"
       }
     ],
     "modes": {
-      "lblHomeSubtitleOnHome": {
+      "bkgIDOnStudentHome": {
         "rules": [
           {
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "lblHomeSubtitleOnHome"
+              "bkgEnterIDOnHome"
             ],
             "clip-content": "false"
           },
           {
-            "id": "lblHomeSubtitleOnHome",
+            "id": "bkgEnterIDOnHome",
+            "border-radius": "10.0",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -44,36 +45,18 @@
                 "value": "1.0"
               }
             },
-            "font-weight": "500.0",
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Home",
-            "overflow": "visible",
-            "text-size": "36.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
+            "vector-content": "bkg_enter_idon_home.svg"
           }
         ]
       }
     }
   },
-  "parameters": {
-    "Home/Teacher Display": {
-      "data-type": "text",
-      "required": false,
-      "description": ""
-    }
-  },
   "previews": [
     {
-      "design": "lblHomeSubtitleOnHome",
+      "design": "bkgIDOnStudentHome",
       "size": {
-        "width": 108.0,
-        "height": 54.0
+        "width": 374.0,
+        "height": 92.0
       }
     }
   ],

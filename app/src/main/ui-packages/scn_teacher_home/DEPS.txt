@@ -1,4 +1,4 @@
-lbl_home_subtitle_on_home
+lbl_home_subtitle_on_student_home
 bkg_bottom_bar
 img_home
 img_settings

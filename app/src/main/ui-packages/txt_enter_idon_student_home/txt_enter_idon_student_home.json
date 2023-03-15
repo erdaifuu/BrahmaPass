@@ -1,0 +1,88 @@
+{
+  "name": "txt_enter_idon_student_home",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "266:169",
+    "version": "3174017321",
+    "component-id": "8212da49ed8c045411cf01b69446c29243af7742"
+  },
+  "default": "txtEnterIDOnStudentHome",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "txtEnterIDOnStudentHome"
+      }
+    ],
+    "modes": {
+      "txtEnterIDOnStudentHome": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "txtEnterIDOnStudentHome"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "txtEnterIDOnStudentHome",
+            "margin": {
+              "top": "4.6376953125"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "0.6980392156862745",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Enter Your ID...",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "48.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "Enter ID On Student Home": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "txtEnterIDOnStudentHome",
+      "size": {
+        "width": 340.0,
+        "height": 64.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

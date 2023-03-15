@@ -3,3 +3,5 @@ grp_checkbox_variants
 grp_password_on_login
 grp_eyecon_variants
 grp_email_on_login
+txt_enter_your_password_on_login
+txt_email_on_login

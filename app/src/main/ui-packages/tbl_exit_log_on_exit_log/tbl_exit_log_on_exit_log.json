@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "231:221",
-    "version": "3166801966",
+    "version": "3174017321",
     "component-id": "b7be2895066a24b195449ca7d3fa944d376e447c"
   },
   "default": "tblExitLogOnExitLog",
@@ -485,7 +485,7 @@
             "margin": {
               "left": "6.6669921875",
               "top": "15.001220703125",
-              "right": "2.50042724609375",
+              "right": "2.500457763671875",
               "bottom": "5.00048828125"
             },
             "size-constraints": {
@@ -523,7 +523,7 @@
             "margin": {
               "left": "6.6669921875",
               "top": "10.0008544921875",
-              "right": "2.50042724609375",
+              "right": "2.500457763671875",
               "bottom": "10.0008544921875"
             },
             "size-constraints": {
@@ -561,7 +561,7 @@
             "margin": {
               "left": "6.6669921875",
               "top": "5.0006103515625",
-              "right": "2.50042724609375",
+              "right": "2.500457763671875",
               "bottom": "15.0010986328125"
             },
             "size-constraints": {
