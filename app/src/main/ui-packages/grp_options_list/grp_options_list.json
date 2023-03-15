@@ -1,0 +1,151 @@
+{
+  "name": "grp_options_list",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "260:171",
+    "version": "3174017321",
+    "component-id": "048ece0653c6e24b93fa2bed75c7bcb9329f08da"
+  },
+  "default": "grpOptionsList",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "BathroomOnOptionsList",
+        "key": "grp_option_variants"
+      },
+      {
+        "type": "adin_component",
+        "id": "GLCOnOptionsList",
+        "key": "grp_option_variants"
+      },
+      {
+        "type": "adin_component",
+        "id": "OfficeOnOptionsList",
+        "key": "grp_option_variants"
+      },
+      {
+        "type": "adin_component",
+        "id": "NurseOnOptionsList",
+        "key": "grp_option_variants"
+      },
+      {
+        "type": "adin_component",
+        "id": "OtherOnOptionsList",
+        "key": "grp_option_variants"
+      }
+    ],
+    "modes": {
+      "grpOptionsList": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "BathroomOnOptionsList",
+              "GLCOnOptionsList",
+              "OfficeOnOptionsList",
+              "NurseOnOptionsList",
+              "OtherOnOptionsList"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "BathroomOnOptionsList",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "37.0"
+              }
+            }
+          },
+          {
+            "id": "GLCOnOptionsList",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            }
+          },
+          {
+            "id": "OfficeOnOptionsList",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "37.0"
+              }
+            }
+          },
+          {
+            "id": "NurseOnOptionsList",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            }
+          },
+          {
+            "id": "OtherOnOptionsList",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "37.0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "grpOptionsList",
+      "size": {
+        "width": 148.0,
+        "height": 187.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

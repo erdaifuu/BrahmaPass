@@ -1,0 +1,73 @@
+{
+  "name": "img_settings",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "229:192",
+    "version": "3174017321",
+    "component-id": "b2193f5b7a2a8249931d5ed550a884539cac74a9"
+  },
+  "default": "imgSettings",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "imgSettings"
+      }
+    ],
+    "modes": {
+      "imgSettings": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$on imgSettingsIconOnHome tapped",
+            "is-structured": "false",
+            "children": [
+              "imgSettings"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "imgSettings",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "img_settings.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on imgSettingsIconOnHome tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "imgSettings",
+      "size": {
+        "width": 40.0,
+        "height": 40.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

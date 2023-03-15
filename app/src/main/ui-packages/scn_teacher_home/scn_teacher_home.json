@@ -1,0 +1,216 @@
+{
+  "name": "scn_teacher_home",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "247:308",
+    "version": "3174017321",
+    "component-id": "766a3ee8718dd1c7bc26beadb20fc396b4e9e0e6"
+  },
+  "default": "scnTeacherHome",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "lblHomeSubtitleOnTeacherHome",
+        "key": "lbl_home_subtitle_on_student_home"
+      },
+      {
+        "type": "adin_component",
+        "id": "bkgBottomBarOnTeacherHome",
+        "key": "bkg_bottom_bar"
+      },
+      {
+        "type": "adin_component",
+        "id": "imgHomeOnTeacherHome",
+        "key": "img_home"
+      },
+      {
+        "type": "adin_component",
+        "id": "imgSettingsOnTeacherHome",
+        "key": "img_settings"
+      },
+      {
+        "type": "adin_component",
+        "id": "imgExitLogOnTeacherHome",
+        "key": "img_exit_log"
+      },
+      {
+        "type": "adin_component",
+        "id": "lblBrahmaPassTopBarOnTeacherHome",
+        "key": "lbl_brahma_pass_top_bar"
+      }
+    ],
+    "modes": {
+      "scnTeacherHome": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "lblHomeSubtitleOnTeacherHome",
+              "bkgBottomBarOnTeacherHome",
+              "imgHomeOnTeacherHome",
+              "imgSettingsOnTeacherHome",
+              "imgExitLogOnTeacherHome",
+              "lblBrahmaPassTopBarOnTeacherHome"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "lblHomeSubtitleOnTeacherHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "186.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "81.0"
+              }
+            },
+            "Home/Teacher Display": "Home",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "108.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "54.0"
+              }
+            }
+          },
+          {
+            "id": "bkgBottomBarOnTeacherHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "729.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "480.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "71.0"
+              }
+            }
+          },
+          {
+            "id": "imgHomeOnTeacherHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "223.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "745.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            }
+          },
+          {
+            "id": "imgSettingsOnTeacherHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "84.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "745.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            }
+          },
+          {
+            "id": "imgExitLogOnTeacherHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "363.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "745.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "35.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            }
+          },
+          {
+            "id": "lblBrahmaPassTopBarOnTeacherHome",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "480.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "71.0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "scnTeacherHome",
+      "size": {
+        "width": 480.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

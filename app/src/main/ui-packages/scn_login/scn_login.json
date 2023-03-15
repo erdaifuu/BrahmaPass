@@ -1,0 +1,368 @@
+{
+  "name": "scn_login",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "yXddnwgmFl7Vofw9CT9Uy6",
+    "node": "111:237",
+    "version": "3174017321",
+    "component-id": "2c45527b306265a134d5ad2a8fda15c34db2ee2e"
+  },
+  "default": "scnLogin",
+  "documentation": "Login Screen for BrahmaPass",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "btnLoginButtonOnLogin",
+        "key": "btn_login_button_on_login"
+      },
+      {
+        "type": "adin_component",
+        "id": "grpCheckboxVariantsOnLogin",
+        "key": "grp_checkbox_variants"
+      },
+      {
+        "type": "text",
+        "id": "lblRememberMeOnLogin"
+      },
+      {
+        "type": "adin_component",
+        "id": "grpPasswordOnLogin",
+        "key": "grp_password_on_login"
+      },
+      {
+        "type": "adin_component",
+        "id": "grpEyeconVariants",
+        "key": "grp_eyecon_variants"
+      },
+      {
+        "type": "adin_component",
+        "id": "grpEmailOnLogin",
+        "key": "grp_email_on_login"
+      },
+      {
+        "type": "image",
+        "id": "imgBrahmaOnLogin"
+      },
+      {
+        "type": "text",
+        "id": "lblBrahmaPassOnLogin"
+      },
+      {
+        "type": "adin_component",
+        "id": "txtEnterYourPasswordOnLogin",
+        "key": "txt_enter_your_password_on_login"
+      },
+      {
+        "type": "adin_component",
+        "id": "txtEmailOnLogin",
+        "key": "txt_email_on_login"
+      }
+    ],
+    "modes": {
+      "scnLogin": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "btnLoginButtonOnLogin",
+              "grpCheckboxVariantsOnLogin",
+              "lblRememberMeOnLogin",
+              "grpPasswordOnLogin",
+              "grpEyeconVariants",
+              "grpEmailOnLogin",
+              "imgBrahmaOnLogin",
+              "lblBrahmaPassOnLogin",
+              "txtEnterYourPasswordOnLogin",
+              "txtEmailOnLogin"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "btnLoginButtonOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "53.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "536.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "374.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            }
+          },
+          {
+            "id": "grpCheckboxVariantsOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "187.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "449.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            }
+          },
+          {
+            "id": "lblRememberMeOnLogin",
+            "margin": {
+              "left": "64.0",
+              "top": "446.0",
+              "right": "303.0",
+              "bottom": "325.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "204.0",
+              "saturation": "1.0",
+              "value": "0.0784313725490196"
+            },
+            "text-content": "Remember Me",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "grpPasswordOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "53.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "347.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "374.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "75.0"
+              }
+            }
+          },
+          {
+            "id": "grpEyeconVariants",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "395.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "390.0"
+              }
+            },
+            "design": "Property 1=Closed",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.580001831054688"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              }
+            }
+          },
+          {
+            "id": "grpEmailOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "53.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "244.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "374.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "79.0"
+              }
+            }
+          },
+          {
+            "id": "imgBrahmaOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "187.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "125.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "105.38642120361328"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "75.0"
+              }
+            },
+            "image-content": "img_brahma_on_login.png",
+            "scale": "cover"
+          },
+          {
+            "id": "lblBrahmaPassOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "72.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "266.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "BrahmaPass",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "40.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "txtEnterYourPasswordOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "63.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "386.0"
+              }
+            },
+            "Enter Password Input on Login": "Enter Your Password",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "309.26922607421875"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            }
+          },
+          {
+            "id": "txtEmailOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "64.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "287.0"
+              }
+            },
+            "Enter Email Input on Login": "Enter Your Email",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "310.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "scnLogin",
+      "size": {
+        "width": 480.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
