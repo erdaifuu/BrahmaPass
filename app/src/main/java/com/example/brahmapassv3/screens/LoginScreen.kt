@@ -1,8 +1,6 @@
 package com.example.brahmapassv3.screens
 
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -17,58 +15,49 @@ import com.google.relay.compose.BoxScopeInstance.boxAlign
 import com.google.relay.compose.BoxScopeInstance.columnWeight
 import com.google.relay.compose.BoxScopeInstance.rowWeight
 
+
+//windowSizeClass: WindowSizeClass
 @Composable
 fun LoginScreen(navController: NavController) {
     val context = LocalContext.current
     Box(modifier = Modifier.fillMaxSize()){
 
     }
-    BtnLoginButtonOnLoginInstance(
-        modifier = Modifier.boxAlign(
-            alignment = Alignment.TopStart,
-            offset = DpOffset(
-                x = 0.dp,
-                y = 536.0.dp
-            )
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        GrpEmailOnLoginInstance(
+            modifier = Modifier.padding(16.dp)
         )
-    )
-    GrpCheckboxVariantsOnLogin(
-        modifier = Modifier.boxAlign(
-            alignment = Alignment.TopStart,
-            offset = DpOffset(
-                x = 0.dp,
-                y = 449.0.dp
+
+        Row(modifier = Modifier.padding(16.dp
+        )) {
+            GrpPasswordOnLoginInstance(
+
             )
+
+            GrpEyeconVariantsInstance()
+        }
+
+        BtnLoginButtonOnLoginInstance(
+            modifier = Modifier.padding(16.dp)
         )
-    )
-    LblRememberMeOnLogin(modifier = Modifier.rowWeight(1.0f).columnWeight(1.0f))
-    GrpPasswordOnLoginInstance(
-        modifier = Modifier.boxAlign(
-            alignment = Alignment.TopStart,
-            offset = DpOffset(
-                x = 0.dp,
-                y = 347.0.dp
-            )
+    }
+
+    Row(
+        verticalAlignment = Alignment.Top
+    ) {
+        LblRememberMeOnLogin(
+
         )
-    )
-    GrpEyeconVariantsInstance(
-        modifier = Modifier.boxAlign(
-            alignment = Alignment.TopStart,
-            offset = DpOffset(
-                x = 0.dp,
-                y = 390.0.dp
-            )
+
+        GrpCheckboxVariantsOnLogin(
+            modifier = Modifier.padding(16.dp)
         )
-    )
-    GrpEmailOnLoginInstance(
-        modifier = Modifier.boxAlign(
-            alignment = Alignment.TopStart,
-            offset = DpOffset(
-                x = 0.dp,
-                y = 244.0.dp
-            )
-        )
-    )
+    }
+
     ImgBrahmaOnLogin(
         modifier = Modifier.boxAlign(
             alignment = Alignment.TopStart,
@@ -94,6 +83,7 @@ fun LoginScreen(navController: NavController) {
 fun LoginScreenPreview() {
     LoginScreen(navController = rememberNavController())
 }
+
 
 /*
 ScnLogin(
