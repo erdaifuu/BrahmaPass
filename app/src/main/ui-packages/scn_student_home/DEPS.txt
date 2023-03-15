@@ -1,8 +1,0 @@
-bkg_bottom_bar
-img_home
-btn_create_hallpass_on_home
-txt_time
-lbl_home_subtitle_on_home
-lbl_brahma_pass_top_bar
-grp_idon_student_home
-dd_variant_group

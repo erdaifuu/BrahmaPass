@@ -1,5 +1,0 @@
-img_exit_log
-lbl_brahma_pass_top_bar
-bkg_bottom_bar
-img_back_arrow
-tbl_exit_log_on_exit_log

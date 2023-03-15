@@ -15,7 +15,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.brahmapassv3.scnlogin.BtnLoginButtonOnLoginInstance
-import com.example.brahmapassv3.screens.HomeScreen
+import com.example.brahmapassv3.screens.StudentHomeScreen
 import com.example.brahmapassv3.screens.LoginScreen
 import com.google.relay.compose.BoxScopeInstance.boxAlign
 
@@ -38,7 +38,7 @@ fun Navigation() {
                 }
             )
         ) { entry ->
-            HomeScreen(navController = navController)
+            StudentHomeScreen(navController = navController)
             //name = entry.arguments?.getString("name"),
         }
     }
