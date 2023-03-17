@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "223:185",
-    "version": "3174017321",
+    "version": "3186889537",
     "component-id": "a62205070f860017ee55cd2dd572b149c65b63e4"
   },
   "default": "grpEmailOnLogin",
@@ -23,6 +23,11 @@
       {
         "type": "text",
         "id": "txtEmailOnEmail"
+      },
+      {
+        "type": "adin_component",
+        "id": "txtEmailOnLogin",
+        "key": "txt_email_on_login"
       }
     ],
     "modes": {
@@ -33,7 +38,8 @@
             "is-structured": "false",
             "children": [
               "bkgBoxOnEmail",
-              "txtEmailOnEmail"
+              "txtEmailOnEmail",
+              "txtEmailOnLogin"
             ],
             "clip-content": "false"
           },
@@ -83,6 +89,16 @@
             "text-size": "16.0",
             "line-height": "1.5",
             "typeface": "Poppins"
+          },
+          {
+            "id": "txtEmailOnLogin",
+            "margin": {
+              "left": "11.0",
+              "top": "43.0",
+              "right": "53.0",
+              "bottom": "12.0"
+            },
+            "Enter Email Input on Login": "Enter Your Email"
           }
         ]
       }
