@@ -1,5 +1,7 @@
 package com.example.brahmapassv3.screens
 
+import android.widget.Toast
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -32,14 +34,7 @@ fun LoginScreen(navController: NavController) {
             modifier = Modifier.padding(16.dp)
         )
 
-        Row(modifier = Modifier.padding(16.dp
-        )) {
-            GrpPasswordOnLoginInstance(
-
-            )
-
-            GrpEyeconVariantsInstance()
-        }
+        PasswordTextBox()
 
         BtnLoginButtonOnLoginInstance(
             modifier = Modifier.padding(16.dp)
@@ -82,6 +77,32 @@ fun LoginScreen(navController: NavController) {
 @Composable
 fun LoginScreenPreview() {
     LoginScreen(navController = rememberNavController())
+}
+
+@Composable
+fun PasswordTextBox() {
+    var con = LocalContext.current;
+    Box(
+        modifier = Modifier.padding(16.dp)
+    ) {
+        GrpPasswordOnLoginInstance()
+        TxtEnterYourPasswordOnLoginInstance(
+            modifier = Modifier
+                .offset(y = 40.dp)
+        )
+        GrpEyeconVariantsInstance(
+            modifier = Modifier
+                .offset(x = 340.dp, y = 42.dp)
+                .size(10.dp)
+                .clickable(onClick = {Toast.makeText(con, "Hello", Toast.LENGTH_SHORT).show()})
+        )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PasswordTextBoxPreview() {
+    PasswordTextBox()
 }
 
 
