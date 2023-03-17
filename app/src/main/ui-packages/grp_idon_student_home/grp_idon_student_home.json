@@ -1,14 +1,14 @@
 {
-  "name": "bkg_idon_student_home",
+  "name": "grp_idon_student_home",
   "version": 32,
   "source-key": {
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "229:167",
-    "version": "3174017321",
+    "version": "3186889537",
     "component-id": "12620d79ef2bde7115355bfe2e6815ea930324db"
   },
-  "default": "bkgIDOnStudentHome",
+  "default": "grpIDOnStudentHome",
   "design": {
     "atoms": [
       {
@@ -19,16 +19,22 @@
       {
         "type": "vector",
         "id": "bkgEnterIDOnHome"
+      },
+      {
+        "type": "adin_component",
+        "id": "txtEnterIDOnStudentHome",
+        "key": "txt_enter_idon_student_home"
       }
     ],
     "modes": {
-      "bkgIDOnStudentHome": {
+      "grpIDOnStudentHome": {
         "rules": [
           {
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "bkgEnterIDOnHome"
+              "bkgEnterIDOnHome",
+              "txtEnterIDOnStudentHome"
             ],
             "clip-content": "false"
           },
@@ -46,6 +52,16 @@
               }
             },
             "vector-content": "bkg_enter_idon_home.svg"
+          },
+          {
+            "id": "txtEnterIDOnStudentHome",
+            "margin": {
+              "left": "14.0",
+              "top": "9.0",
+              "right": "20.0",
+              "bottom": "19.0"
+            },
+            "Enter ID On Student Home": "Enter Your ID..."
           }
         ]
       }
@@ -53,7 +69,7 @@
   },
   "previews": [
     {
-      "design": "bkgIDOnStudentHome",
+      "design": "grpIDOnStudentHome",
       "size": {
         "width": 374.0,
         "height": 92.0

@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "111:241",
-    "version": "3174017321",
+    "version": "3186889537",
     "component-id": "c50544f50f68c86bec602960acc3a1180a89b57d"
   },
   "default": "scnStudentHome",
@@ -65,13 +65,8 @@
       },
       {
         "type": "adin_component",
-        "id": "txtEnterIDOnStudentHome",
-        "key": "txt_enter_idon_student_home"
-      },
-      {
-        "type": "adin_component",
-        "id": "bkgIDOnStudentHome",
-        "key": "bkg_idon_student_home"
+        "id": "grpIDOnStudentHome",
+        "key": "grp_idon_student_home"
       }
     ],
     "modes": {
@@ -91,8 +86,7 @@
               "lblBrahmaPassTopBarOnStudentHome",
               "lblReasonOnStudentHome",
               "ddVariantGroupOnStudentHome",
-              "txtEnterIDOnStudentHome",
-              "bkgIDOnStudentHome"
+              "grpIDOnStudentHome"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -341,31 +335,7 @@
             }
           },
           {
-            "id": "txtEnterIDOnStudentHome",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "72.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "309.0"
-              }
-            },
-            "Enter ID On Student Home": "Enter Your ID...",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "340.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "64.0"
-              }
-            }
-          },
-          {
-            "id": "bkgIDOnStudentHome",
+            "id": "grpIDOnStudentHome",
             "alignment": {
               "horizontal": {
                 "attachment": "start",

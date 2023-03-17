@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "111:237",
-    "version": "3174017321",
+    "version": "3186889537",
     "component-id": "2c45527b306265a134d5ad2a8fda15c34db2ee2e"
   },
   "default": "scnLogin",
@@ -53,16 +53,6 @@
       {
         "type": "text",
         "id": "lblBrahmaPassOnLogin"
-      },
-      {
-        "type": "adin_component",
-        "id": "txtEnterYourPasswordOnLogin",
-        "key": "txt_enter_your_password_on_login"
-      },
-      {
-        "type": "adin_component",
-        "id": "txtEmailOnLogin",
-        "key": "txt_email_on_login"
       }
     ],
     "modes": {
@@ -79,9 +69,7 @@
               "grpEyeconVariants",
               "grpEmailOnLogin",
               "imgBrahmaOnLogin",
-              "lblBrahmaPassOnLogin",
-              "txtEnterYourPasswordOnLogin",
-              "txtEmailOnLogin"
+              "lblBrahmaPassOnLogin"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -300,54 +288,6 @@
             "text-size": "40.0",
             "line-height": "1.5",
             "typeface": "Poppins"
-          },
-          {
-            "id": "txtEnterYourPasswordOnLogin",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "63.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "386.0"
-              }
-            },
-            "Enter Password Input on Login": "Enter Your Password",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "309.26922607421875"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "24.0"
-              }
-            }
-          },
-          {
-            "id": "txtEmailOnLogin",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "64.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "287.0"
-              }
-            },
-            "Enter Email Input on Login": "Enter Your Email",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "310.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "24.0"
-              }
-            }
           }
         ]
       }

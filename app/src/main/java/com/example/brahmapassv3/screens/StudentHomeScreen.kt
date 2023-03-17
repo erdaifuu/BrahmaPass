@@ -1,5 +1,7 @@
 package com.example.brahmapassv3.screens
 
+import android.view.LayoutInflater
+import androidx.compose.animation.core.withInfiniteAnimationFrameMillis
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
@@ -14,6 +16,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.brahmapassv3.txttime.poppins
 import com.google.relay.compose.RelayText
 import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 @Composable
 fun StudentHomeScreen(navController: NavController) {
@@ -24,12 +27,13 @@ fun StudentHomeScreen(navController: NavController) {
 @Composable
 fun StudentHomeScreenPreview() {
     StudentHomeScreen(navController = rememberNavController())
+    TxtTimeOnStudentHome()
 }
 
 @Composable
-fun TxtTimeOnHomeOnStudentHome(modifier: Modifier = Modifier) {
+fun TxtTimeOnStudentHome(modifier: Modifier = Modifier) {
     RelayText(
-        content = "MM/DD/YYYY 00:00",
+        content = displayCurrentTime(),
         fontSize = 28.0.sp,
         fontFamily = poppins,
         color = Color(
@@ -45,7 +49,13 @@ fun TxtTimeOnHomeOnStudentHome(modifier: Modifier = Modifier) {
     )
 }
 
-fun main(args: Array<String>) {
+fun displayCurrentTime(): String {
     val current = LocalDateTime.now()
-    println("$current")
+    val formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss")
+    val formatted = current.format(formatter)
+    return "$formatted"
+}
+
+fun main(args: Array<String>){
+    println(displayCurrentTime())
 }

@@ -5,5 +5,5 @@ txt_time
 lbl_home_subtitle_on_student_home
 lbl_brahma_pass_top_bar
 dd_variant_group
+grp_idon_student_home
 txt_enter_idon_student_home
-bkg_idon_student_home
