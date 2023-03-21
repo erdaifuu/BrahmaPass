@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "223:185",
-    "version": "3186889537",
+    "version": "3205630433",
     "component-id": "a62205070f860017ee55cd2dd572b149c65b63e4"
   },
   "default": "grpEmailOnLogin",
@@ -15,10 +15,6 @@
         "type": "group",
         "id": "top_level",
         "root": "true"
-      },
-      {
-        "type": "vector",
-        "id": "bkgBoxOnEmail"
       },
       {
         "type": "text",
@@ -37,29 +33,10 @@
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "bkgBoxOnEmail",
               "txtEmailOnEmail",
               "txtEmailOnLogin"
             ],
             "clip-content": "false"
-          },
-          {
-            "id": "bkgBoxOnEmail",
-            "margin": {
-              "top": "31.0"
-            },
-            "border-radius": "10.0",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "vector-content": "bkg_box_on_email.svg"
           },
           {
             "id": "txtEmailOnEmail",
@@ -93,10 +70,7 @@
           {
             "id": "txtEmailOnLogin",
             "margin": {
-              "left": "11.0",
-              "top": "43.0",
-              "right": "53.0",
-              "bottom": "12.0"
+              "top": "31.0"
             },
             "Enter Email Input on Login": "Enter Your Email"
           }

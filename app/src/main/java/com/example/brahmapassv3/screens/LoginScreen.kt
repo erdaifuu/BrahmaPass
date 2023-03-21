@@ -12,7 +12,12 @@ import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.example.brahmapassv3.grppasswordonlogin.BkgBoxOnPasswordOnLogin
+import com.example.brahmapassv3.grppasswordonlogin.GrpPasswordOnLogin
+import com.example.brahmapassv3.grppasswordonlogin.LblPasswordOnLogin
+import com.example.brahmapassv3.grppasswordonlogin.TxtEnterYourPasswordOnLoginInstance
 import com.example.brahmapassv3.scnlogin.*
+import com.example.brahmapassv3.ui.figma.MyEnterYourPasswordOnLogin
 import com.google.relay.compose.BoxScopeInstance.boxAlign
 import com.google.relay.compose.BoxScopeInstance.columnWeight
 import com.google.relay.compose.BoxScopeInstance.rowWeight
@@ -22,8 +27,14 @@ import com.google.relay.compose.BoxScopeInstance.rowWeight
 @Composable
 fun LoginScreen(navController: NavController) {
     val context = LocalContext.current
-    Box(modifier = Modifier.fillMaxSize()){
-
+    Box(modifier = Modifier.fillMaxSize()){}
+    Column(
+        modifier = Modifier.padding(60.dp),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        ImgBrahmaOnLogin()
+        LblBrahmaPassOnLogin()
     }
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -33,44 +44,13 @@ fun LoginScreen(navController: NavController) {
         GrpEmailOnLoginInstance(
             modifier = Modifier.padding(16.dp)
         )
-
         PasswordTextBox()
+
 
         BtnLoginButtonOnLoginInstance(
             modifier = Modifier.padding(16.dp)
         )
     }
-
-    Row(
-        verticalAlignment = Alignment.Top
-    ) {
-        LblRememberMeOnLogin(
-
-        )
-
-        GrpCheckboxVariantsOnLogin(
-            modifier = Modifier.padding(16.dp)
-        )
-    }
-
-    ImgBrahmaOnLogin(
-        modifier = Modifier.boxAlign(
-            alignment = Alignment.TopStart,
-            offset = DpOffset(
-                x = 0.dp,
-                y = 125.0.dp
-            )
-        )
-    )
-    LblBrahmaPassOnLogin(
-        modifier = Modifier.boxAlign(
-            alignment = Alignment.TopCenter,
-            offset = DpOffset(
-                x = 0.0.dp,
-                y = 72.0.dp
-            )
-        )
-    )
 }
 
 @Preview(showBackground = true, widthDp = 700)
@@ -83,27 +63,47 @@ fun LoginScreenPreview() {
 fun PasswordTextBox() {
     var con = LocalContext.current;
     Box(
-        modifier = Modifier.padding(16.dp)
+        modifier = Modifier
+            .padding(16.dp)
     ) {
-        GrpPasswordOnLoginInstance()
+        GrpPasswordOnLogin()
+    /*
+        BkgBoxOnPasswordOnLogin(
+            //modifier = Modifier.rowWeight(1.0f).columnWeight(1.0f)
+        )
+        LblPasswordOnLogin(
+            //modifier = Modifier.rowWeight(1.0f).columnWeight(1.0f)
+        )
         TxtEnterYourPasswordOnLoginInstance(
-            modifier = Modifier
-                .offset(y = 40.dp)
+
         )
-        GrpEyeconVariantsInstance(
-            modifier = Modifier
-                .offset(x = 340.dp, y = 42.dp)
-                .size(10.dp)
-                .clickable(onClick = {Toast.makeText(con, "Hello", Toast.LENGTH_SHORT).show()})
-        )
+
+         */
     }
 }
 
+//TODO: Remember me
 @Preview(showBackground = true)
 @Composable
 fun PasswordTextBoxPreview() {
     PasswordTextBox()
 }
+
+@Composable
+fun RememberMe() {
+    var con = LocalContext.current;
+    Box(
+        modifier = Modifier.padding(16.dp)
+    ) {
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun RememberMePreview() {
+    RememberMe()
+}
+
 
 
 /*

@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "111:237",
-    "version": "3186889537",
+    "version": "3205630433",
     "component-id": "2c45527b306265a134d5ad2a8fda15c34db2ee2e"
   },
   "default": "scnLogin",
@@ -38,11 +38,6 @@
       },
       {
         "type": "adin_component",
-        "id": "grpEyeconVariants",
-        "key": "grp_eyecon_variants"
-      },
-      {
-        "type": "adin_component",
         "id": "grpEmailOnLogin",
         "key": "grp_email_on_login"
       },
@@ -66,7 +61,6 @@
               "grpCheckboxVariantsOnLogin",
               "lblRememberMeOnLogin",
               "grpPasswordOnLogin",
-              "grpEyeconVariants",
               "grpEmailOnLogin",
               "imgBrahmaOnLogin",
               "lblBrahmaPassOnLogin"
@@ -177,30 +171,6 @@
               "height-constraints": {
                 "sizing-mode": "fixed",
                 "value": "75.0"
-              }
-            }
-          },
-          {
-            "id": "grpEyeconVariants",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "395.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "390.0"
-              }
-            },
-            "design": "Property 1=Closed",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "20.580001831054688"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "17.0"
               }
             }
           },
