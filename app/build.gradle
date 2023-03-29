@@ -3,6 +3,9 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'com.google.relay' version '0.3.02'
     id 'com.google.gms.google-services'
+    id 'kotlin-kapt'
+    id 'com.google.firebase.crashlytics'
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -53,6 +56,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
     // Add the dependencies for any other desired Firebase products
     implementation 'androidx.core:core-ktx:1.9.0'
+    implementation("com.google.dagger:hilt-android:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.44")
     implementation "androidx.compose.ui:ui:$composeVer"
     implementation "androidx.compose.material:material:$composeVer"
     implementation "androidx.compose.ui:ui-tooling-preview:$composeVer"
@@ -60,11 +65,14 @@ dependencies {
     implementation 'androidx.activity:activity-compose:1.6.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$composeVer"
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
     debugImplementation "androidx.compose.ui:ui-tooling:$composeVer"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$composeVer"
     implementation 'androidx.compose.material3:material3-window-size-class:1.0.1'
+    implementation 'com.google.firebase:firebase-auth-ktx'
 
 
     def nav_version = "2.5.3"

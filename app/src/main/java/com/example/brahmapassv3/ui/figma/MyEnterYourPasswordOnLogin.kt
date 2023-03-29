@@ -27,6 +27,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.brahmapassv3.txtenteryourpasswordonlogin.TopLevel
 import com.example.brahmapassv3.txtenteryourpasswordonlogin.TxtEnterYourPasswordOnLogin
 
+public var inputPassword = ""
+
 @Composable
 fun MyEnterYourPasswordOnLogin(
     modifier: Modifier = Modifier,
@@ -39,11 +41,12 @@ fun MyEnterYourPasswordOnLogin(
         var passwordVisible by rememberSaveable { mutableStateOf(false) }
 
         TextField(
-            //modifier = Modifier.fillMaxWidth().fillMaxHeight(),
+            modifier = Modifier.fillMaxWidth(),
             value = password,
-            onValueChange = { password = it },
+            onValueChange = { password = it;
+                inputPassword = password},
             singleLine = true,
-            placeholder = { Text("Password") },
+            placeholder = { Text("Enter Your Password") },
             visualTransformation = if (passwordVisible) VisualTransformation.None else PasswordVisualTransformation(),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
             trailingIcon = {

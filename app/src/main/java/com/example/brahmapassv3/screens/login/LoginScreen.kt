@@ -1,31 +1,58 @@
 package com.example.brahmapassv3.screens
 
+import android.app.Activity
+import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
+import androidx.annotation.StringRes
+import com.example.brahmapassv3.R.string as AppText
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.Button
+import androidx.compose.material.ButtonDefaults
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.example.brahmapassv3.grppasswordonlogin.BkgBoxOnPasswordOnLogin
 import com.example.brahmapassv3.grppasswordonlogin.GrpPasswordOnLogin
 import com.example.brahmapassv3.grppasswordonlogin.LblPasswordOnLogin
 import com.example.brahmapassv3.grppasswordonlogin.TxtEnterYourPasswordOnLoginInstance
+import com.example.brahmapassv3.model.service.impl.AccountServiceImpl
 import com.example.brahmapassv3.scnlogin.*
+import com.example.brahmapassv3.screens.login.LoginViewModel
 import com.example.brahmapassv3.ui.figma.MyEnterYourPasswordOnLogin
 import com.google.relay.compose.BoxScopeInstance.boxAlign
 import com.google.relay.compose.BoxScopeInstance.columnWeight
 import com.google.relay.compose.BoxScopeInstance.rowWeight
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
+
+
 
 
 //windowSizeClass: WindowSizeClass
 @Composable
-fun LoginScreen(navController: NavController) {
+fun LoginScreen(
+    openAndPopUp: (String, String) -> Unit,
+    modifier: Modifier = Modifier,
+    viewModel: LoginViewModel = hiltViewModel()
+    ) {
+
+    val uiState by viewModel.uiState
+
     val context = LocalContext.current
     Box(modifier = Modifier.fillMaxSize()){}
     Column(
@@ -42,22 +69,46 @@ fun LoginScreen(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         GrpEmailOnLoginInstance(
-            modifier = Modifier.padding(16.dp)
+            modifier = Modifier.padding(8.dp)
         )
-        PasswordTextBox()
 
+        GrpPasswordOnLoginInstance(
+            modifier = Modifier.padding(8.dp)
+        )
 
+    }
+
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Bottom,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        /*
         BtnLoginButtonOnLoginInstance(
-            modifier = Modifier.padding(16.dp)
+            modifier = Modifier
+                .padding(60.dp)
+                .clickable(onClick = {  })
         )
+         */
+        BasicButton(AppText.sign_in, modifier = Modifier) { viewModel.onSignInClick() }
     }
 }
 
-@Preview(showBackground = true, widthDp = 700)
 @Composable
-fun LoginScreenPreview() {
-    LoginScreen(navController = rememberNavController())
+fun BasicButton(@StringRes text: Int, modifier: Modifier, action: () -> Unit) {
+    Button(
+        onClick = action,
+        modifier = modifier,
+        colors =
+        ButtonDefaults.buttonColors(
+            backgroundColor = MaterialTheme.colors.primary,
+            contentColor = MaterialTheme.colors.onPrimary
+        )
+    ) {
+        Text(text = stringResource(text), fontSize = 16.sp)
+    }
 }
+
 
 @Composable
 fun PasswordTextBox() {
