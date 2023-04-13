@@ -1,13 +1,8 @@
 package com.example.brahmapassv3.screens
 
-import android.app.Activity
-import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.annotation.StringRes
 import com.example.brahmapassv3.R.string as AppText
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
@@ -20,27 +15,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
-import com.example.brahmapassv3.grppasswordonlogin.GrpPasswordOnLogin
-import com.example.brahmapassv3.grppasswordonlogin.LblPasswordOnLogin
-import com.example.brahmapassv3.grppasswordonlogin.TxtEnterYourPasswordOnLoginInstance
-import com.example.brahmapassv3.model.service.impl.AccountServiceImpl
+import com.example.brahmapassv3.common.composable.BasicButton
+import com.example.brahmapassv3.common.composable.EmailField
+import com.example.brahmapassv3.common.composable.PasswordField
+import com.example.brahmapassv3.common.ext.basicButton
+import com.example.brahmapassv3.common.ext.fieldModifier
 import com.example.brahmapassv3.scnlogin.*
 import com.example.brahmapassv3.screens.login.LoginViewModel
-import com.example.brahmapassv3.ui.figma.MyEnterYourPasswordOnLogin
-import com.google.relay.compose.BoxScopeInstance.boxAlign
-import com.google.relay.compose.BoxScopeInstance.columnWeight
-import com.google.relay.compose.BoxScopeInstance.rowWeight
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
-
-
 
 
 //windowSizeClass: WindowSizeClass
@@ -68,76 +51,10 @@ fun LoginScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        GrpEmailOnLoginInstance(
-            modifier = Modifier.padding(8.dp)
-        )
-
-        GrpPasswordOnLoginInstance(
-            modifier = Modifier.padding(8.dp)
-        )
-
+        EmailField(uiState.email, viewModel::onEmailChange, Modifier.fieldModifier())
+        PasswordField(uiState.password, viewModel::onPasswordChange, Modifier.fieldModifier())
+        BasicButton(AppText.sign_in, Modifier.basicButton()) { viewModel.onSignInClick(openAndPopUp) }
     }
-
-    Column(
-        modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.Bottom,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        /*
-        BtnLoginButtonOnLoginInstance(
-            modifier = Modifier
-                .padding(60.dp)
-                .clickable(onClick = {  })
-        )
-         */
-        BasicButton(AppText.sign_in, modifier = Modifier) { viewModel.onSignInClick() }
-    }
-}
-
-@Composable
-fun BasicButton(@StringRes text: Int, modifier: Modifier, action: () -> Unit) {
-    Button(
-        onClick = action,
-        modifier = modifier,
-        colors =
-        ButtonDefaults.buttonColors(
-            backgroundColor = MaterialTheme.colors.primary,
-            contentColor = MaterialTheme.colors.onPrimary
-        )
-    ) {
-        Text(text = stringResource(text), fontSize = 16.sp)
-    }
-}
-
-
-@Composable
-fun PasswordTextBox() {
-    var con = LocalContext.current;
-    Box(
-        modifier = Modifier
-            .padding(16.dp)
-    ) {
-        GrpPasswordOnLogin()
-    /*
-        BkgBoxOnPasswordOnLogin(
-            //modifier = Modifier.rowWeight(1.0f).columnWeight(1.0f)
-        )
-        LblPasswordOnLogin(
-            //modifier = Modifier.rowWeight(1.0f).columnWeight(1.0f)
-        )
-        TxtEnterYourPasswordOnLoginInstance(
-
-        )
-
-         */
-    }
-}
-
-//TODO: Remember me
-@Preview(showBackground = true)
-@Composable
-fun PasswordTextBoxPreview() {
-    PasswordTextBox()
 }
 
 @Composable

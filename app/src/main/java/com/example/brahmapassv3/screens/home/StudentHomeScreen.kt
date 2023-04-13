@@ -1,4 +1,4 @@
-package com.example.brahmapassv3.screens
+package com.example.brahmapassv3.screens.home
 
 import android.view.LayoutInflater
 import androidx.compose.animation.core.withInfiniteAnimationFrameMillis
@@ -12,8 +12,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
 import com.example.brahmapassv3.txttime.poppins
+import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import com.google.relay.compose.RelayText
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -26,7 +26,7 @@ fun StudentHomeScreen(navController: NavController) {
 @Preview(showBackground = true, widthDp = 700)
 @Composable
 fun StudentHomeScreenPreview() {
-    StudentHomeScreen(navController = rememberNavController())
+    //StudentHomeScreen(navController = rememberAnimatedNavController())
     TxtTimeOnStudentHome()
 }
 
