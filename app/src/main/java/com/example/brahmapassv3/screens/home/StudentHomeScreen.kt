@@ -2,16 +2,29 @@ package com.example.brahmapassv3.screens.home
 
 import android.view.LayoutInflater
 import androidx.compose.animation.core.withInfiniteAnimationFrameMillis
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.*
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.DateRange
+import androidx.compose.material.icons.filled.ExitToApp
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.brahmapassv3.*
+import com.example.brahmapassv3.R
 import com.example.brahmapassv3.txttime.poppins
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import com.google.relay.compose.RelayText
@@ -19,34 +32,85 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 @Composable
-fun StudentHomeScreen(navController: NavController) {
-
+fun StudentHomeScreen(
+    OpenLoginScreen: (String, String) -> Unit,
+    OpenConfirmation1Screen: (String, String) -> Unit,
+) {
+    val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
+    Scaffold(
+        scaffoldState = scaffoldState,
+        topBar = { TopAppBar(
+            title = {
+                Text(text = "BrahmaPass",
+                    fontSize = 30.sp,
+                    fontFamily = poppinsFamily,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth())
+            },
+            backgroundColor = MaterialTheme.colors.primary
+        )  },
+        content = { padding ->
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier
+                    .padding(15.dp)
+                    .fillMaxSize()
+            ){
+                Text("Home",
+                    fontSize = 30.sp,
+                    fontFamily = poppinsFamily,
+                    fontWeight = FontWeight.Medium,
+                    textAlign = TextAlign.Center,)
+                Text (displayCurrentTime(),
+                    fontSize = 30.sp,
+                    fontFamily = poppinsFamily,
+                    fontWeight = FontWeight.Medium,
+                    textAlign = TextAlign.Center,)
+                painterResource(R.drawable.scn_student_home_img_clock_on_student_home)
+                CreateHallpassButton(OpenConfirmation1Screen = OpenConfirmation1Screen)
+            }
+        },
+        bottomBar = { BottomBar(OpenLoginScreen) })
 }
 
-@Preview(showBackground = true, widthDp = 700)
 @Composable
-fun StudentHomeScreenPreview() {
-    //StudentHomeScreen(navController = rememberAnimatedNavController())
-    TxtTimeOnStudentHome()
+fun CreateHallpassButton (
+    OpenConfirmation1Screen: (String, String) -> Unit,
+) {
+    Button (
+        onClick = {
+            OpenConfirmation1Screen(CONFIRMATION1_SCREEN, TEACHER_SCREEN)
+            val selectedIndex = 0
+        }) {
+        Text(text = "Create Hallpass", color = Color.White)
+    }
 }
 
 @Composable
-fun TxtTimeOnStudentHome(modifier: Modifier = Modifier) {
-    RelayText(
-        content = displayCurrentTime(),
-        fontSize = 28.0.sp,
-        fontFamily = poppins,
-        color = Color(
-            alpha = 255,
-            red = 0,
-            green = 0,
-            blue = 0
-        ),
-        height = 1.5.em,
-        fontWeight = FontWeight(300.0.toInt()),
-        maxLines = -1,
-        modifier = modifier.fillMaxWidth(1.0f).fillMaxHeight(1.0f)
-    )
+fun BottomBar(
+    OpenLoginScreen: (String, String) -> Unit,
+) {
+    val selectedIndex = remember { mutableStateOf(2) }
+    BottomNavigation(elevation = 10.dp) {
+
+        BottomNavigationItem(icon = {
+            Icon(imageVector = Icons.Default.Home,"")
+        },
+            selected = (selectedIndex.value == 0),
+            onClick = {
+                selectedIndex.value = 0
+            })
+
+        BottomNavigationItem(icon = {
+            Icon(imageVector = Icons.Default.ExitToApp,"")
+        },
+            selected = (selectedIndex.value == 1),
+            onClick = {
+                selectedIndex.value = 1
+                OpenLoginScreen(LOGIN_SCREEN, STUDENT_SCREEN)
+            })
+    }
 }
 
 fun displayCurrentTime(): String {

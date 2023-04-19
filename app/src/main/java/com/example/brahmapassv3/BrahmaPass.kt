@@ -22,6 +22,7 @@ import androidx.navigation.navArgument
 import com.google.accompanist.navigation.animation.navigation
 import com.example.brahmapassv3.common.snackbar.SnackbarManager
 import com.example.brahmapassv3.screens.LoginScreen
+import com.example.brahmapassv3.screens.home.StudentHomeScreen
 import com.example.brahmapassv3.screens.home.TeacherHomeScreen
 import com.example.brahmapassv3.screens.log.LogScreen
 import com.example.brahmapassv3.screens.settings.SettingsScreen
@@ -95,7 +96,8 @@ fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
     ) {
         TeacherHomeScreen(
             OpenSettingsScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
-            OpenLogScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) }
+            OpenLogScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
+            OpenStudentScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) }
         )
     }
 
@@ -126,12 +128,25 @@ fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
     {
         LogScreen(
             OpenTeacherScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
-            OpenSettingsScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) }
+            OpenSettingsScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
         )
     }
 
     composable(LOGIN_SCREEN) {
         LoginScreen(openAndPopUp = { route, popUp -> appState.navigateAndPopUp(route, popUp) })
+    }
+
+    composable(
+        STUDENT_SCREEN,
+        enterTransition = {
+            slideInHorizontally(initialOffsetX = { 1000 })
+        },
+    )
+    {
+        StudentHomeScreen(
+            OpenLoginScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
+            OpenConfirmation1Screen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
+        )
     }
 
     /*

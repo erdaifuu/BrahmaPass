@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "111:237",
-    "version": "3205630433",
+    "version": "3366798681",
     "component-id": "2c45527b306265a134d5ad2a8fda15c34db2ee2e"
   },
   "default": "scnLogin",
@@ -42,12 +42,12 @@
         "key": "grp_email_on_login"
       },
       {
-        "type": "image",
-        "id": "imgBrahmaOnLogin"
-      },
-      {
         "type": "text",
         "id": "lblBrahmaPassOnLogin"
+      },
+      {
+        "type": "image",
+        "id": "imgBrahmaOnLogin"
       }
     ],
     "modes": {
@@ -62,8 +62,8 @@
               "lblRememberMeOnLogin",
               "grpPasswordOnLogin",
               "grpEmailOnLogin",
-              "imgBrahmaOnLogin",
-              "lblBrahmaPassOnLogin"
+              "lblBrahmaPassOnLogin",
+              "imgBrahmaOnLogin"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -170,7 +170,7 @@
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "75.0"
+                "value": "87.0"
               }
             }
           },
@@ -196,31 +196,6 @@
                 "value": "79.0"
               }
             }
-          },
-          {
-            "id": "imgBrahmaOnLogin",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "187.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "125.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "105.38642120361328"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "75.0"
-              }
-            },
-            "image-content": "img_brahma_on_login.png",
-            "scale": "cover"
           },
           {
             "id": "lblBrahmaPassOnLogin",
@@ -258,6 +233,31 @@
             "text-size": "40.0",
             "line-height": "1.5",
             "typeface": "Poppins"
+          },
+          {
+            "id": "imgBrahmaOnLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "176.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "125.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "128.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "96.0"
+              }
+            },
+            "image-content": "img_brahma_on_login.png",
+            "scale": "cover"
           }
         ]
       }

@@ -16,13 +16,12 @@ limitations under the License.
 
 package com.example.brahmapassv3
 
-const val SPLASH_SCREEN = "SplashScreen"
 const val SETTINGS_SCREEN = "SettingsScreen"
 const val LOGIN_SCREEN = "LoginScreen"
 const val TEACHER_SCREEN = "TeacherHomeScreen"
 const val LOG_SCREEN = "LogScreen"
-const val TASKS_SCREEN = "TasksScreen"
-const val EDIT_TASK_SCREEN = "EditTaskScreen"
+const val STUDENT_SCREEN = "StudentHomeScreen"
+const val CONFIRMATION1_SCREEN = "EditTaskScreen"
 
 const val TASK_ID = "taskId"
 const val TASK_DEFAULT_ID = "-1"
