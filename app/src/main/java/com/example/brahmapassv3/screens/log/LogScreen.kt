@@ -54,9 +54,15 @@ fun LogScreen(
                         fontFamily = com.example.brahmapassv3.screens.home.poppinsFamily,
                         fontWeight = FontWeight.Medium,
                         textAlign = TextAlign.Center,) }
+
+
+
                 },
             bottomBar = { BottomBar(OpenTeacherScreen, OpenSettingsScreen) })
 }
+
+@Composable
+fun
 
 @Composable
 fun BottomBar(
