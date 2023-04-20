@@ -61,8 +61,6 @@ fun LogScreen(
             bottomBar = { BottomBar(OpenTeacherScreen, OpenSettingsScreen) })
 }
 
-@Composable
-fun
 
 @Composable
 fun BottomBar(
