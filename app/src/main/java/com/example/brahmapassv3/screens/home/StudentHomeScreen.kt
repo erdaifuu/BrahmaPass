@@ -22,9 +22,16 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.example.brahmapassv3.*
 import com.example.brahmapassv3.R
+import com.example.brahmapassv3.common.composable.BasicButton
+import com.example.brahmapassv3.common.composable.EmailField
+import com.example.brahmapassv3.common.composable.IDField
+import com.example.brahmapassv3.common.ext.basicButton
+import com.example.brahmapassv3.common.ext.fieldModifier
+import com.example.brahmapassv3.screens.login.LoginViewModel
 import com.example.brahmapassv3.txttime.poppins
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import com.google.relay.compose.RelayText
@@ -34,7 +41,9 @@ import java.time.format.DateTimeFormatter
 @Composable
 fun StudentHomeScreen(
     OpenLoginScreen: (String, String) -> Unit,
-    OpenConfirmation1Screen: (String, String) -> Unit,
+    openAndPopUp: (String, String) -> Unit,
+    modifier: Modifier = Modifier,
+    viewModel: StudentHomeViewModel = hiltViewModel()
 ) {
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
     Scaffold(
@@ -68,24 +77,21 @@ fun StudentHomeScreen(
                     fontWeight = FontWeight.Medium,
                     textAlign = TextAlign.Center,)
                 painterResource(R.drawable.scn_student_home_img_clock_on_student_home)
-                CreateHallpassButton(OpenConfirmation1Screen = OpenConfirmation1Screen)
+
+                BasicButton(R.string.create_hallpass, Modifier.basicButton()) { viewModel.onCreateHallpassClick(openAndPopUp) }
             }
         },
         bottomBar = { BottomBar(OpenLoginScreen) })
 }
 
+//FIGURE OUT WTF THIS IS :)
+/*
 @Composable
-fun CreateHallpassButton (
-    OpenConfirmation1Screen: (String, String) -> Unit,
-) {
-    Button (
-        onClick = {
-            OpenConfirmation1Screen(CONFIRMATION1_SCREEN, TEACHER_SCREEN)
-            val selectedIndex = 0
-        }) {
-        Text(text = "Create Hallpass", color = Color.White)
-    }
-}
+fun ReasonDropdown (
+
+)
+*/
+
 
 @Composable
 fun BottomBar(

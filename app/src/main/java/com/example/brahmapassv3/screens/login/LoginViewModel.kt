@@ -51,7 +51,6 @@ class LoginViewModel @Inject constructor(
             SnackbarManager.showMessage(AppText.email_error)
             return
         }
-
         if (password.isBlank()) {
             SnackbarManager.showMessage(AppText.empty_password_error)
             return

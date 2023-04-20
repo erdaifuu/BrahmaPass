@@ -136,18 +136,7 @@ fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
         LoginScreen(openAndPopUp = { route, popUp -> appState.navigateAndPopUp(route, popUp) })
     }
 
-    composable(
-        STUDENT_SCREEN,
-        enterTransition = {
-            slideInHorizontally(initialOffsetX = { 1000 })
-        },
-    )
-    {
-        StudentHomeScreen(
-            OpenLoginScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
-            OpenConfirmation1Screen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
-        )
-    }
+
 
     /*
     composable(SIGN_UP_SCREEN) {

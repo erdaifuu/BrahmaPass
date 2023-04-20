@@ -93,6 +93,7 @@ private fun PasswordField(
     OutlinedTextField(
         modifier = modifier,
         value = value,
+        singleLine = true,
         onValueChange = { onNewValue(it) },
         placeholder = { Text(text = stringResource(placeholder)) },
         leadingIcon = { Icon(imageVector = Icons.Default.Lock, contentDescription = "Lock") },
@@ -103,5 +104,16 @@ private fun PasswordField(
         },
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
         visualTransformation = visualTransformation
+    )
+}
+
+@Composable
+fun IDField(value: String, onNewValue: (String) -> Unit, modifier: Modifier = Modifier) {
+    OutlinedTextField(
+        singleLine = true,
+        modifier = modifier,
+        value = value,
+        onValueChange = { onNewValue(it) },
+        placeholder = { Text("Enter ID") },
     )
 }
