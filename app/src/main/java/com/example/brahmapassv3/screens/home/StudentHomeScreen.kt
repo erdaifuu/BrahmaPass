@@ -37,6 +37,14 @@ import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import com.google.relay.compose.RelayText
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import android.os.Bundle
+import android.widget.Toast
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.*
+import androidx.compose.material.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.platform.LocalContext
 
 @Composable
 fun StudentHomeScreen(
@@ -77,21 +85,12 @@ fun StudentHomeScreen(
                     fontWeight = FontWeight.Medium,
                     textAlign = TextAlign.Center,)
                 painterResource(R.drawable.scn_student_home_img_clock_on_student_home)
-
+                ReasonDropdown()
                 BasicButton(R.string.create_hallpass, Modifier.basicButton()) { viewModel.onCreateHallpassClick(openAndPopUp) }
             }
         },
         bottomBar = { BottomBar(OpenLoginScreen) })
 }
-
-//FIGURE OUT WTF THIS IS :)
-/*
-@Composable
-fun ReasonDropdown (
-
-)
-*/
-
 
 @Composable
 fun BottomBar(
@@ -116,6 +115,64 @@ fun BottomBar(
                 selectedIndex.value = 1
                 OpenLoginScreen(LOGIN_SCREEN, STUDENT_SCREEN)
             })
+    }
+}
+
+@OptIn(ExperimentalMaterialApi::class)
+@Composable
+fun ReasonDropdown() {
+    val listItems = arrayOf("Bathroom", "GLC", "Office", "Nurse", "Other")
+    val contextForToast = LocalContext.current.applicationContext
+
+    // state of the menu
+    var expanded by remember {
+        mutableStateOf(false)
+    }
+
+    // remember the selected item
+    var selectedItem by remember {
+        mutableStateOf(listItems[0])
+    }
+
+    // box
+    ExposedDropdownMenuBox(
+        expanded = expanded,
+        onExpandedChange = {
+            expanded = !expanded
+        }
+    ) {
+        // text field
+        TextField(
+            value = selectedItem,
+            onValueChange = {},
+            readOnly = true,
+            label = { Text(text = "Enter Reason") },
+            trailingIcon = {
+                ExposedDropdownMenuDefaults.TrailingIcon(
+                    expanded = expanded
+                )
+            },
+            colors = ExposedDropdownMenuDefaults.textFieldColors()
+        )
+
+        // menu
+        ExposedDropdownMenu(
+            expanded = expanded,
+            onDismissRequest = { expanded = false }
+        ) {
+            // this is a column scope
+            // all the items are added vertically
+            listItems.forEach { selectedOption ->
+                // menu item
+                DropdownMenuItem(onClick = {
+                    selectedItem = selectedOption
+                    Toast.makeText(contextForToast, selectedOption, Toast.LENGTH_SHORT).show()
+                    expanded = false
+                }) {
+                    Text(text = selectedOption)
+                }
+            }
+        }
     }
 }
 
