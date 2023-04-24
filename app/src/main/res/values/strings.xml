@@ -8,6 +8,7 @@
     <string name="email_error">Please insert a valid email.</string>
     <string name="cancel">Cancel</string>
     <string name="try_again">Try again</string>
+    <string name="id_error">Please insert a valid ID.</string>
 
     <!-- LoginScreen -->
     <string name="sign_in">Sign in</string>
@@ -23,6 +24,9 @@
 
     <!-- TasksScreen -->
     <string name="tasks">Tasks</string>
+
+    <!-- HomeScreen -->
+    <string name="create_hallpass">Create Hallpass</string>
 
     <!-- EditTaskScreen -->
     <string name="edit_task">Edit your task</string>

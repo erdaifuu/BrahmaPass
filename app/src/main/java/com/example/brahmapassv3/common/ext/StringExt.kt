@@ -16,6 +16,14 @@ fun String.isValidPassword(): Boolean {
             Pattern.compile(PASS_PATTERN).matcher(this).matches()
 }
 
+fun isValidID (id: String): Boolean {
+    for (i in 0..id.length)
+        for(j in 0..9)
+            if(!(id.substring(i..i+1).equals(j)))
+                return false
+    return true
+}
+
 fun String.passwordMatches(repeated: String): Boolean {
     return this == repeated
 }

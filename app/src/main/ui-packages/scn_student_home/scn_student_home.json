@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
     "node": "111:241",
-    "version": "3205630433",
+    "version": "3366798681",
     "component-id": "c50544f50f68c86bec602960acc3a1180a89b57d"
   },
   "default": "scnStudentHome",
@@ -15,10 +15,6 @@
         "type": "group",
         "id": "top_level",
         "root": "true"
-      },
-      {
-        "type": "text",
-        "id": "lblTimeSubtitleOnStudentHome"
       },
       {
         "type": "vector",
@@ -55,10 +51,6 @@
         "key": "lbl_brahma_pass_top_bar"
       },
       {
-        "type": "text",
-        "id": "lblReasonOnStudentHome"
-      },
-      {
         "type": "adin_component",
         "id": "ddVariantGroupOnStudentHome",
         "key": "dd_variant_group"
@@ -67,6 +59,11 @@
         "type": "adin_component",
         "id": "grpIDOnStudentHome",
         "key": "grp_idon_student_home"
+      },
+      {
+        "type": "adin_component",
+        "id": "imgLogout",
+        "key": "img_logout"
       }
     ],
     "modes": {
@@ -76,7 +73,6 @@
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "lblTimeSubtitleOnStudentHome",
               "imgClockOnStudentHome",
               "bkgBottomBarOnStudentHome",
               "imgHomeOnStudentHome",
@@ -84,9 +80,9 @@
               "txtTimeOnStudentHome",
               "lblHomeSubtitleOnStudentHome",
               "lblBrahmaPassTopBarOnStudentHome",
-              "lblReasonOnStudentHome",
               "ddVariantGroupOnStudentHome",
-              "grpIDOnStudentHome"
+              "grpIDOnStudentHome",
+              "imgLogout"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -96,46 +92,12 @@
             }
           },
           {
-            "id": "lblTimeSubtitleOnStudentHome",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "140.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "127.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "200.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Current Time:",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-size": "28.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
             "id": "imgClockOnStudentHome",
             "margin": {
               "left": "215.0",
-              "top": "220.0",
+              "top": "206.0",
               "right": "215.0",
-              "bottom": "530.0"
+              "bottom": "544.0"
             },
             "size-constraints": {
               "width-constraints": {
@@ -223,11 +185,11 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "82.0"
+                "offset": "80.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "169.0"
+                "offset": "142.0"
               }
             },
             "Time Display": "MM/DD/YYYY 00:00",
@@ -280,46 +242,15 @@
             }
           },
           {
-            "id": "lblReasonOnStudentHome",
-            "margin": {
-              "left": "57.0",
-              "top": "427.0",
-              "right": "46.0",
-              "bottom": "327.0"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Reason of Departure:",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-size": "32.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
-          },
-          {
             "id": "ddVariantGroupOnStudentHome",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "110.0"
+                "offset": "114.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "501.0"
+                "offset": "443.0"
               }
             },
             "design": "design=optionReason",
@@ -354,6 +285,29 @@
               "height-constraints": {
                 "sizing-mode": "fixed",
                 "value": "92.0"
+              }
+            }
+          },
+          {
+            "id": "imgLogout",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "427.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "747.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "35.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
               }
             }
           }

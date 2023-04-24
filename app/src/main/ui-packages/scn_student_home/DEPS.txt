@@ -6,4 +6,5 @@ lbl_home_subtitle_on_student_home
 lbl_brahma_pass_top_bar
 dd_variant_group
 grp_idon_student_home
+img_logout
 txt_enter_idon_student_home

@@ -1,14 +1,14 @@
 {
-  "name": "txt_enter_idon_student_home",
+  "name": "img_logout",
   "version": 32,
   "source-key": {
     "type": "figma",
     "file": "yXddnwgmFl7Vofw9CT9Uy6",
-    "node": "266:169",
+    "node": "384:165",
     "version": "3366798681",
-    "component-id": "8212da49ed8c045411cf01b69446c29243af7742"
+    "component-id": "8432f78bd46b0b4eca85d5ab8669006ebab2010b"
   },
-  "default": "txtEnterIDOnStudentHome",
+  "default": "imgLogout",
   "design": {
     "atoms": [
       {
@@ -17,26 +17,24 @@
         "root": "true"
       },
       {
-        "type": "text",
-        "id": "txtEnterIDOnStudentHome"
+        "type": "vector",
+        "id": "imgLogoutOnStudentHome"
       }
     ],
     "modes": {
-      "txtEnterIDOnStudentHome": {
+      "imgLogout": {
         "rules": [
           {
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "txtEnterIDOnStudentHome"
+              "imgLogoutOnStudentHome"
             ],
             "clip-content": "false"
           },
           {
-            "id": "txtEnterIDOnStudentHome",
-            "margin": {
-              "top": "4.6376953125"
-            },
+            "id": "imgLogoutOnStudentHome",
+            "tap-handler": "$Logout Button On Student Home",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -47,38 +45,25 @@
                 "value": "1.0"
               }
             },
-            "color": {
-              "alpha": "0.6980392156862745",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Enter Your ID...",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align": "left",
-            "text-align-vertical": "center",
-            "text-size": "48.0",
-            "line-height": "1.5",
-            "typeface": "Poppins"
+            "vector-content": "img_logout_on_student_home.svg"
           }
         ]
       }
     }
   },
   "parameters": {
-    "Enter ID On Student Home": {
-      "data-type": "text",
+    "Logout Button On Student Home": {
+      "data-type": "void-callback",
       "required": false,
       "description": ""
     }
   },
   "previews": [
     {
-      "design": "txtEnterIDOnStudentHome",
+      "design": "imgLogout",
       "size": {
-        "width": 340.0,
-        "height": 64.0
+        "width": 35.0,
+        "height": 38.0
       }
     }
   ],

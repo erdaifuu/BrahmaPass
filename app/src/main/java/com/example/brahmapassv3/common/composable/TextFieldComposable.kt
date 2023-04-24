@@ -106,3 +106,14 @@ private fun PasswordField(
         visualTransformation = visualTransformation
     )
 }
+
+@Composable
+fun IDField(value: String, onNewValue: (String) -> Unit, modifier: Modifier = Modifier) {
+    OutlinedTextField(
+        singleLine = true,
+        modifier = modifier,
+        value = value,
+        onValueChange = { onNewValue(it) },
+        placeholder = { Text("Enter ID") },
+    )
+}

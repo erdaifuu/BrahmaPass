@@ -9,6 +9,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
@@ -24,6 +25,7 @@ import com.example.brahmapassv3.txttime.poppins
 
 @Composable
 fun TeacherHomeScreen(
+    OpenStudentScreen: (String, String) -> Unit,
     OpenSettingsScreen: (String, String) -> Unit,
     OpenLogScreen: (String, String) -> Unit,
     modifier: Modifier = Modifier,
@@ -54,11 +56,23 @@ fun TeacherHomeScreen(
                         fontFamily = poppinsFamily,
                         fontWeight = FontWeight.Medium,
                         textAlign = TextAlign.Center,) }
+                ToClassModeButton(OpenStudentScreen = OpenStudentScreen)
                 },
             bottomBar = { BottomBar(OpenSettingsScreen, OpenLogScreen) })
 }
 
-
+@Composable
+fun ToClassModeButton (
+    OpenStudentScreen: (String, String) -> Unit,
+) {
+    Button (
+        onClick = {
+            OpenStudentScreen(STUDENT_SCREEN, TEACHER_SCREEN)
+            val selectedIndex = 3
+        }) {
+        Text(text = "Change to Class Mode", color = Color.White)
+    }
+}
 
 @Composable
 fun BottomBar(
