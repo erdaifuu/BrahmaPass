@@ -22,6 +22,8 @@ import androidx.navigation.navArgument
 import com.google.accompanist.navigation.animation.navigation
 import com.example.brahmapassv3.common.snackbar.SnackbarManager
 import com.example.brahmapassv3.screens.LoginScreen
+import com.example.brahmapassv3.screens.confirmation.Confirmation1Screen
+import com.example.brahmapassv3.screens.confirmation.Confirmation2Screen
 import com.example.brahmapassv3.screens.home.StudentHomeScreen
 import com.example.brahmapassv3.screens.home.TeacherHomeScreen
 import com.example.brahmapassv3.screens.log.LogScreen
@@ -135,6 +137,26 @@ fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
     composable(LOGIN_SCREEN) {
         LoginScreen(openAndPopUp = { route, popUp -> appState.navigateAndPopUp(route, popUp) })
     }
+
+    composable(STUDENT_SCREEN) {
+        StudentHomeScreen(
+            OpenLoginScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
+            openAndPopUp =  { route, popUp -> appState.navigateAndPopUp(route, popUp) },
+        )
+    }
+
+    composable(CONFIRMATION1_SCREEN) {
+        Confirmation1Screen(
+            OpenConfirmation2Screen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
+        )
+    }
+
+    composable(CONFIRMATION2_SCREEN) {
+        Confirmation2Screen(
+            OpenStudentScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
+        )
+    }
+
 
 
 
