@@ -7,8 +7,8 @@ import androidx.compose.runtime.mutableStateOf
 import com.example.brahmapassv3.CONFIRMATION1_SCREEN
 import com.example.brahmapassv3.STUDENT_SCREEN
 import com.example.brahmapassv3.R.string as AppText
-import com.example.brahmapassv3.common.ext.isValidEmail
-import com.example.brahmapassv3.common.ext.isValidID
+import com.example.brahmapassv3.screens.home.ext.isValidEmail
+import com.example.brahmapassv3.screens.home.ext.isValidID
 import com.example.brahmapassv3.common.snackbar.SnackbarManager
 import com.example.brahmapassv3.model.service.AccountService
 import com.example.brahmapassv3.model.service.LogService
@@ -26,7 +26,7 @@ class StudentHomeViewModel @Inject constructor(
     private val id
         get () = uiState.value.id
 
-    fun onEmailChange(newValue: String) {
+    fun onIDChange(newValue: String) {
         uiState.value = uiState.value.copy(id = newValue)
     }
 

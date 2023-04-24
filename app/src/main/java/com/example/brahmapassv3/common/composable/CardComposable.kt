@@ -27,7 +27,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.example.brahmapassv3.common.ext.dropdownSelector
+import com.example.brahmapassv3.screens.home.ext.dropdownSelector
 
 @ExperimentalMaterialApi
 @Composable

@@ -2,6 +2,7 @@ package com.example.brahmapassv3
 
 import android.content.res.Resources
 import androidx.compose.animation.*
+import androidx.compose.animation.core.keyframes
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.*
@@ -12,6 +13,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraphBuilder
@@ -145,13 +147,23 @@ fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
         )
     }
 
-    composable(CONFIRMATION1_SCREEN) {
+    composable(
+        CONFIRMATION1_SCREEN,
+        enterTransition = {
+            fadeIn(animationSpec = tween(durationMillis = 1000))
+        }
+    ) {
         Confirmation1Screen(
             OpenConfirmation2Screen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
         )
     }
 
-    composable(CONFIRMATION2_SCREEN) {
+    composable(
+        CONFIRMATION2_SCREEN,
+        enterTransition = {
+            fadeIn(animationSpec = tween(durationMillis = 1000))
+        }
+    ) {
         Confirmation2Screen(
             OpenStudentScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
         )

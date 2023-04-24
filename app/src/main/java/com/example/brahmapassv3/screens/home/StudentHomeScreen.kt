@@ -29,8 +29,8 @@ import com.example.brahmapassv3.R
 import com.example.brahmapassv3.common.composable.BasicButton
 import com.example.brahmapassv3.common.composable.EmailField
 import com.example.brahmapassv3.common.composable.IDField
-import com.example.brahmapassv3.common.ext.basicButton
-import com.example.brahmapassv3.common.ext.fieldModifier
+import com.example.brahmapassv3.screens.home.ext.basicButton
+import com.example.brahmapassv3.screens.home.ext.fieldModifier
 import com.example.brahmapassv3.screens.login.LoginViewModel
 import com.example.brahmapassv3.txttime.poppins
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
@@ -141,7 +141,6 @@ fun ReasonDropdown() {
             expanded = !expanded
         }
     ) {
-        // text field
         TextField(
             value = selectedItem,
             onValueChange = {},
@@ -155,15 +154,11 @@ fun ReasonDropdown() {
             colors = ExposedDropdownMenuDefaults.textFieldColors()
         )
 
-        // menu
         ExposedDropdownMenu(
             expanded = expanded,
             onDismissRequest = { expanded = false }
         ) {
-            // this is a column scope
-            // all the items are added vertically
             listItems.forEach { selectedOption ->
-                // menu item
                 DropdownMenuItem(onClick = {
                     selectedItem = selectedOption
                     Toast.makeText(contextForToast, selectedOption, Toast.LENGTH_SHORT).show()
