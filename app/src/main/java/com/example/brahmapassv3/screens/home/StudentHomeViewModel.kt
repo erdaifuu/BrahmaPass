@@ -7,8 +7,8 @@ import androidx.compose.runtime.mutableStateOf
 import com.example.brahmapassv3.CONFIRMATION1_SCREEN
 import com.example.brahmapassv3.STUDENT_SCREEN
 import com.example.brahmapassv3.R.string as AppText
-import com.example.brahmapassv3.common.ext.isValidEmail
-import com.example.brahmapassv3.common.ext.isValidID
+import com.example.brahmapassv3.screens.home.ext.isValidEmail
+import com.example.brahmapassv3.screens.home.ext.isValidID
 import com.example.brahmapassv3.common.snackbar.SnackbarManager
 import com.example.brahmapassv3.model.Exit
 import com.example.brahmapassv3.model.service.AccountService
@@ -31,7 +31,6 @@ class StudentHomeViewModel @Inject constructor(
 
     fun onReasonChange(newValue: String) {
         exit.value = exit.value.copy(reason = newValue)
-    }
 
     fun onIdChange(newValue: String) {
         exit.value = exit.value.copy(studentId = newValue.toInt())

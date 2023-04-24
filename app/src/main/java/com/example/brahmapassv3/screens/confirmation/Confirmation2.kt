@@ -34,8 +34,8 @@ import com.example.brahmapassv3.R
 import com.example.brahmapassv3.common.composable.BasicButton
 import com.example.brahmapassv3.common.composable.EmailField
 import com.example.brahmapassv3.common.composable.IDField
-import com.example.brahmapassv3.common.ext.basicButton
-import com.example.brahmapassv3.common.ext.fieldModifier
+import com.example.brahmapassv3.screens.home.ext.basicButton
+import com.example.brahmapassv3.screens.home.ext.fieldModifier
 import com.example.brahmapassv3.screens.login.LoginViewModel
 import com.example.brahmapassv3.txttime.poppins
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
@@ -68,8 +68,5 @@ fun Confirmation2Screen(
 fun GoToStudentScreen(
     OpenStudentScreen: (String, String) -> Unit,
 ) {
-    LaunchedEffect(Unit) {
-        delay(10.seconds)
-        OpenStudentScreen(STUDENT_SCREEN, CONFIRMATION2_SCREEN)
-    }
+    OpenStudentScreen(STUDENT_SCREEN, CONFIRMATION2_SCREEN)
 }
