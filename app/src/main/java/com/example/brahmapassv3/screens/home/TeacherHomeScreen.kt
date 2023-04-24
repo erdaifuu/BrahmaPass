@@ -20,6 +20,8 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.brahmapassv3.*
 import com.example.brahmapassv3.R
+import com.example.brahmapassv3.common.composable.BasicButton
+import com.example.brahmapassv3.common.ext.basicButton
 import com.example.brahmapassv3.screens.login.LoginViewModel
 import com.example.brahmapassv3.txttime.poppins
 
@@ -29,7 +31,7 @@ fun TeacherHomeScreen(
     OpenSettingsScreen: (String, String) -> Unit,
     OpenLogScreen: (String, String) -> Unit,
     modifier: Modifier = Modifier,
-    viewModel: LoginViewModel = hiltViewModel()
+    viewModel: TeacherHomeViewModel = hiltViewModel()
 ) {
         val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
         Scaffold(
@@ -55,8 +57,9 @@ fun TeacherHomeScreen(
                         fontSize = 30.sp,
                         fontFamily = poppinsFamily,
                         fontWeight = FontWeight.Medium,
-                        textAlign = TextAlign.Center,) }
-                ToClassModeButton(OpenStudentScreen = OpenStudentScreen)
+                        textAlign = TextAlign.Center,)
+                    ToClassModeButton(OpenStudentScreen = OpenStudentScreen)
+                }
                 },
             bottomBar = { BottomBar(OpenSettingsScreen, OpenLogScreen) })
 }
@@ -65,13 +68,7 @@ fun TeacherHomeScreen(
 fun ToClassModeButton (
     OpenStudentScreen: (String, String) -> Unit,
 ) {
-    Button (
-        onClick = {
-            OpenStudentScreen(STUDENT_SCREEN, TEACHER_SCREEN)
-            val selectedIndex = 3
-        }) {
-        Text(text = "Change to Class Mode", color = Color.White)
-    }
+    BasicButton (R.string.change_to_class, Modifier.basicButton()){OpenStudentScreen(STUDENT_SCREEN, TEACHER_SCREEN)}
 }
 
 @Composable

@@ -108,7 +108,9 @@ private fun PasswordField(
 }
 
 @Composable
-fun IDField(value: String, onNewValue: (String) -> Unit, modifier: Modifier = Modifier) {
+fun IDField(value: String,
+            onNewValue: (String) -> Unit,
+            modifier: Modifier = Modifier) {
     OutlinedTextField(
         singleLine = true,
         modifier = modifier,

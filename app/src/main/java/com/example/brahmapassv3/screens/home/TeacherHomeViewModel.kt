@@ -15,44 +15,14 @@ import com.example.brahmapassv3.model.service.AccountService
 import com.example.brahmapassv3.model.service.LogService
 import com.example.brahmapassv3.model.service.StorageService
 import com.example.brahmapassv3.screens.MakeItSoViewModel
-import com.google.firebase.Timestamp
 import dagger.hilt.android.lifecycle.HiltViewModel
-import java.util.Date
 import javax.inject.Inject
 
 @HiltViewModel
-class StudentHomeViewModel @Inject constructor(
+class TeacherHomeViewModel @Inject constructor(
     private val accountService: AccountService,
     logService: LogService,
     private val storageService: StorageService,
 ) : MakeItSoViewModel(logService) {
-
-    val exit = mutableStateOf(Exit())
-
-    fun onReasonChange(newValue: String) {
-        exit.value = exit.value.copy(reason = newValue)
-    }
-
-    fun onIdChange(newValue: String) {
-        exit.value = exit.value.copy(studentId = newValue.toInt())
-    }
-
-    private fun setNewTimestamp() {
-        exit.value = exit.value.copy(time = Timestamp.now())
-    }
-
-
-    fun onCreateHallPassClick(openAndPopUp: (String, String) -> Unit) {
-        launchCatching {
-            setNewTimestamp()
-            val editedExit = exit.value
-            if (editedExit.id.isBlank()) {
-                storageService.save(editedExit)
-            } else {
-                storageService.update(editedExit)
-            }
-            openAndPopUp(CONFIRMATION1_SCREEN, STUDENT_SCREEN)
-        }
-    }
 
 }

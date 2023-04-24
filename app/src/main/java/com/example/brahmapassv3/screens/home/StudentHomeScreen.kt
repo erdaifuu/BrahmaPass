@@ -45,6 +45,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.platform.LocalContext
+import com.example.brahmapassv3.common.composable.BasicField
 
 @Composable
 fun StudentHomeScreen(
@@ -53,6 +54,8 @@ fun StudentHomeScreen(
     modifier: Modifier = Modifier,
     viewModel: StudentHomeViewModel = hiltViewModel()
 ) {
+    val exit by viewModel.exit
+
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
     Scaffold(
         scaffoldState = scaffoldState,
@@ -85,8 +88,9 @@ fun StudentHomeScreen(
                     fontWeight = FontWeight.Medium,
                     textAlign = TextAlign.Center,)
                 painterResource(R.drawable.scn_student_home_img_clock_on_student_home)
-                ReasonDropdown()
-                BasicButton(R.string.create_hallpass, Modifier.basicButton()) { viewModel.onCreateHallpassClick(openAndPopUp) }
+                IDField(exit.studentId.toString(), viewModel::onIdChange, Modifier.fieldModifier())
+                ReasonDropdown(viewModel::onReasonChange)
+                BasicButton(R.string.create_hallpass, Modifier.basicButton()) { viewModel.onCreateHallPassClick(openAndPopUp) }
             }
         },
         bottomBar = { BottomBar(OpenLoginScreen) })
@@ -120,7 +124,9 @@ fun BottomBar(
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
-fun ReasonDropdown() {
+fun ReasonDropdown(
+    onNewValue: (String) -> Unit
+) {
     val listItems = arrayOf("Bathroom", "GLC", "Office", "Nurse", "Other")
     val contextForToast = LocalContext.current.applicationContext
 
@@ -144,7 +150,7 @@ fun ReasonDropdown() {
         // text field
         TextField(
             value = selectedItem,
-            onValueChange = {},
+            onValueChange = {onNewValue(it)},
             readOnly = true,
             label = { Text(text = "Enter Reason") },
             trailingIcon = {

@@ -43,6 +43,9 @@
     <string name="sign_out">Sign out</string>
     <string name="delete_my_account">Delete my account</string>
 
+    <string name="change_to_class">Change to Class Mode</string>
+    <string name="id_placeholder">ID HERE</string>
+
     <!-- Dialogs -->
     <string name="sign_out_title">Sign out?</string>
     <string name="sign_out_description">You will have to sign in again to see your tasks.</string>
