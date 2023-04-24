@@ -17,12 +17,16 @@ limitations under the License.
 package com.example.brahmapassv3.model.service.module
 
 import com.example.brahmapassv3.model.service.AccountService
+import com.example.brahmapassv3.model.service.ConfigurationService
 //import com.example.brahmapassv3.model.service.ConfigurationService
 import com.example.brahmapassv3.model.service.LogService
+import com.example.brahmapassv3.model.service.StorageService
 //import com.example.brahmapassv3.model.service.StorageService
 import com.example.brahmapassv3.model.service.impl.AccountServiceImpl
+import com.example.brahmapassv3.model.service.impl.ConfigurationServiceImpl
 //import com.example.brahmapassv3.model.service.impl.ConfigurationServiceImpl
 import com.example.brahmapassv3.model.service.impl.LogServiceImpl
+import com.example.brahmapassv3.model.service.impl.StorageServiceImpl
 //import com.example.brahmapassv3.model.service.impl.StorageServiceImpl
 import dagger.Binds
 import dagger.Module
@@ -36,8 +40,8 @@ abstract class ServiceModule {
 
     @Binds abstract fun provideLogService(impl: LogServiceImpl): LogService
 
-    //@Binds abstract fun provideStorageService(impl: StorageServiceImpl): StorageService
+    @Binds abstract fun provideStorageService(impl: StorageServiceImpl): StorageService
 
-    //@Binds
-    //abstract fun provideConfigurationService(impl: ConfigurationServiceImpl): ConfigurationService
+    @Binds
+    abstract fun provideConfigurationService(impl: ConfigurationServiceImpl): ConfigurationService
 }

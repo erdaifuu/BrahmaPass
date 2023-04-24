@@ -93,6 +93,7 @@ private fun PasswordField(
     OutlinedTextField(
         modifier = modifier,
         value = value,
+        singleLine = true,
         onValueChange = { onNewValue(it) },
         placeholder = { Text(text = stringResource(placeholder)) },
         leadingIcon = { Icon(imageVector = Icons.Default.Lock, contentDescription = "Lock") },

@@ -14,16 +14,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 
-package com.example.brahmapassv3
+package com.example.brahmapassv3.model
 
-const val SPLASH_SCREEN = "SplashScreen"
-const val SETTINGS_SCREEN = "SettingsScreen"
-const val LOGIN_SCREEN = "LoginScreen"
-const val TEACHER_SCREEN = "TeacherHomeScreen"
-const val LOG_SCREEN = "LogScreen"
-const val TASKS_SCREEN = "TasksScreen"
-const val EDIT_TASK_SCREEN = "EditTaskScreen"
+import com.google.firebase.Timestamp
+import com.google.firebase.firestore.DocumentId
 
-const val EXIT_ID = "exitId"
-const val TASK_DEFAULT_ID = "-1"
-const val EXIT_ID_ARG = "?$EXIT_ID={$EXIT_ID}"
+data class Exit(
+    @DocumentId val id: String = "",
+    val reason: String = "",
+    val studentId: Int = 0,
+    val time: Timestamp = Timestamp.now()
+)

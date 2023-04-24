@@ -14,16 +14,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 
-package com.example.brahmapassv3
+package com.example.brahmapassv3.model.service
 
-const val SPLASH_SCREEN = "SplashScreen"
-const val SETTINGS_SCREEN = "SettingsScreen"
-const val LOGIN_SCREEN = "LoginScreen"
-const val TEACHER_SCREEN = "TeacherHomeScreen"
-const val LOG_SCREEN = "LogScreen"
-const val TASKS_SCREEN = "TasksScreen"
-const val EDIT_TASK_SCREEN = "EditTaskScreen"
+import com.google.firebase.perf.ktx.trace
+import com.google.firebase.perf.metrics.Trace
 
-const val EXIT_ID = "exitId"
-const val TASK_DEFAULT_ID = "-1"
-const val EXIT_ID_ARG = "?$EXIT_ID={$EXIT_ID}"
+/**
+ * Trace a block with Firebase performance.
+ *
+ * Supports both suspend and regular methods.
+ */
+inline fun <T> trace(name: String, block: Trace.() -> T): T = Trace.create(name).trace(block)

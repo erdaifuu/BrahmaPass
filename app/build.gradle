@@ -55,7 +55,7 @@ android {
 }
 
 dependencies {
-    implementation platform('com.google.firebase:firebase-bom:31.2.0')
+    implementation platform('com.google.firebase:firebase-bom:31.5.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
     // Add the dependencies for any other desired Firebase products
     implementation 'com.google.firebase:firebase-auth-ktx'
@@ -69,6 +69,7 @@ dependencies {
     implementation "androidx.compose.material:material:$composeVer"
     implementation "androidx.compose.ui:ui-tooling-preview:$composeVer"
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-compose:2.6.1'
     implementation 'androidx.activity:activity-compose:1.7.1'
     testImplementation 'junit:3junit:4.13.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

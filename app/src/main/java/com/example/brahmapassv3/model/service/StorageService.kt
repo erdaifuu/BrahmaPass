@@ -14,16 +14,19 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 
-package com.example.brahmapassv3
+package com.example.brahmapassv3.model.service
 
-const val SPLASH_SCREEN = "SplashScreen"
-const val SETTINGS_SCREEN = "SettingsScreen"
-const val LOGIN_SCREEN = "LoginScreen"
-const val TEACHER_SCREEN = "TeacherHomeScreen"
-const val LOG_SCREEN = "LogScreen"
-const val TASKS_SCREEN = "TasksScreen"
-const val EDIT_TASK_SCREEN = "EditTaskScreen"
+import com.example.brahmapassv3.model.Exit
+import kotlinx.coroutines.flow.Flow
 
-const val EXIT_ID = "exitId"
-const val TASK_DEFAULT_ID = "-1"
-const val EXIT_ID_ARG = "?$EXIT_ID={$EXIT_ID}"
+
+interface StorageService {
+    val exits: Flow<List<Exit>>
+
+    suspend fun getExit(exitId: String): Exit?
+
+    suspend fun save(exit: Exit): String
+    suspend fun update(exit: Exit)
+    suspend fun delete(exitId: String)
+    suspend fun deleteAllForUser(userId: String)
+}
