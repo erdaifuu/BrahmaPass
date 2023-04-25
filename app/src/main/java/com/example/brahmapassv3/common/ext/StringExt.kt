@@ -1,4 +1,4 @@
-package com.example.brahmapassv3.screens.home.ext
+package com.example.brahmapassv3.common.ext
 
 import android.util.Patterns
 import java.util.regex.Pattern

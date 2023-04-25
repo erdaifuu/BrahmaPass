@@ -26,9 +26,13 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.sp
 import com.example.brahmapassv3.R.drawable as AppIcon
 import com.example.brahmapassv3.R.string as AppText
 
@@ -111,11 +115,22 @@ private fun PasswordField(
 fun IDField(value: String,
             onNewValue: (String) -> Unit,
             modifier: Modifier = Modifier) {
+    val maxChar = 6;
+
     OutlinedTextField(
         singleLine = true,
         modifier = modifier,
         value = value,
-        onValueChange = { onNewValue(it) },
-        placeholder = { Text("Enter ID") },
+        textStyle = TextStyle(
+            fontSize = 30.sp,
+            textAlign = TextAlign.Center,
+            fontWeight = FontWeight.Bold
+        ),
+        onValueChange = {
+            if (it.length <= maxChar){
+                onNewValue(it)
+            }
+        },
+        placeholder = { Text("0") },
     )
 }

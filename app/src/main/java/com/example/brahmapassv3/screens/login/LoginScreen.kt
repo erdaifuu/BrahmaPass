@@ -20,8 +20,8 @@ import androidx.compose.ui.unit.sp
 import com.example.brahmapassv3.common.composable.BasicButton
 import com.example.brahmapassv3.common.composable.EmailField
 import com.example.brahmapassv3.common.composable.PasswordField
-import com.example.brahmapassv3.screens.home.ext.basicButton
-import com.example.brahmapassv3.screens.home.ext.fieldModifier
+import com.example.brahmapassv3.common.ext.basicButton
+import com.example.brahmapassv3.common.ext.fieldModifier
 import com.example.brahmapassv3.scnlogin.*
 import com.example.brahmapassv3.screens.login.LoginViewModel
 

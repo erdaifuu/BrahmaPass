@@ -29,8 +29,8 @@ import com.example.brahmapassv3.R
 import com.example.brahmapassv3.common.composable.BasicButton
 import com.example.brahmapassv3.common.composable.EmailField
 import com.example.brahmapassv3.common.composable.IDField
-import com.example.brahmapassv3.screens.home.ext.basicButton
-import com.example.brahmapassv3.screens.home.ext.fieldModifier
+import com.example.brahmapassv3.common.ext.basicButton
+import com.example.brahmapassv3.common.ext.fieldModifier
 import com.example.brahmapassv3.screens.login.LoginViewModel
 import com.example.brahmapassv3.txttime.poppins
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
@@ -44,6 +44,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.platform.LocalContext
 import com.example.brahmapassv3.common.composable.BasicField
 
@@ -88,8 +89,16 @@ fun StudentHomeScreen(
                     fontWeight = FontWeight.Medium,
                     textAlign = TextAlign.Center,)
                 painterResource(R.drawable.scn_student_home_img_clock_on_student_home)
+            }
+            Column(
+                verticalArrangement = Arrangement.spacedBy(10.dp, Alignment.CenterVertically),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier
+                    .padding(15.dp)
+                    .fillMaxSize()
+            ) {
                 IDField(exit.studentId.toString(), viewModel::onIdChange, Modifier.fieldModifier())
-                ReasonDropdown(viewModel::onReasonChange)
+                ReasonDropdown(Modifier.fieldModifier(), viewModel::onReasonChange)
                 BasicButton(R.string.create_hallpass, Modifier.basicButton()) { viewModel.onCreateHallPassClick(openAndPopUp) }
             }
         },
@@ -125,6 +134,7 @@ fun BottomBar(
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun ReasonDropdown(
+    modifier: Modifier,
     onNewValue: (String) -> Unit
 ) {
     val listItems = arrayOf("Bathroom", "GLC", "Office", "Nurse", "Other")
@@ -149,7 +159,7 @@ fun ReasonDropdown(
     ) {
         TextField(
             value = selectedItem,
-            onValueChange = {onNewValue(it)},
+            onValueChange = {},
             readOnly = true,
             label = { Text(text = "Enter Reason") },
             trailingIcon = {
@@ -167,7 +177,8 @@ fun ReasonDropdown(
             listItems.forEach { selectedOption ->
                 DropdownMenuItem(onClick = {
                     selectedItem = selectedOption
-                    Toast.makeText(contextForToast, selectedOption, Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(contextForToast, selectedOption, Toast.LENGTH_SHORT).show()
+                    onNewValue(selectedOption)
                     expanded = false
                 }) {
                     Text(text = selectedOption)

@@ -6,6 +6,7 @@ import com.example.brahmapassv3.model.service.StorageService
 import com.example.brahmapassv3.model.service.trace
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.ktx.snapshots
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.firestore.ktx.toObjects
@@ -27,7 +28,7 @@ constructor(private val firestore: FirebaseFirestore, private val auth: AccountS
     override val exits: Flow<List<Exit>>
         get() =
             auth.currentUser.flatMapLatest { user ->
-                currentCollection(user.id).snapshots().map { snapshot -> snapshot.toObjects() }
+                currentCollection(user.id).orderBy("time", Query.Direction.DESCENDING).snapshots().map { snapshot -> snapshot.toObjects() }
             }
 
     override suspend fun getExit(exitId: String): Exit? =
@@ -54,8 +55,6 @@ constructor(private val firestore: FirebaseFirestore, private val auth: AccountS
 
     private fun currentCollection(uid: String): CollectionReference =
         firestore.collection(USER_COLLECTION).document(uid).collection(EXIT_COLLECTION)
-
-
     companion object {
         private const val USER_COLLECTION = "users"
         private const val EXIT_COLLECTION = "exits"

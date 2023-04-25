@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 
-package com.example.brahmapassv3.screens.home.ext
+package com.example.brahmapassv3.common.ext
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.ui.Alignment
