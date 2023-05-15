@@ -4,6 +4,7 @@ buildscript {
         composeCompilerVer = '1.4.2'
         composeVer = '1.5.0-alpha03'
         compose_material3 = '1.0.1'
+        JAVA_HOME = 'C:\\Program Files\\Android\\Android Studio\\jre'
     }
     dependencies {
         // Add the dependency for the Google services Gradle plugin

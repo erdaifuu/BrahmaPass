@@ -20,44 +20,22 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.brahmapassv3.*
 import com.example.brahmapassv3.R
 import com.example.brahmapassv3.screens.login.LoginViewModel
-import com.example.brahmapassv3.txttime.poppins
 
 @Composable
 fun SettingsScreen(
-    OpenTeacherScreen: (String, String) -> Unit,
-    OpenLogScreen: (String, String) -> Unit,
-    modifier: Modifier = Modifier,
-    viewModel: LoginViewModel = hiltViewModel()
 ) {
         val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
-        Scaffold(
-            scaffoldState = scaffoldState,
-            topBar = { TopAppBar(
-                title = {
-                    Text(text = "BrahmaPass",
-                        fontSize = 30.sp,
-                        fontFamily = poppinsFamily,
-                        fontWeight = FontWeight.Bold,
-                        textAlign = TextAlign.Center,
-                        modifier = Modifier.fillMaxWidth())},
-                backgroundColor = MaterialTheme.colors.primary
-            )  },
-            content = { padding ->
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    modifier = Modifier
-                        .padding(15.dp)
-                        .fillMaxSize()
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier.padding(15.dp).fillMaxSize()
                 ){
-                    Text("Settings",
-                        fontSize = 30.sp,
-                        fontFamily = com.example.brahmapassv3.screens.home.poppinsFamily,
-                        fontWeight = FontWeight.Medium,
-                        textAlign = TextAlign.Center,) }
-            },
-            bottomBar = { BottomBar(OpenTeacherScreen, OpenLogScreen) })
+            Text("Settings",
+                fontSize = 30.sp,
+                fontFamily = com.example.brahmapassv3.screens.home.poppinsFamily,
+                fontWeight = FontWeight.Medium,
+                textAlign = TextAlign.Center,) }
 }
-
+/*
 @Composable
 fun BottomBar(
     OpenTeacherScreen: (String, String) -> Unit,
@@ -94,7 +72,7 @@ fun BottomBar(
     }
 }
 
-
+*/
 val poppinsFamily: FontFamily = FontFamily(
     Font(R.font.relay_poppins_black, FontWeight.Light),
     Font(R.font.relay_poppins_regular, FontWeight.Normal),

@@ -33,35 +33,28 @@ fun TeacherHomeScreen(
     modifier: Modifier = Modifier,
     viewModel: TeacherHomeViewModel = hiltViewModel()
 ) {
-        val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
-        Scaffold(
-            scaffoldState = scaffoldState,
-            topBar = { TopAppBar(
-                title = {
-                    Text(text = "BrahmaPass",
-                        fontSize = 30.sp,
-                        fontFamily = poppinsFamily,
-                        fontWeight = FontWeight.Bold,
-                        textAlign = TextAlign.Center,
-                        modifier = Modifier.fillMaxWidth())},
+    val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
+    Scaffold(
+        scaffoldState = scaffoldState,
+        topBar = { TopAppBar(
+            title = {
+                Text(text = "BrahmaPass",
+                    fontSize = 30.sp,
+                    fontFamily = poppinsFamily,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth())},
                 backgroundColor = MaterialTheme.colors.primary
             )  },
-            content = { padding ->
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    modifier = Modifier
-                        .padding(15.dp)
-                        .fillMaxSize()
+        content = { padding ->
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier.padding(15.dp).fillMaxSize()
                 ){
-                    Text("Home",
-                        fontSize = 30.sp,
-                        fontFamily = poppinsFamily,
-                        fontWeight = FontWeight.Medium,
-                        textAlign = TextAlign.Center,)
-                    ToClassModeButton(OpenStudentScreen = OpenStudentScreen)
+
                 }
-                },
-            bottomBar = { BottomBar(OpenSettingsScreen, OpenLogScreen) })
+        },
+        bottomBar = { BottomBar(OpenSettingsScreen, OpenLogScreen) })
 }
 
 @Composable
