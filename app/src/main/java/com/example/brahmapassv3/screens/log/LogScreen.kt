@@ -8,7 +8,6 @@ import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
@@ -26,8 +25,6 @@ import com.example.brahmapassv3.*
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.brahmapassv3.R
 import com.example.brahmapassv3.common.ext.smallSpacer
-import com.example.brahmapassv3.screens.log.LogViewModel
-import com.example.brahmapassv3.txttime.poppins
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
@@ -57,18 +54,25 @@ fun LogScreen(
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier
-                    .padding(15.dp)
+                    .padding(padding)
                     .fillMaxSize()
             ){
-                Text("Exit Log",
-                    fontSize = 30.sp,
-                    fontFamily = com.example.brahmapassv3.screens.home.poppinsFamily,
-                    fontWeight = FontWeight.Medium,
-                    textAlign = TextAlign.Center,)
+                Row(
+                    modifier = Modifier.padding(15.dp)
+                ){
+                        Text("Exit Log",
+                            fontSize = 30.sp,
+                            fontFamily = com.example.brahmapassv3.screens.teacher_home.poppinsFamily,
+                            fontWeight = FontWeight.Medium,
+                            textAlign = TextAlign.Center,)
+                }
 
                 Spacer(modifier = Modifier.smallSpacer())
 
-                LazyColumn {
+                LazyColumn(
+                    verticalArrangement = Arrangement.spacedBy(4.dp),
+                    contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+                    ) {
                     items(exits.value, key = { it.id }) { exitItem ->
                         ExitItem(
                             exit = exitItem,

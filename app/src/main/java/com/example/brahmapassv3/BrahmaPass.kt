@@ -2,7 +2,6 @@ package com.example.brahmapassv3
 
 import android.content.res.Resources
 import androidx.compose.animation.*
-import androidx.compose.animation.core.keyframes
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.*
@@ -13,21 +12,17 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
-import androidx.navigation.compose.NavHost
 import com.google.accompanist.navigation.animation.composable
-import androidx.navigation.navArgument
-import com.google.accompanist.navigation.animation.navigation
 import com.example.brahmapassv3.common.snackbar.SnackbarManager
 import com.example.brahmapassv3.screens.LoginScreen
 import com.example.brahmapassv3.screens.confirmation.Confirmation1Screen
 import com.example.brahmapassv3.screens.confirmation.Confirmation2Screen
-import com.example.brahmapassv3.screens.home.StudentHomeScreen
-import com.example.brahmapassv3.screens.home.TeacherHomeScreen
+import com.example.brahmapassv3.screens.student_home.StudentHomeScreen
+import com.example.brahmapassv3.screens.teacher_home.TeacherHomeScreen
 import com.example.brahmapassv3.screens.log.LogScreen
 import com.example.brahmapassv3.screens.settings.SettingsScreen
 import com.example.brahmapassv3.ui.theme.BrahmapassV3Theme
@@ -118,7 +113,8 @@ fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
     {
         SettingsScreen(
             OpenTeacherScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
-            OpenLogScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) }
+            OpenLogScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
+            SignOut = { route, popUp -> appState.navigateAndPopUp(route, popUp) }
         )
     }
 

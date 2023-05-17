@@ -15,6 +15,8 @@ package com.example.brahmapassv3.screens.login
 
 import androidx.compose.runtime.mutableStateOf
 import com.example.brahmapassv3.LOGIN_SCREEN
+import com.example.brahmapassv3.R
+import com.example.brahmapassv3.SETTINGS_SCREEN
 import com.example.brahmapassv3.TEACHER_SCREEN
 import com.example.brahmapassv3.R.string as AppText
 import com.example.brahmapassv3.common.ext.isValidEmail
@@ -22,6 +24,7 @@ import com.example.brahmapassv3.common.snackbar.SnackbarManager
 import com.example.brahmapassv3.model.service.AccountService
 import com.example.brahmapassv3.model.service.LogService
 import com.example.brahmapassv3.screens.MakeItSoViewModel
+import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -59,6 +62,14 @@ class LoginViewModel @Inject constructor(
         launchCatching {
             accountService.authenticate(email, password)
             openAndPopUp(TEACHER_SCREEN, LOGIN_SCREEN)
+        }
+    }
+
+    fun onSignOutClick(openAndPopUp: (String, String) -> Unit) {
+        launchCatching {
+            openAndPopUp(LOGIN_SCREEN, SETTINGS_SCREEN)
+            FirebaseAuth.getInstance().signOut()
+            SnackbarManager.showMessage(R.string.sign_out)
         }
     }
 

@@ -1,6 +1,8 @@
-package com.example.brahmapassv3.screens.home
+package com.example.brahmapassv3.screens.teacher_home
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
@@ -9,7 +11,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
@@ -22,8 +23,9 @@ import com.example.brahmapassv3.*
 import com.example.brahmapassv3.R
 import com.example.brahmapassv3.common.composable.BasicButton
 import com.example.brahmapassv3.common.ext.basicButton
-import com.example.brahmapassv3.screens.login.LoginViewModel
-import com.example.brahmapassv3.txttime.poppins
+import com.example.brahmapassv3.common.ext.smallSpacer
+import com.example.brahmapassv3.model.service.MonthEventList
+import com.example.brahmapassv3.screens.log.ExitItem
 
 @Composable
 fun TeacherHomeScreen(
@@ -34,6 +36,8 @@ fun TeacherHomeScreen(
     viewModel: TeacherHomeViewModel = hiltViewModel()
 ) {
         val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
+        val events = MonthEventList
+
         Scaffold(
             scaffoldState = scaffoldState,
             topBar = { TopAppBar(
@@ -49,16 +53,49 @@ fun TeacherHomeScreen(
             content = { padding ->
                 Column(
                     horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.SpaceBetween,
                     modifier = Modifier
-                        .padding(15.dp)
+                        .padding(padding)
                         .fillMaxSize()
                 ){
-                    Text("Home",
-                        fontSize = 30.sp,
-                        fontFamily = poppinsFamily,
-                        fontWeight = FontWeight.Medium,
-                        textAlign = TextAlign.Center,)
-                    ToClassModeButton(OpenStudentScreen = OpenStudentScreen)
+                    Row(
+                        modifier = Modifier.padding(15.dp)
+                    ){
+                        Text("Home",
+                            fontSize = 30.sp,
+                            fontFamily = poppinsFamily,
+                            fontWeight = FontWeight.Medium,
+                            textAlign = TextAlign.Center,)
+                    }
+
+                    Spacer(modifier = Modifier.smallSpacer())
+
+                    LazyColumn(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(bottom = 32.dp),
+                        verticalArrangement = Arrangement.Center,//Arrangement.spacedBy(4.dp),
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+                    ) {
+                        items(events.size) {index ->
+                            Text(
+                                //modifier = Modifier.fillMaxWidth(),
+                                text = events[index],
+                                //fontSize = 30.sp,
+                                //textAlign = TextAlign.Left,
+                                //fontWeight = FontWeight.Bold
+                            )
+                        }
+                    }
+
+                    Row(
+                        modifier = Modifier
+                            .weight(1f, false)
+                            .padding(30.dp)
+                    ){
+                        ToClassModeButton(OpenStudentScreen = OpenStudentScreen)
+                    }
                 }
                 },
             bottomBar = { BottomBar(OpenSettingsScreen, OpenLogScreen) })
@@ -66,6 +103,13 @@ fun TeacherHomeScreen(
 
 @Composable
 fun ToClassModeButton (
+    OpenStudentScreen: (String, String) -> Unit,
+) {
+    BasicButton (R.string.change_to_class, Modifier.basicButton()){OpenStudentScreen(STUDENT_SCREEN, TEACHER_SCREEN)}
+}
+
+@Composable
+fun EventDisplay (
     OpenStudentScreen: (String, String) -> Unit,
 ) {
     BasicButton (R.string.change_to_class, Modifier.basicButton()){OpenStudentScreen(STUDENT_SCREEN, TEACHER_SCREEN)}

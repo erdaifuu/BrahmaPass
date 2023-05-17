@@ -3,9 +3,9 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'com.google.relay' version '0.3.02'
     id 'com.google.gms.google-services'
-    id 'kotlin-kapt'
     id 'com.google.firebase.crashlytics'
     id("com.google.dagger.hilt.android")
+    id 'kotlin-kapt'
 }
 
 android {
