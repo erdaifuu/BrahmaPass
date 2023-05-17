@@ -103,6 +103,18 @@ fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
     }
 
     composable(
+        MAIN_SCREEN,
+        enterTransition = {
+            slideIntoContainer(AnimatedContentTransitionScope.SlideDirection.Left, animationSpec = tween(700))
+        },
+        //exitTransition = { slideOutHorizontally() }
+    ) {
+        MainScreen(
+            OpenStudentScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) }
+        )
+    }
+
+    composable(
         SETTINGS_SCREEN,
         enterTransition = {
             if (initialState.destination.hierarchy.any { it.route == TEACHER_SCREEN }) {

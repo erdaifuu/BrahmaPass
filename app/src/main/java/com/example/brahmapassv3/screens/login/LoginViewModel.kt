@@ -15,6 +15,7 @@ package com.example.brahmapassv3.screens.login
 
 import androidx.compose.runtime.mutableStateOf
 import com.example.brahmapassv3.LOGIN_SCREEN
+import com.example.brahmapassv3.MAIN_SCREEN
 import com.example.brahmapassv3.TEACHER_SCREEN
 import com.example.brahmapassv3.R.string as AppText
 import com.example.brahmapassv3.common.ext.isValidEmail
@@ -58,7 +59,7 @@ class LoginViewModel @Inject constructor(
 
         launchCatching {
             accountService.authenticate(email, password)
-            openAndPopUp(TEACHER_SCREEN, LOGIN_SCREEN)
+            openAndPopUp(MAIN_SCREEN, LOGIN_SCREEN)
         }
     }
 

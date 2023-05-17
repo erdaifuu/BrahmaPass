@@ -23,6 +23,8 @@ const val LOG_SCREEN = "LogScreen"
 const val STUDENT_SCREEN = "StudentHomeScreen"
 const val CONFIRMATION1_SCREEN = "Confirmation1"
 const val CONFIRMATION2_SCREEN = "Confirmation2"
+const val MAIN_SCREEN = "MainScreen"
+
 
 const val EXIT_ID = "exitId"
 const val TASK_DEFAULT_ID = "-1"
