@@ -37,9 +37,13 @@ import com.google.relay.compose.RelayText
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -56,18 +60,12 @@ import com.example.brahmapassv3.screens.home.ToClassModeButton
 import com.example.brahmapassv3.screens.home.displayCurrentTime
 import com.example.brahmapassv3.screens.home.poppinsFamily
 import com.example.brahmapassv3.screens.log.ExitItem
-import com.example.brahmapassv3.screens.log.LogScreen
 import com.example.brahmapassv3.screens.log.LogViewModel
-import com.example.brahmapassv3.screens.login.LoginScreen
-import com.example.brahmapassv3.screens.settings.SettingsScreen
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun MainScreen (
-    OpenTeacherScreen: (String, String) -> Unit,
-    OpenSettingsScreen: (String, String) -> Unit,
-    OpenLogScreen: (String, String) -> Unit,
-    OpenLoginScreen: (String, String) -> Unit,
+    OpenStudentScreen: (String, String) -> Unit,
     modifier: Modifier = Modifier,
     viewModel: LogViewModel = hiltViewModel()
 ) {
@@ -87,53 +85,109 @@ fun MainScreen (
         )  },
         content = { padding ->
             if (selectedIndex.value == 0) {
-                SettingsScreen()
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier
+                        .padding(15.dp)
+                        .fillMaxSize()
+                ){
+                    Text("Home",
+                        fontSize = 30.sp,
+                        fontFamily = poppinsFamily,
+                        fontWeight = FontWeight.Medium,
+                        textAlign = TextAlign.Center,)
+                    ToClassModeButton(OpenStudentScreen = OpenStudentScreen)
+                }
             }
             else if (selectedIndex.value == 1) {
-                LogScreen()
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier
+                        .padding(15.dp)
+                        .fillMaxSize()
+                ){
+                    Text("Settings",
+                        fontSize = 30.sp,
+                        fontFamily = com.example.brahmapassv3.screens.home.poppinsFamily,
+                        fontWeight = FontWeight.Medium,
+                        textAlign = TextAlign.Center,) }
             }
             else if (selectedIndex.value == 2) {
-                LoginScreen()
+                val exits = viewModel.exits.collectAsStateWithLifecycle(emptyList())
+                val options by viewModel.options
+
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier
+                        .padding(15.dp)
+                        .fillMaxSize()
+                ){
+                    Text("Exit Log",
+                        fontSize = 30.sp,
+                        fontFamily = com.example.brahmapassv3.screens.home.poppinsFamily,
+                        fontWeight = FontWeight.Medium,
+                        textAlign = TextAlign.Center,)
+
+                    Spacer(modifier = Modifier.smallSpacer())
+
+                    LazyColumn {
+                        items(exits.value, key = { it.id }) { exitItem ->
+                            ExitItem(
+                                exit = exitItem,
+                                options = options,
+                            )
+                        }
+                    }
+                }
             }
+
         },
-        bottomBar = { BottomBar(OpenSettingsScreen, OpenLogScreen, OpenLoginScreen) })
+        bottomBar = { BottomBar() })
 }
+
+/*
+Teacher Screen: selectedIndex = 0
+Settings Screen: selectedIndex = 1
+Log Screen: selectedIndex = 2
+ */
 
 @Composable
 fun BottomBar(
-    OpenSettingsScreen: (String, String) -> Unit,
-    OpenLogScreen: (String, String) -> Unit,
-    OpenLoginScreen: (String, String) -> Unit,
 ) {
-    val selectedIndex = remember { mutableStateOf(1) }
+    val selectedIndex = remember { mutableStateOf(0) }
+    val visible = remember { mutableStateOf(true) }
+
     BottomNavigation(elevation = 10.dp) {
+
+        BottomNavigationItem(icon = {
+            Icon(imageVector = Icons.Default.Home,"")
+        },
+            selected = (selectedIndex.value == 0),
+            onClick = {
+                fadeOut()
+                selectedIndex.value = 0
+                fadeIn()
+            })
+
 
         BottomNavigationItem(icon = {
             Icon(imageVector = Icons.Default.Settings,"")
         },
-            selected = (selectedIndex.value == 0),
+            selected = (selectedIndex.value == 1),
             onClick = {
-                OpenSettingsScreen(SETTINGS_SCREEN, TEACHER_SCREEN)
-                selectedIndex.value = 0
+                fadeOut()
+                selectedIndex.value = 1
+                fadeIn()
             })
 
         BottomNavigationItem(icon = {
             Icon(imageVector = Icons.Default.DateRange,"")
         },
-            selected = (selectedIndex.value == 1),
-            onClick = {
-                OpenLogScreen(LOG_SCREEN, TEACHER_SCREEN)
-                selectedIndex.value = 1
-            })
-
-        BottomNavigationItem(icon = {
-            Icon(imageVector = Icons.Default.ExitToApp,"")
-        },
             selected = (selectedIndex.value == 2),
             onClick = {
+                fadeOut()
                 selectedIndex.value = 2
-                OpenLoginScreen(LOGIN_SCREEN, TEACHER_SCREEN)
+                fadeIn()
             })
     }
 }
-

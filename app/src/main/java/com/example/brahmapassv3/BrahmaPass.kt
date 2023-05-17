@@ -18,12 +18,13 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import com.google.accompanist.navigation.animation.composable
 import com.example.brahmapassv3.common.snackbar.SnackbarManager
-import com.example.brahmapassv3.screens.login.LoginScreen
+import com.example.brahmapassv3.screens.LoginScreen
 import com.example.brahmapassv3.screens.confirmation.Confirmation1Screen
 import com.example.brahmapassv3.screens.confirmation.Confirmation2Screen
 import com.example.brahmapassv3.screens.home.StudentHomeScreen
 import com.example.brahmapassv3.screens.home.TeacherHomeScreen
 import com.example.brahmapassv3.screens.log.LogScreen
+import com.example.brahmapassv3.screens.main.MainScreen
 import com.example.brahmapassv3.screens.settings.SettingsScreen
 import com.example.brahmapassv3.ui.theme.BrahmapassV3Theme
 import com.google.accompanist.navigation.animation.AnimatedNavHost
@@ -86,6 +87,7 @@ fun resources(): Resources {
 @OptIn(ExperimentalAnimationApi::class)
 @ExperimentalMaterialApi
 fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
+
     composable(
         TEACHER_SCREEN,
         enterTransition = {
