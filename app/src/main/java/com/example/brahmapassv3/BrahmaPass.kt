@@ -1,6 +1,7 @@
 package com.example.brahmapassv3
 
 import android.content.res.Resources
+import android.util.Log
 import androidx.compose.animation.*
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.padding
@@ -89,9 +90,21 @@ fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
     composable(
         TEACHER_SCREEN,
         enterTransition = {
-            slideIntoContainer(AnimatedContentTransitionScope.SlideDirection.Left, animationSpec = tween(700))
+            if (initialState.destination.hierarchy.any { it.route == SETTINGS_SCREEN }) {
+                slideInHorizontally(initialOffsetX = { 1000 })
+            } else
+                slideInHorizontally(initialOffsetX = { -1000 })
         },
-        //exitTransition = { slideOutHorizontally() }
+        exitTransition = {
+            if (targetState.destination.hierarchy.any { it.route == LOG_SCREEN }) {
+                Log.d("Transition", "LOGSCREEN")
+                slideOutHorizontally(targetOffsetX = { -1000 })
+            } else if (targetState.destination.hierarchy.any { it.route == SETTINGS_SCREEN }) {
+                Log.d("Transition", "SETSCREEN")
+                slideOutHorizontally(targetOffsetX = { 1000 })
+            }
+            else { null }
+        }
     ) {
         TeacherHomeScreen(
             OpenSettingsScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
@@ -103,11 +116,9 @@ fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
     composable(
         SETTINGS_SCREEN,
         enterTransition = {
-            if (initialState.destination.hierarchy.any { it.route == TEACHER_SCREEN }) {
-                slideInHorizontally(initialOffsetX = { 1000 })
-            } else
-                slideInHorizontally(initialOffsetX = { -1000 })
+            slideInHorizontally(initialOffsetX = { -1000 })
         },
+        exitTransition = { slideOutHorizontally(targetOffsetX = { -1000 }) }
         //exitTransition = { slideOutHorizontally() }
     )
     {
@@ -123,6 +134,7 @@ fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
         enterTransition = {
             slideInHorizontally(initialOffsetX = { 1000 })
         },
+        exitTransition = { slideOutHorizontally(targetOffsetX = { 1000 }) }
         //exitTransition = { slideOutHorizontally() }
     )
     {

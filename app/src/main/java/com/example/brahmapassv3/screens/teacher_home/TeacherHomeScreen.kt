@@ -1,8 +1,11 @@
 package com.example.brahmapassv3.screens.teacher_home
 
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
@@ -11,11 +14,16 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -24,6 +32,7 @@ import com.example.brahmapassv3.R
 import com.example.brahmapassv3.common.composable.BasicButton
 import com.example.brahmapassv3.common.ext.basicButton
 import com.example.brahmapassv3.common.ext.smallSpacer
+import com.example.brahmapassv3.model.service.FirstEvent
 import com.example.brahmapassv3.model.service.MonthEventList
 import com.example.brahmapassv3.screens.log.ExitItem
 
@@ -37,6 +46,7 @@ fun TeacherHomeScreen(
 ) {
         val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
         val events = MonthEventList
+        val firstEvent = FirstEvent
 
         Scaffold(
             scaffoldState = scaffoldState,
@@ -68,25 +78,33 @@ fun TeacherHomeScreen(
                             textAlign = TextAlign.Center,)
                     }
 
-                    Spacer(modifier = Modifier.smallSpacer())
+                    //Spacer(modifier = Modifier.smallSpacer())
 
-                    LazyColumn(
+                    Box(
                         modifier = Modifier
-                            .fillMaxSize()
-                            .padding(bottom = 32.dp),
-                        verticalArrangement = Arrangement.Center,//Arrangement.spacedBy(4.dp),
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+                            .border(BorderStroke(2.dp, Color(R.color.purple_200)), shape = RoundedCornerShape(8.dp))
+                            .padding(16.dp),
+                        contentAlignment = Alignment.Center
                     ) {
-                        items(events.size) {index ->
-                            Text(
-                                //modifier = Modifier.fillMaxWidth(),
-                                text = events[index],
-                                //fontSize = 30.sp,
-                                //textAlign = TextAlign.Left,
-                                //fontWeight = FontWeight.Bold
-                            )
-                        }
+                        Text(
+                            text = buildAnnotatedString {
+                                withStyle(style = SpanStyle(fontSize = 20.sp)) {
+                                    for (i in events.indices) {
+                                        if (events[i] == firstEvent) {
+                                            withStyle(style = SpanStyle(fontWeight = FontWeight.Bold)) {
+                                                append("${events[i]}\n\n")
+                                            }
+                                        } else if (i == events.lastIndex){
+                                            append(events[i])
+                                        } else {
+                                            append("${events[i]}\n\n")
+                                        }
+                                    }
+                                }
+                            },
+                            style = TextStyle(fontSize = 16.sp, textAlign = TextAlign.Center),
+                            maxLines = 15
+                        )
                     }
 
                     Row(
