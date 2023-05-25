@@ -1,13 +1,18 @@
 package com.example.brahmapassv3.screens.settings
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -20,9 +25,12 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.brahmapassv3.*
 import com.example.brahmapassv3.R
 import com.example.brahmapassv3.screens.login.LoginViewModel
+import androidx.compose.runtime.livedata.observeAsState
+
 
 @Composable
 fun SettingsScreen(
@@ -33,6 +41,7 @@ fun SettingsScreen(
     viewModel: LoginViewModel = hiltViewModel()
 ) {
         val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
+
         Scaffold(
             scaffoldState = scaffoldState,
             topBar = { TopAppBar(
@@ -53,17 +62,22 @@ fun SettingsScreen(
                         .padding(padding)
                         .fillMaxSize()
                 ){
-                    Column(
+                    Row(
                         modifier = Modifier.padding(15.dp)
-                    ) {
-                        Text(
-                            "Settings",
+                    ){
+                        Text("Settings",
                             fontSize = 30.sp,
                             fontFamily = com.example.brahmapassv3.screens.teacher_home.poppinsFamily,
                             fontWeight = FontWeight.Medium,
-                            textAlign = TextAlign.Center,
-                        )
+                            textAlign = TextAlign.Center,)
                     }
+
+                    Column(
+                        modifier = Modifier.padding(15.dp)
+                    ) {
+                        NotificationToggle()
+                    }
+
                     Row(
                         modifier = Modifier
                             .weight(1f, false)
@@ -159,6 +173,41 @@ fun TiledButton(
         }
     }
 }
+@Composable
+fun NotificationToggle() {
+    val viewModel: SettingsViewModel = viewModel()
+    val notificationsOn by viewModel.notificationsOn.observeAsState(initial = false)
+
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.SpaceBetween,
+        modifier = Modifier
+            .clickable { viewModel.setNotificationsOn(!notificationsOn) }
+            .fillMaxWidth()
+            .padding(16.dp)
+    ) {
+        Switch(
+            checked = notificationsOn,
+            onCheckedChange = { viewModel.setNotificationsOn(it) }
+        )
+
+        Text(
+            text = "Notifications",
+            modifier = Modifier
+                .padding(start = 16.dp)
+                .fillMaxWidth(),
+                //.weight(1f), This makes the Text fill the remaining width
+
+            fontSize = 18.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.DarkGray,
+            fontFamily = FontFamily.Serif
+        )
+
+        Spacer(modifier = Modifier.weight(1f))
+    }
+}
+
 
 val poppinsFamily: FontFamily = FontFamily(
     Font(R.font.relay_poppins_black, FontWeight.Light),

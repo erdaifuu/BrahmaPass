@@ -27,6 +27,8 @@ import java.time.format.DateTimeFormatter
 import androidx.compose.foundation.Image
 import androidx.compose.runtime.*
 import androidx.compose.ui.platform.LocalContext
+import androidx.lifecycle.ViewModelProvider
+import com.example.brahmapassv3.screens.settings.SettingsViewModel
 import com.example.brahmapassv3.screens.teacher_home.poppinsFamily
 import kotlinx.coroutines.delay
 
@@ -35,11 +37,13 @@ fun StudentHomeScreen(
     OpenLoginScreen: (String, String) -> Unit,
     openAndPopUp: (String, String) -> Unit,
     modifier: Modifier = Modifier,
-    viewModel: StudentHomeViewModel = hiltViewModel()
+    viewModel: StudentHomeViewModel = hiltViewModel(),
 ) {
     val exit by viewModel.exit
+    val con = LocalContext.current;
 
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
+
     Scaffold(
         scaffoldState = scaffoldState,
         topBar = { TopAppBar(
@@ -89,7 +93,7 @@ fun StudentHomeScreen(
                         .weight(1f, false)
                         .padding(30.dp)
                 ){
-                    BasicButton(R.string.create_hallpass, Modifier.basicButton()) { viewModel.onCreateHallPassClick(openAndPopUp) }
+                    BasicButton(R.string.create_hallpass, Modifier.basicButton()) { viewModel.onCreateHallPassClick(con, openAndPopUp) }
                 }
             }
         },
