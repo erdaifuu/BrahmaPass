@@ -21,8 +21,8 @@ import com.example.brahmapassv3.common.snackbar.SnackbarManager
 import com.example.brahmapassv3.screens.LoginScreen
 import com.example.brahmapassv3.screens.confirmation.Confirmation1Screen
 import com.example.brahmapassv3.screens.confirmation.Confirmation2Screen
-import com.example.brahmapassv3.screens.home.StudentHomeScreen
-import com.example.brahmapassv3.screens.home.TeacherHomeScreen
+import com.example.brahmapassv3.screens.student_home.StudentHomeScreen
+import com.example.brahmapassv3.screens.teacher_home.TeacherHomeScreen
 import com.example.brahmapassv3.screens.log.LogScreen
 import com.example.brahmapassv3.screens.main.MainScreen
 import com.example.brahmapassv3.screens.settings.SettingsScreen
@@ -127,7 +127,8 @@ fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
     {
         SettingsScreen(
             OpenTeacherScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
-            OpenLogScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) }
+            OpenLogScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
+            SignOut = { route, popUp -> appState.navigateAndPopUp(route, popUp) }
         )
     }
 

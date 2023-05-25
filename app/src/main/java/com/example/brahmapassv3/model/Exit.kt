@@ -22,6 +22,6 @@ import com.google.firebase.firestore.DocumentId
 data class Exit(
     @DocumentId val id: String = "",
     val reason: String = "",
-    val studentId: Int = 0,
+    val studentId: Int? = 0,
     val time: Timestamp = Timestamp.now()
 )

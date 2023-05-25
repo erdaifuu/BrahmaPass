@@ -1,13 +1,13 @@
 package com.example.brahmapassv3;
 
-import android.media.metrics.Event;
+import static com.example.brahmapassv3.model.service.EventScraperServiceKt.grabEventList;
+
 import android.util.Log;
 
 import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import com.google.android.gms.tasks.Task;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -23,7 +23,6 @@ public class EventScraper {
         client.getOptions().setThrowExceptionOnScriptError(false);
         client.getOptions().setPrintContentOnFailingStatusCode(false);
         Thread thread = new Thread(new Runnable() {
-
             @Override
             public void run() {
                 try {
@@ -38,8 +37,10 @@ public class EventScraper {
                     for (int i = 0; i < anchors.size(); i++) {
                         HtmlAnchor link = (HtmlAnchor) anchors.get(i);
                         eventN.add(link.getAttribute("aria-label").replace(',', ';'));
-                        //Log.d("EventScraper","OUTPUT: " + eventN.get(i) + "\n");
+                        Log.d("EventScraper","OUTPUT: " + eventN.get(i) + "\n");
                     }
+                    grabEventList(eventN);
+
                 } catch(Exception e) {
                     e.printStackTrace();
                 }

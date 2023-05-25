@@ -1,51 +1,34 @@
-package com.example.brahmapassv3.screens.home
+package com.example.brahmapassv3.screens.student_home
 
-import android.view.LayoutInflater
-import androidx.compose.animation.core.withInfiniteAnimationFrameMillis
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material.icons.filled.ExitToApp
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Settings
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavController
 import com.example.brahmapassv3.*
 import com.example.brahmapassv3.R
 import com.example.brahmapassv3.common.composable.BasicButton
-import com.example.brahmapassv3.common.composable.EmailField
 import com.example.brahmapassv3.common.composable.IDField
 import com.example.brahmapassv3.common.ext.basicButton
 import com.example.brahmapassv3.common.ext.fieldModifier
-import com.example.brahmapassv3.screens.login.LoginViewModel
-import com.google.accompanist.navigation.animation.rememberAnimatedNavController
-import com.google.relay.compose.RelayText
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import android.os.Bundle
-import android.widget.Toast
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.*
-import androidx.compose.material.*
+import androidx.compose.foundation.Image
 import androidx.compose.runtime.*
-import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.platform.LocalContext
-import com.example.brahmapassv3.common.composable.BasicField
+import com.example.brahmapassv3.screens.teacher_home.poppinsFamily
+import kotlinx.coroutines.delay
 
 @Composable
 fun StudentHomeScreen(
@@ -73,36 +56,68 @@ fun StudentHomeScreen(
         content = { padding ->
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.SpaceBetween,
                 modifier = Modifier
-                    .padding(15.dp)
+                    .padding(padding)
                     .fillMaxSize()
             ){
-                Text("Home",
-                    fontSize = 30.sp,
-                    fontFamily = poppinsFamily,
-                    fontWeight = FontWeight.Medium,
-                    textAlign = TextAlign.Center,)
-                Text (displayCurrentTime(),
-                    fontSize = 30.sp,
-                    fontFamily = poppinsFamily,
-                    fontWeight = FontWeight.Medium,
-                    textAlign = TextAlign.Center,)
-                painterResource(R.drawable.scn_student_home_img_clock_on_student_home)
-            }
-            Column(
-                verticalArrangement = Arrangement.spacedBy(10.dp, Alignment.CenterVertically),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier
-                    .padding(15.dp)
-                    .fillMaxSize()
-            ) {
-                IDField(exit.studentId.toString(), viewModel::onIdChange, Modifier.fieldModifier())
-                ReasonDropdown(Modifier.fieldModifier(), viewModel::onReasonChange)
-                BasicButton(R.string.create_hallpass, Modifier.basicButton()) { viewModel.onCreateHallPassClick() }
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier
+                        .padding(15.dp)
+                        .weight(2f, false)
+                ) {
+                    Text("Home",
+                        fontSize = 30.sp,
+                        fontFamily = poppinsFamily,
+                        fontWeight = FontWeight.Medium,
+                        textAlign = TextAlign.Center,)
+                    TimeDisplay()
+                    Image(painter = painterResource(R.drawable.scn_student_home_img_clock_on_student_home), contentDescription = "Clock")
+                }
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier
+                        .padding(15.dp)
+                ) {
+                    //StudentIdField(value = exit.studentId.toString(), onChange = viewModel::onIdChange)
+                    IDField(idState = IdTextFieldState(), onNewValue = viewModel::onIdChange, Modifier.fieldModifier())
+                    ReasonDropdown(Modifier.fieldModifier(), viewModel::onReasonChange)
+                }
+                Row(
+                    modifier = Modifier
+                        .weight(1f, false)
+                        .padding(30.dp)
+                ){
+                    BasicButton(R.string.create_hallpass, Modifier.basicButton()) { viewModel.onCreateHallPassClick(openAndPopUp) }
+                }
             }
         },
         bottomBar = { BottomBar(OpenLoginScreen) })
 }
+
+@Composable
+fun TimeDisplay() {
+    var timeText by remember { mutableStateOf(displayCurrentTime()) }
+
+    Text (timeText,
+        fontSize = 30.sp,
+        fontFamily = poppinsFamily,
+        fontWeight = FontWeight.Medium,
+        textAlign = TextAlign.Center,)
+
+    LaunchedEffect(Unit) {
+        while (true) {
+            timeText = displayCurrentTime()
+            delay(1000)
+        }
+    }
+}
+
+class IdTextFieldState(){
+    var idText: String by mutableStateOf("")
+}
+
 
 @Composable
 fun BottomBar(
@@ -125,10 +140,12 @@ fun BottomBar(
             selected = (selectedIndex.value == 1),
             onClick = {
                 selectedIndex.value = 1
-                OpenLoginScreen(LOGIN_SCREEN, STUDENT_SCREEN)
+                OpenLoginScreen(TEACHER_SCREEN, STUDENT_SCREEN)
             })
     }
 }
+
+
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
@@ -156,7 +173,7 @@ fun ReasonDropdown(
             expanded = !expanded
         }
     ) {
-        TextField(
+        OutlinedTextField(
             value = selectedItem,
             onValueChange = {},
             readOnly = true,

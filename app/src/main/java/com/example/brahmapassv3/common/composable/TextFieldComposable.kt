@@ -17,6 +17,7 @@ limitations under the License.
 package com.example.brahmapassv3.common.composable
 
 import androidx.annotation.StringRes
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -33,6 +34,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
+import com.example.brahmapassv3.screens.student_home.IdTextFieldState
 import com.example.brahmapassv3.R.drawable as AppIcon
 import com.example.brahmapassv3.R.string as AppText
 
@@ -112,25 +114,38 @@ private fun PasswordField(
 }
 
 @Composable
-fun IDField(value: String,
+fun IDField(idState : IdTextFieldState = remember { IdTextFieldState() },
             onNewValue: (String) -> Unit,
             modifier: Modifier = Modifier) {
+
     val maxChar = 6;
+    val pattern = remember { Regex("^\\d+\$") }
 
     OutlinedTextField(
         singleLine = true,
         modifier = modifier,
-        value = value,
+        value = idState.idText,
         textStyle = TextStyle(
             fontSize = 30.sp,
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold
         ),
+        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
         onValueChange = {
             if (it.length <= maxChar){
-                onNewValue(it)
+                if (it.isEmpty() || it.matches(pattern)) {
+                    idState.idText = it
+                    onNewValue(it)
+                }
             }
         },
-        placeholder = { Text("0") },
+        placeholder = {
+            Text(
+                modifier = Modifier.fillMaxWidth(),
+                text = "ID HERE",
+                fontSize = 30.sp,
+                textAlign = TextAlign.Center,
+                fontWeight = FontWeight.Bold
+            ) },
     )
 }
