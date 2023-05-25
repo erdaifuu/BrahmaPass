@@ -56,22 +56,14 @@ import androidx.compose.ui.platform.LocalContext
 fun Confirmation2Screen(
     OpenStudentScreen: (String, String) -> Unit
 ) {
-    Column (
-        modifier = Modifier.padding(60.dp).background(Color(0xFF8B54F7)),
-        verticalArrangement = Arrangement.Top,
-        horizontalAlignment = Alignment.CenterHorizontally
+    Box (
+        modifier = Modifier.background(Color(0xFF8B54F7)),
     ) {
         Text(
             text = "Hall Pass Created",
             fontSize = 40.sp,
             fontFamily = com.example.brahmapassv3.scnlogin.poppins,
-            color = Color(
-                alpha = 255,
-                red = 0,
-                green = 0,
-                blue = 0
-            ),
-            fontWeight = FontWeight(600),
+            color = Color.White
         )
         LaunchedEffect(Unit) {
             delay(5000)
