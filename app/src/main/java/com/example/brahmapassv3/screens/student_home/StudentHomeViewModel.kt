@@ -11,7 +11,7 @@ import com.example.brahmapassv3.model.Exit
 import com.example.brahmapassv3.model.service.AccountService
 import com.example.brahmapassv3.model.service.LogService
 import com.example.brahmapassv3.model.service.StorageService
-import com.example.brahmapassv3.model.service.hallPassNotification
+//import com.example.brahmapassv3.model.service.hallPassNotification
 import com.example.brahmapassv3.screens.MakeItSoViewModel
 import com.example.brahmapassv3.screens.settings.SettingsViewModel
 import com.google.firebase.Timestamp

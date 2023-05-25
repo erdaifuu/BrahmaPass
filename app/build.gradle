@@ -97,4 +97,5 @@ dependencies {
     implementation("net.sourceforge.htmlunit:htmlunit-android:2.63.0")
     implementation("com.google.accompanist:accompanist-navigation-animation:0.31.0-alpha")
     implementation("androidx.compose.animation:animation:1.4.3")
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
 }

@@ -46,6 +46,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.runtime.*
@@ -56,17 +57,25 @@ fun Confirmation2Screen(
     OpenStudentScreen: (String, String) -> Unit
 ) {
     Column (
-        modifier = Modifier.padding(60.dp),
+        modifier = Modifier.padding(60.dp).background(Color(0xFF8B54F7)),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        GoToStudentScreen(OpenStudentScreen = OpenStudentScreen)
+        Text(
+            text = "Hall Pass Created",
+            fontSize = 40.sp,
+            fontFamily = com.example.brahmapassv3.scnlogin.poppins,
+            color = Color(
+                alpha = 255,
+                red = 0,
+                green = 0,
+                blue = 0
+            ),
+            fontWeight = FontWeight(600),
+        )
+        LaunchedEffect(Unit) {
+            delay(5000)
+            OpenStudentScreen(STUDENT_SCREEN, CONFIRMATION2_SCREEN)
+        }
     }
-}
-
-@Composable
-fun GoToStudentScreen(
-    OpenStudentScreen: (String, String) -> Unit,
-) {
-    OpenStudentScreen(STUDENT_SCREEN, CONFIRMATION2_SCREEN)
 }

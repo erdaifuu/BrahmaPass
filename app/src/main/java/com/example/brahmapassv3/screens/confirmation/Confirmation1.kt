@@ -52,18 +52,14 @@ import kotlin.time.Duration.Companion.seconds
 fun Confirmation1Screen(
     OpenConfirmation2Screen: (String, String) -> Unit
 ) {
-    Column(
+    Column (
         modifier = Modifier.padding(60.dp),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        GoToConfirmation2(OpenConfirmation2Screen = OpenConfirmation2Screen)
+        LaunchedEffect(Unit) {
+            delay(5000)
+            OpenConfirmation2Screen(STUDENT_SCREEN, CONFIRMATION2_SCREEN)
+        }
     }
-}
-
-@Composable
-fun GoToConfirmation2(
-    OpenConfirmation2Screen: (String, String) -> Unit,
-) {
-        OpenConfirmation2Screen(CONFIRMATION2_SCREEN, CONFIRMATION1_SCREEN)
 }
