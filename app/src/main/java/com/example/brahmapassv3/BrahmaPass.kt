@@ -24,7 +24,6 @@ import com.example.brahmapassv3.screens.confirmation.Confirmation2Screen
 import com.example.brahmapassv3.screens.student_home.StudentHomeScreen
 import com.example.brahmapassv3.screens.teacher_home.TeacherHomeScreen
 import com.example.brahmapassv3.screens.log.LogScreen
-import com.example.brahmapassv3.screens.main.MainScreen
 import com.example.brahmapassv3.screens.settings.SettingsScreen
 import com.example.brahmapassv3.ui.theme.BrahmapassV3Theme
 import com.google.accompanist.navigation.animation.AnimatedNavHost
@@ -98,18 +97,6 @@ fun NavGraphBuilder.brahmaPassGraph(appState: BrahmaPassState) {
         TeacherHomeScreen(
             OpenSettingsScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
             OpenLogScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) },
-            OpenStudentScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) }
-        )
-    }
-
-    composable(
-        MAIN_SCREEN,
-        enterTransition = {
-            slideIntoContainer(AnimatedContentTransitionScope.SlideDirection.Left, animationSpec = tween(700))
-        },
-        //exitTransition = { slideOutHorizontally() }
-    ) {
-        MainScreen(
             OpenStudentScreen = { route, popUp -> appState.navigateAndPopUp(route, popUp) }
         )
     }
