@@ -32,54 +32,31 @@ import com.example.brahmapassv3.txttime.poppins
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun LogScreen(
-    OpenTeacherScreen: (String, String) -> Unit,
-    OpenSettingsScreen: (String, String) -> Unit,
-    modifier: Modifier = Modifier,
     viewModel: LogViewModel = hiltViewModel()
 ) {
-    val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
-    Scaffold(
-        scaffoldState = scaffoldState,
-        topBar = { TopAppBar(
-            title = {
-                Text(text = "BrahmaPass",
-                    fontSize = 30.sp,
-                    fontFamily = poppinsFamily,
-                    fontWeight = FontWeight.Bold,
-                    textAlign = TextAlign.Center,
-                    modifier = Modifier.fillMaxWidth())},
-            backgroundColor = MaterialTheme.colors.primary
-        )  },
-        content = { padding ->
-            val exits = viewModel.exits.collectAsStateWithLifecycle(emptyList())
-            val options by viewModel.options
+    val exits = viewModel.exits.collectAsStateWithLifecycle(emptyList())
+    val options by viewModel.options
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier.padding(15.dp).fillMaxSize()
+    ){
+        Text("Exit Log",
+            fontSize = 30.sp,
+            fontFamily = com.example.brahmapassv3.screens.home.poppinsFamily,
+            fontWeight = FontWeight.Medium,
+            textAlign = TextAlign.Center,)
 
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier
-                    .padding(15.dp)
-                    .fillMaxSize()
-            ){
-                Text("Exit Log",
-                    fontSize = 30.sp,
-                    fontFamily = com.example.brahmapassv3.screens.home.poppinsFamily,
-                    fontWeight = FontWeight.Medium,
-                    textAlign = TextAlign.Center,)
+        Spacer(modifier = Modifier.smallSpacer())
 
-                Spacer(modifier = Modifier.smallSpacer())
-
-                LazyColumn {
-                    items(exits.value, key = { it.id }) { exitItem ->
-                        ExitItem(
-                            exit = exitItem,
-                            options = options,
-                        )
-                    }
-                }
+        LazyColumn {
+            items(exits.value, key = { it.id }) { exitItem ->
+                ExitItem(
+                    exit = exitItem,
+                    options = options,
+                )
             }
-        },
-        bottomBar = { BottomBar(OpenTeacherScreen, OpenSettingsScreen) })
-
+        }
+    }
     LaunchedEffect(viewModel) { viewModel.loadExitOptions() }
 }
 

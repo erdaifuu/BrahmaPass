@@ -98,7 +98,7 @@ fun StudentHomeScreen(
             ) {
                 IDField(exit.studentId.toString(), viewModel::onIdChange, Modifier.fieldModifier())
                 ReasonDropdown(Modifier.fieldModifier(), viewModel::onReasonChange)
-                BasicButton(R.string.create_hallpass, Modifier.basicButton()) { viewModel.onCreateHallPassClick(openAndPopUp) }
+                BasicButton(R.string.create_hallpass, Modifier.basicButton()) { viewModel.onCreateHallPassClick() }
             }
         },
         bottomBar = { BottomBar(OpenLoginScreen) })

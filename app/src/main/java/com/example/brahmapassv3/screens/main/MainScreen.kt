@@ -56,11 +56,14 @@ import com.example.brahmapassv3.common.composable.BasicField
 import com.example.brahmapassv3.common.ext.smallSpacer
 import com.example.brahmapassv3.screens.home.BottomBar
 import com.example.brahmapassv3.screens.home.ReasonDropdown
+import com.example.brahmapassv3.screens.home.TeacherHomeScreen
 import com.example.brahmapassv3.screens.home.ToClassModeButton
 import com.example.brahmapassv3.screens.home.displayCurrentTime
 import com.example.brahmapassv3.screens.home.poppinsFamily
 import com.example.brahmapassv3.screens.log.ExitItem
+import com.example.brahmapassv3.screens.log.LogScreen
 import com.example.brahmapassv3.screens.log.LogViewModel
+import com.example.brahmapassv3.screens.settings.SettingsScreen
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
@@ -85,60 +88,13 @@ fun MainScreen (
         )  },
         content = { padding ->
             if (selectedIndex.value == 0) {
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    modifier = Modifier
-                        .padding(15.dp)
-                        .fillMaxSize()
-                ){
-                    Text("Home",
-                        fontSize = 30.sp,
-                        fontFamily = poppinsFamily,
-                        fontWeight = FontWeight.Medium,
-                        textAlign = TextAlign.Center,)
-                    ToClassModeButton(OpenStudentScreen = OpenStudentScreen)
-                }
+                TeacherHomeScreen(OpenStudentScreen)
             }
             else if (selectedIndex.value == 1) {
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    modifier = Modifier
-                        .padding(15.dp)
-                        .fillMaxSize()
-                ){
-                    Text("Settings",
-                        fontSize = 30.sp,
-                        fontFamily = com.example.brahmapassv3.screens.home.poppinsFamily,
-                        fontWeight = FontWeight.Medium,
-                        textAlign = TextAlign.Center,) }
+                SettingsScreen()
             }
             else if (selectedIndex.value == 2) {
-                val exits = viewModel.exits.collectAsStateWithLifecycle(emptyList())
-                val options by viewModel.options
-
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    modifier = Modifier
-                        .padding(15.dp)
-                        .fillMaxSize()
-                ){
-                    Text("Exit Log",
-                        fontSize = 30.sp,
-                        fontFamily = com.example.brahmapassv3.screens.home.poppinsFamily,
-                        fontWeight = FontWeight.Medium,
-                        textAlign = TextAlign.Center,)
-
-                    Spacer(modifier = Modifier.smallSpacer())
-
-                    LazyColumn {
-                        items(exits.value, key = { it.id }) { exitItem ->
-                            ExitItem(
-                                exit = exitItem,
-                                options = options,
-                            )
-                        }
-                    }
-                }
+                LogScreen()
             }
 
         },

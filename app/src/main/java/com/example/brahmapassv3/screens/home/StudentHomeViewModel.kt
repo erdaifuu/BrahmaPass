@@ -1,5 +1,6 @@
 package com.example.brahmapassv3.screens.home
 
+import androidx.compose.animation.fadeOut
 import com.example.brahmapassv3.screens.home.StudentHomeUiState
 
 
@@ -17,6 +18,7 @@ import com.example.brahmapassv3.model.service.StorageService
 import com.example.brahmapassv3.screens.MakeItSoViewModel
 import com.google.firebase.Timestamp
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.delay
 import java.lang.NumberFormatException
 import java.util.Date
 import javax.inject.Inject
@@ -45,7 +47,7 @@ class StudentHomeViewModel @Inject constructor(
         }
 
 
-        fun onCreateHallPassClick(openAndPopUp: (String, String) -> Unit) {
+        fun onCreateHallPassClick() {
             launchCatching {
                 setNewTimestamp()
                 if(exit.value.reason.isBlank()) {
@@ -58,7 +60,9 @@ class StudentHomeViewModel @Inject constructor(
                 } else {
                     storageService.update(editedExit)
                 }
-                openAndPopUp(CONFIRMATION1_SCREEN, STUDENT_SCREEN)
+                fadeOut()
+
+                delay(1000)
             }
         }
     }

@@ -24,75 +24,19 @@ import com.example.brahmapassv3.txttime.poppins
 
 @Composable
 fun SettingsScreen(
-    OpenTeacherScreen: (String, String) -> Unit,
-    OpenLogScreen: (String, String) -> Unit,
-    modifier: Modifier = Modifier,
-    viewModel: LoginViewModel = hiltViewModel()
+
 ) {
-        val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
-        Scaffold(
-            scaffoldState = scaffoldState,
-            topBar = { TopAppBar(
-                title = {
-                    Text(text = "BrahmaPass",
-                        fontSize = 30.sp,
-                        fontFamily = poppinsFamily,
-                        fontWeight = FontWeight.Bold,
-                        textAlign = TextAlign.Center,
-                        modifier = Modifier.fillMaxWidth())},
-                backgroundColor = MaterialTheme.colors.primary
-            )  },
-            content = { padding ->
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    modifier = Modifier
-                        .padding(15.dp)
-                        .fillMaxSize()
-                ){
-                    Text("Settings",
-                        fontSize = 30.sp,
-                        fontFamily = com.example.brahmapassv3.screens.home.poppinsFamily,
-                        fontWeight = FontWeight.Medium,
-                        textAlign = TextAlign.Center,) }
-            },
-            bottomBar = { BottomBar(OpenTeacherScreen, OpenLogScreen) })
-}
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier.padding(15.dp).fillMaxSize()
+    ){
+        Text("Settings",
+            fontSize = 30.sp,
+            fontFamily = com.example.brahmapassv3.screens.home.poppinsFamily,
+            fontWeight = FontWeight.Medium,
+            textAlign = TextAlign.Center,) }
+  }
 
-@Composable
-fun BottomBar(
-    OpenTeacherScreen: (String, String) -> Unit,
-    OpenLogScreen: (String, String) -> Unit
-) {
-    val selectedIndex = remember { mutableStateOf(0) }
-    BottomNavigation(elevation = 10.dp) {
-
-        BottomNavigationItem(icon = {
-            Icon(imageVector = Icons.Default.Settings,"")
-        },
-            selected = (selectedIndex.value == 0),
-            onClick = {
-                selectedIndex.value = 0
-            })
-
-        BottomNavigationItem(icon = {
-            Icon(imageVector = Icons.Default.Home,"")
-        },
-            selected = (selectedIndex.value == 1),
-            onClick = {
-                selectedIndex.value = 1
-                OpenTeacherScreen(TEACHER_SCREEN, SETTINGS_SCREEN)
-            })
-
-        BottomNavigationItem(icon = {
-            Icon(imageVector = Icons.Default.DateRange,"")
-        },
-            selected = (selectedIndex.value == 2),
-            onClick = {
-                selectedIndex.value = 2
-                OpenLogScreen(LOG_SCREEN, SETTINGS_SCREEN)
-            })
-    }
-}
 
 
 val poppinsFamily: FontFamily = FontFamily(
