@@ -27,8 +27,6 @@ import java.time.format.DateTimeFormatter
 import androidx.compose.foundation.Image
 import androidx.compose.runtime.*
 import androidx.compose.ui.platform.LocalContext
-import androidx.lifecycle.ViewModelProvider
-import com.example.brahmapassv3.screens.settings.SettingsViewModel
 import com.example.brahmapassv3.screens.teacher_home.poppinsFamily
 import kotlinx.coroutines.delay
 
@@ -211,8 +209,7 @@ fun ReasonDropdown(
 fun displayCurrentTime(): String {
     val current = LocalDateTime.now()
     val formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss")
-    val formatted = current.format(formatter)
-    return "$formatted"
+    return current.format(formatter)
 }
 
 fun main(args: Array<String>){
